@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+
+     background-image: url('bg.jpg');
+    
+}
+.top-bar{
+    height: 40px;
+    width: 100%;
+    background-color: #333333;
+}
+div li{
+   float: left;
+   list-style: none;
+   line-height: 35px;
+}
+div a{
+   text-decoration: none;
+   color: white;
+   display: inline-block;
+   width:70px;
+}
+
+.login{
+    width: 450px;
+    height: 250px;
+    margin-left: 450px;
+    margin-top: 110px;
+    position: relative;
+    background-color: aqua;
+}
+.loginbox{
+    height:250px;
+    background:orange;
+    position:absolute;
+    width: 450px;
+    text-align: center
+    }
+.loginbox_c{
+    height:250px;
+    background:white;
+    width: 450px;
+    margin-top: 50px;
+    position: absolute
+}
+
+.loginbox_c  .loginFormLeft {
+   width: 70%;
+   height: 80%;
+   position: relative;
+   background-color: antiquewhite;
+   float: left;
+}
+
+.loginbox_c  .loginFormRight {
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    right: -5px;
+    top:35px;
+    float: left;
+    
+ }
+
+.register-left{
+    height:50px;   
+    font-size: 20px;
+    background: rgb(63, 62, 62);
+    position:relative;
+    width: 50%; 
+    line-height: 50px;
+    float: left;
+}
+.login-right{
+    height:50px;   
+    font-size: 20px;
+    background: #faebd7;
+    position:relative;
+    width: 50%;
+    float: left;
+    line-height: 50px;
+}
+.loginbox_l{
+    float:left;
+  
+    width:250px;
+    padding:20px;
+    border-right:1px solid #999;
+    margin:0 0 5px;
+}
+.loginbox_l ul li input{
+    display: block;
+    height: 35px;
+    width: 245px;
+}
+.loginbox_l p{
+    padding:10px 0;
+    
+}
+.loginbox_l p label{ 
+    float:left
+}
+.loginbox_l p a{
+ 
+    text-decoration:underline
+}
+.loginbtn{
+    height:40px;
+    line-height:40px;
+    border-radius:4px;
+    background:#ff6767;
+    color:#fff;
+    font-size:18px;
+    width:100%;
+    text-align:center;
+    border:0;
+    cursor:pointer;
+    margin:10px 0 0
+}
+.loginFormRight p{
+    font-size: 10px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <meta name="keywords" content="用户登录">
+    <link rel="stylesheet" type="text/css" href="login.css" />
+</head>
+
+<body>
+    <!--导航栏-->
+    <div class="top-bar" id="J_top_bar">
+        <ul class="bar-left left">
+            <li><a title="美食天下" href="#" target="_black" class="top_bar_logo" image:url(logo.jpg)><i>美食天下</i></a></li>
+            <li><a title="首页" href="#" target="_black">首页</a></li>
+            <li><a title="菜谱" href="#" target="_black">菜谱</a></li>
+            <li><a title="珍选" href="#" target="_black">珍选</a></li>
+            <li><a title="专题" href="#" target="_black">专题</a></li>
+            <li><a title="社区" href="#" target="_black">社区</a></li>
+        </ul>
+
+    </div>
+    <!-- 登录窗口 -->
+    <div class="login">
+        <div class="loginbox">
+            <div class="register-left">
+                <a href="../register/register.html">注册</a>
+            </div>
+            <div class="login-right">
+                <a href="#" class="on" style="color:black">登录</a>
+            </div>
+
+        </div>
+        <div class="loginbox_c">
+            <div class="loginFormLeft">
+                <form id="loginform" name="loginform" action="#" method="post">
+                    <div class="loginbox_l">
+                        <ul class="mform_r">
+                            <!-- <li><label for="username"><span class="phone">手机号码/昵称:</span></label><input type="text"
+                                    name="username" id="username" /></li>
+                            <li style="border:0;"><label for="password">密 码:</label><input type="password" name="password"
+                                    id="password" /></li> -->
+                            <li><input type="text" name="username" id="username" placeholder="手机号码/昵称："/></li>
+                            <li><input type="password" name="username" id="username" placeholder="密码："/></li>
+                        </ul>
+                        <p class="clear">
+                            <label for="cookietime"><input type="checkbox" id="cookietime" name="cookietime" value="" /><span style="font-size:10px;">&nbsp;下次自动登录</span></label>
+
+                        </p>
+                        <input type="submit" id="loginbtn" class="loginbtn" value="登&nbsp;录" />
+                    </div>
+                </form>
+            </div>
+            <div class="loginFormRight">
+                <img src="2dcode.jpg"/>
+                <p>扫描二维码下载客户端</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
