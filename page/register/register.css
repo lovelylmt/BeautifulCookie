@@ -4,6 +4,8 @@
 }
 body{
     background-image: url('bg.jpg');  
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .top-bar{
    height: 40px;
@@ -24,21 +26,21 @@ div a{
 .login{
     width: 450px;
     height: 250px;
-    margin-left: 450px;
+    margin-left: 36%;
     margin-top: 110px;
     position: relative;
     background-color: aqua;
 }
 .loginbox{
-    height:250px;
+    height:220px;
     background:orange;
     position:absolute;
     width: 450px;
     text-align: center
 }
 .loginbox_c{
-    height:250px;
-    background:white;
+    height:220px;
+    background:#faebd7;
     width: 450px;
     margin-top: 50px;
     position: absolute
@@ -106,4 +108,8 @@ div a{
 .loginFormRight p{
     font-size: 10px;
   
+}
+
+ul li {
+    padding-top: 10px
 }
