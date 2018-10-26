@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,46 +9,66 @@
     <meta name="keywords" content="用户注册">
     <link rel="stylesheet" type="text/css" href="register.css" />
 </head>
+
 <body>
-        <div class="top-bar" id="J_top_bar">
-                <ul class="bar-left left">
-                    <li><a title="美食天下" href="#" target="_black" class="top_bar_logo" image:url(logo.jpg)><i>美食天下</i></a></li>
-                    <li><a title="首页" href="#" target="_black">首页</a></li>
-                    <li><a title="菜谱" href="#" target="_black">菜谱</a></li>
-                    <li><a title="珍选" href="#" target="_black">珍选</a></li>
-                    <li><a title="专题" href="#" target="_black">专题</a></li>
-                    <li><a title="社区" href="#" target="_black">社区</a></li>
-                </ul>
-        </div>       
-    <div class="login">
-            <div class="loginbox">
-                    <div class="register-left">
-                        <a href="./register.html" style="color:black">注册</a>
-                    </div>
-                    <div class="login-right">
-                        <a href="../login/login.html" class="on" style="color:white">登录</a>
-                    </div>
-                </div>
-                <div class="loginbox_c">
-                        <div class="loginFormLeft">
-                                <form id="loginform" name="loginform" action="#" method="post">
-                                        <div class="loginbox_l">
-                                            <ul class="mform_r">
-                                                    <li><input type="text" name="username" id="username" placeholder="手机号码/昵称："/></li>
-                                                    <li><input type="password" name="username" id="username" placeholder="密码："/></li>
-                                            </ul>
-                                           
-                                            <input type="submit" id="loginbtn" class="loginbtn" value="注&nbsp;册" />
-                                        </div>
-                                    </form>  
-                        </div>
-                        <div class="loginFormRight">
-                                <img src="2dcode.jpg"/>
-                                <p>扫描二维码下载客户端</p>
-                        </div>
-                      
-                    </div>
+    <div class="top-bar" id="J_top_bar">
+        <ul class="bar-left left">
+            <li>
+                <a title="美食天下" href="#" target="_black" class="top_bar_logo" image:url(logo.jpg)>
+                    <i>美食天下</i>
+                </a>
+            </li>
+            <li>
+                <a title="首页" href="#" target="_black">首页</a>
+            </li>
+            <li>
+                <a title="菜谱" href="#" target="_black">菜谱</a>
+            </li>
+            <li>
+                <a title="珍选" href="#" target="_black">珍选</a>
+            </li>
+            <li>
+                <a title="专题" href="#" target="_black">专题</a>
+            </li>
+            <li>
+                <a title="社区" href="#" target="_black">社区</a>
+            </li>
+        </ul>
     </div>
-  
+    <div class="login">
+        <div class="loginbox">
+            <div class="register-left">
+                <a href="./register.html" style="color:black">注册</a>
+            </div>
+            <div class="login-right">
+                <a href="../login/login.html" class="on" style="color:white">登录</a>
+            </div>
+        </div>
+        <div class="loginbox_c">
+            <div class="loginFormLeft">
+                <form id="loginform" name="loginform"  >
+                    <div class="loginbox_l">
+                        <ul class="mform_r">
+                            <li>
+                                <input type="text" name="username" id="username" placeholder="手机号码/昵称：" />
+                            </li>
+                            <li>
+                                <input type="password" name="username" id="password" placeholder="密码：" />
+                            </li>
+                        </ul>
+                        <input type="button" id="loginbtn" class="loginbtn" onclick="register()" value="注&nbsp;册" />
+                    </div>
+                </form>
+                
+            </div>
+            <div class="loginFormRight">
+                <img src="2dcode.jpg" />
+                <p>扫描二维码下载客户端</p>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./register.js"></script>
 </html>
