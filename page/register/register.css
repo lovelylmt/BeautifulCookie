@@ -53,6 +53,10 @@ div a{
     width: 50%; 
     line-height: 50px;
     float: left;
+    
+}
+.register-left a{
+    color:black;
 }
 .login-right{
     height:50px;   
@@ -62,6 +66,9 @@ div a{
     width: 50%;
     float: left;
     line-height: 50px;
+}
+.login-right a{
+    color:white;
 }
 .loginbox_c  .loginFormLeft {
     width: 70%;

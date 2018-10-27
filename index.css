@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+}
+.top-bar{
+    height: 40px;
+    width: 100%;
+    background-color: #333333;
+ }
+ div li{
+    float: left;
+    list-style: none;
+    line-height: 35px;
+  }
+  div a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width:70px;
+  }
+.logo_wrap2{
+    background: #000;
+    padding-top:50px;
+}
+
+.logo_inner img{
+    position: absolute;
+     top:55px;
+     left: 180px;
+}
+.logo_nav{
+    background: orange;
+    position: absolute;
+    padding:0 40px 0 0;
+    height:50px;
+    top:55px;
+    left: 30%;
+   
+}
+.logo_nav a{
+   background: blue;
+    position:relative;
+    float:left;
+    padding:0 10px 5px;
+    font-size:20px;
+    line-height:60px;  
+    color:black;  
+}
+.logo_search{
+    background: #000;
+    position: absolute;
+    right: 180px;
+    top:75px;
+
+}

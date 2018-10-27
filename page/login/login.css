@@ -16,7 +16,7 @@ body{
 div li{
    float: left;
    list-style: none;
-   line-height: 35px;
+   line-height: 20px;
 }
 div a{
    text-decoration: none;
@@ -24,28 +24,28 @@ div a{
    display: inline-block;
    width:70px;
 }
-
 .login{
     width: 450px;
     height: 250px;
     margin-left: 36%;
     margin-top: 110px;
     position: relative;
-    background-color: aqua;
+    
 }
 .loginbox{
     height:220px;
-    background:orange;
     position:absolute;
     width: 450px;
-    text-align: center
+    text-align: center;
+
     }
 .loginbox_c{
     height:220px;
     background:#faebd7;
     width: 450px;
     margin-top: 50px;
-    position: absolute
+    position: absolute;
+  
 }
 
 .loginbox_c  .loginFormLeft {
@@ -70,7 +70,7 @@ div a{
     height:50px;   
     font-size: 20px;
     background: rgb(63, 62, 62);
-    position:relative;
+    position: relative;
     width: 50%; 
     line-height: 50px;
     float: left;
@@ -79,10 +79,13 @@ div a{
     height:50px;   
     font-size: 20px;
     background: #faebd7;
-    position:relative;
+    position: relative;
     width: 50%;
     float: left;
     line-height: 50px;
+}
+.login-right{
+    color: white;
 }
 .loginbox_l{
     float:left;
