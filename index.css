@@ -5,7 +5,10 @@
 .top-bar{
     height: 40px;
     width: 100%;
-    background-color: #333333;
+    background-color:palevioletred;
+ }
+ .top-bar .right{
+     float: right;
  }
  div li{
     float: left;
@@ -17,6 +20,7 @@
     color: white;
     display: inline-block;
     width:70px;
+    font-size: 15px;
   }
 .logo_wrap2{
 
@@ -26,29 +30,43 @@
     height: 100%;
     width: 108px;
     float: left;
-    margin-left: 10%;
+    margin-left: 13%;
+   
 }
 .logo_inner img{
      height: 60px;
-     width: 108px;
+     width: 108px;    
 }
 
 .logo_nav{
     height:100%;
     width: 40%;
     float: left;
-    margin-left: 10%
+    margin-left: 7% 
 }
 .logo_nav a{
     position:relative;
     float:left;
     font-size:20px;
     line-height:50px;  
-    color:black;  
+    color:rgb(216, 42, 100);  
 }
 .logo_search{
     height: 100%;
     width: 250px;
     float: left;
-    padding: 15px
+    padding: 15px;
+   
+}
+.carousel-inner{
+    left: 12.5%;
+}
+.carousel-control-prev{
+ 
+    left: 28%;
+}
+.carousel-control-next{
+    
+    right: 10%;
+    
 }

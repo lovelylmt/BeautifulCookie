@@ -10,7 +10,10 @@ body{
 .top-bar{
    height: 40px;
    width: 100%;
-   background-color: #333333;
+   background-color: palevioletred;
+}
+.top-bar .right{
+    float: right;
 }
 div li{
   float: left;
@@ -61,7 +64,7 @@ div a{
 .login-right{
     height:50px;   
     font-size: 20px;
-    background: rgb(63, 62, 62);
+    background: palevioletred;
     position:relative;
     width: 50%;
     float: left;

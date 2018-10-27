@@ -5,14 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <title>首页</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 
 <body>
-    <!-- 导航栏 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2" style="background-color:lavender;"></div>
+            <div class="col-sm-8" style="background-color:lavenderblush;"></div>
+            <div class="col-sm-2" style="background-color:lavender;"></div>
+        </div>
+    </div>
+
     <div class="top-bar" id="J_top_bar">
+        <!-- 导航栏 -->
         <ul class="bar-left left">
             <li>
                 <a title="美食天下" href="#" target="_black" class="top_bar_logo">
@@ -35,9 +52,20 @@
                 <a title="社区" href="#" target="_black">社区</a>
             </li>
         </ul>
+
+        <ul class="bar-left right">
+                <li>
+                        <a title="注册" href="./page/register/register.html" target="_black">注册</a>
+                    </li>
+                    <li>
+                            <a title="登录" href="./page/login/login.html" target="_black">登录</a>
+                        </li>
+        </ul>
+
     </div>
-    <!-- 中间导航 -->
+
     <div class="w logo_wrap2" style="margin-top: 1%">
+        <!-- 中间导航 -->
         <div class="logo_inner">
             <a href="#" title="美食天下">
                 <img src="./static//img/logo.png" alt="">
@@ -55,13 +83,54 @@
             <div class="input-group">
                 <input type="text" class="form-control">
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" style="background-color: gray;color: white">
+                    <button class="btn btn-default" type="button" style="background-color: palevioletred;color: white">
                         搜索
                     </button>
                 </span>
             </div>
         </div>
     </div>
+
+    <div id="w1" class="carousel slide" data-ride="carousel">
+        <!-- 指示符 -->
+        <ul class="carousel-indicators">
+            <li data-target="#w1" data-slide-to="0" class="active"></li>
+            <li data-target="#w1" data-slide-to="1"></li>
+            <li data-target="#w1" data-slide-to="2"></li>
+            <li data-target="#w1" data-slide-to="3"></li>
+            <li data-target="#w1" data-slide-to="4"></li>
+            <li data-target="#w1" data-slide-to="5"></li>
+        </ul>
+        <!-- 轮播图片 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./static/img/one.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="./static/img/two.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="./static/img/three.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="./static/img/four.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="./static/img/five.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="./static/img/six.jpg">
+            </div>
+            </div>
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#w1" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#w1" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
 </body>
 
 </html>
