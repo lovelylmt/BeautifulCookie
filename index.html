@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
 </head>
 
 <body>
@@ -36,21 +37,29 @@
         </ul>
     </div>
     <!-- 中间导航 -->
-    <div class="w logo_wrap2">
+    <div class="w logo_wrap2" style="margin-top: 1%">
         <div class="logo_inner">
-            <a href="#" title="美食天下" ><img src="./static//img/logo.png" alt=""></a>
+            <a href="#" title="美食天下">
+                <img src="./static//img/logo.png" alt="">
+            </a>
         </div>
-        <div class="logo_search">
-            <div class="searchBox J_search"><a href="javascript:;" title="搜索" class="search_Btn J_searchBTN right" id="search">搜索</a><input
-                    type="text" id="q" class="search_Text J_searchTxt right">
-            </div>
-        </div>
+
         <div class="logo_nav">
             <a title="首页" href="#" class="on" target="_blank">首页</a>
             <a title="菜谱" href="#" target="_blank">菜谱</a>
             <a title="珍选" href="#" target="_blank">珍选</a>
             <a title="专题" href="#" target="_blank">专题</a>
             <a title="社区" href="#" target="_blank">社区</a>
+        </div>
+        <div class="logo_search">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="background-color: gray;color: white">
+                        搜索
+                    </button>
+                </span>
+            </div>
         </div>
     </div>
 </body>

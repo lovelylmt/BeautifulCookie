@@ -19,37 +19,36 @@
     width:70px;
   }
 .logo_wrap2{
-    background: #000;
-    padding-top:50px;
+
+    height: 60px;  
+}
+.logo_inner {
+    height: 100%;
+    width: 108px;
+    float: left;
+    margin-left: 10%;
+}
+.logo_inner img{
+     height: 60px;
+     width: 108px;
 }
 
-.logo_inner img{
-    position: absolute;
-     top:55px;
-     left: 180px;
-}
 .logo_nav{
-    background: orange;
-    position: absolute;
-    padding:0 40px 0 0;
-    height:50px;
-    top:55px;
-    left: 30%;
-   
+    height:100%;
+    width: 40%;
+    float: left;
+    margin-left: 10%
 }
 .logo_nav a{
-   background: blue;
     position:relative;
     float:left;
-    padding:0 10px 5px;
     font-size:20px;
-    line-height:60px;  
+    line-height:50px;  
     color:black;  
 }
 .logo_search{
-    background: #000;
-    position: absolute;
-    right: 180px;
-    top:75px;
-
+    height: 100%;
+    width: 250px;
+    float: left;
+    padding: 15px
 }
