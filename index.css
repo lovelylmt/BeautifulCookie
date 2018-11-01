@@ -88,13 +88,13 @@
 
  .w1_1{
     position: absolute;
-    left:12.5%; 
+    left:12.5%;
     top:19.5%;
     width:200px;
     height:360px;
     padding:30px 0 0;
     background:rgba(68,68,68,.4);
-    z-index:4; 
+    z-index:4;
 }
 
  .w1_1 li a.list-group-item{
@@ -106,45 +106,85 @@
     background-color: rgba(68,68,68,0.01);
     border: 0px;
     font-size: 20px;
-}  
-.w1_1 li a.list-group-item:hover{  
+}
+.w1_1 li a.list-group-item:hover{
     background:#ff6767;
     text-decoration:none;
     width: 180px;
-} 
-.w2 ul li{
-    left: 12%;
 }
+
 .tab-content{
     position: relative;
     left: 4%;
 }
 
-.w5{height: 1571px; width:990px;overflow:hidden;margin:40px 0 0 0;}
-.w5 .big4_list ul{display:none}
-.w5 .big4_list ul.on{display:block}
+ul{
+    list-style: none;
+}
+/* 清楚margin-top塌陷 */
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: table;
+}
+/* 清楚浮动 */
+.clearfix::after{
+    clear: both;
+}
+#myTab{
+    position: relative;
+    left: 12.5%;
+    font-size: 20px;
+    /* background: rgb(211, 168, 209); */
+    width: 990px;
+    top: 20px;
+}
+#myTabContent{
+    position: relative;
+    top:20px;
+    left: 12.5%;
+    height: 1600px;
+    width: 990px;
+    /* background-color: #ff6767; */
+    border: 1px solid #ddd;
+    /* 多出来的ul要剪掉 */
+    overflow: hidden;
+}
+#myTabContent ul{
+    display: block;
+    width: 1070px;
+    /* background: #000; */
+    margin: 20px 0 0 0;
+}
+#myTabContent ul li{
 
-.ui_title_wrap{height: 37px; width: 990px; line-height:30px;font-size:20px}
-.ui_title_wrap h3{height: 37px;width: 80px; font-weight:400;display:inline-block;font-size:20px;margin-right:20px;color:#666;padding-bottom:4px;outline:0;color:#333;max-width:100%;overflow:hidden;text-decoration:none;text-overflow:ellipsis;white-space:nowrap}
-.ui_title_wrap h3 a{color:#666;font-size: 20px}
-.ui_title_wrap h3.on{color:#ff6767;border-bottom:3px solid #ff6767}
-.ui_title_wrap a{text-decoration:none}
+    width:230px;
+    height:305px;
+    /*多个div在一个页面上，默认情况是：一行一个div，但是只要在div的css中使用
+    float：left，可以使一行有多个div，这样可以把网页划分成很多块，
+    但是使用该属性会影响后面的元素，所有如果后面的div不想再被影响，
+    可以使用clear:both；
+    可以理解为清除float:left和float:right的影响，返回到默认状态。*/
+    float:left;
+    margin:0 23px 0 0;
+    text-align: center;
+    overflow: hidden;
+    /* background: orange; */
+
+}
+#myTabContent li a img{
+    position: relative;
+    width:230px;
+    height:230px;
+    left: -80px;
+}
+#myTabContent p{
+    font-size:18px;
+    line-height:120%;
+    padding:8px 0 2px;
+    color: #000;
+    text-align: center;
+}
 
 
 
-.big4_list{width:100%}
-.big4_list ul{display:block;width:1040px}
-.big4_list li{float:left;margin:0 23px 0 0;text-align:center;width:230px;height:305px;overflow:hidden}
-.big4_list li a{display:block;overflow:hidden;text-decoration:none;position:relative}
-.big4_list li a span.copyright{background:#333;background:rgba(0,0,0,.5);border-radius:3px;color:#fff;font-size:12px;height:20px;left:5px;line-height:20px;padding:1px 4px;position:absolute;top:5px;z-index:1}.big4_list li a i{display:block;overflow:hidden;width:230px;height:230px}
-.big4_list li a i{display:block;overflow:hidden;width:230px;height:230px}
-.big4_list li a img{width:230px;height:230px;-moz-transition:transform .5s ease-in-out;-o-transition:transform .5s ease-in-out;-ms-transition:transform .5s ease-in-out;transition:transform .5s ease-in-out}
-.big4_list li:hover a img{-webkit-transform:scale(1.1,1.1);-moz-transform:scale(1.1,1.1);-o-transform:scale(1.1,1.1);-ms-transform:scale(1.1,1.1);transform:scale(1.1,1.1)}
-.big4_list li a p{font-size:18px;line-height:120%;padding:8px 0 2px}
-.big4_list li a span{color:#999}
-.big4_list li a.u{margin:auto;color:#999;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.big4_list li a.u:hover{color:#ff6767}
-.w5 .big4_list ul.on{display:block}
-.clear{zoom:1}
-.clear:after{clear:both;content:' ';display:block;height:0;overflow:hidden;visibility:hidden}
-.mt10{margin-top:10px}
+
