@@ -45,12 +45,14 @@
     margin-left: 7%
 }
 .logo_nav a{
+   
     position:relative;
     float:left;
     font-size:20px;
     line-height:50px;
-    color:rgb(216, 42, 100);
+    color:palevioletred;
 }
+
 .logo_search{
     height: 100%;
     width: 250px;
@@ -116,6 +118,7 @@
 .tab-content{
     position: relative;
     left: 4%;
+  
 }
 
 ul{
@@ -137,6 +140,13 @@ ul{
     /* background: rgb(211, 168, 209); */
     width: 990px;
     top: 20px;
+  
+}
+#myTab li a{
+    color: palevioletred;
+    background: white;
+  
+  
 }
 #myTabContent{
     position: relative;
