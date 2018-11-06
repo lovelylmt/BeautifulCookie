@@ -45,7 +45,7 @@
     margin-left: 7%
 }
 .logo_nav a{
-   
+
     position:relative;
     float:left;
     font-size:20px;
@@ -65,7 +65,7 @@
 }
 .carousel-control-prev{
 
-    left: 28%;
+    left: 27.5%;
     background: #000;
     height: 20%;
     width: 3%;
@@ -76,7 +76,7 @@
 .carousel-control-next{
    background: #000;
    position: absolute;
-    right: 16%;
+    right: 14%;
     height: 20%;
     width: 3%;
     top: 40%;
@@ -91,7 +91,7 @@
  .w1_1{
     position: absolute;
     left:12.5%;
-    top:19.5%;
+    top:21%;
     width:200px;
     height:360px;
     padding:30px 0 0;
@@ -118,7 +118,7 @@
 .tab-content{
     position: relative;
     left: 4%;
-  
+
 }
 
 ul{
@@ -140,13 +140,13 @@ ul{
     /* background: rgb(211, 168, 209); */
     width: 990px;
     top: 20px;
-  
+
 }
 #myTab li a{
     color: palevioletred;
     background: white;
-  
-  
+
+
 }
 #myTabContent{
     position: relative;
@@ -155,7 +155,7 @@ ul{
     height: 1600px;
     width: 990px;
     /* background-color: #ff6767; */
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     /* 多出来的ul要剪掉 */
     overflow: hidden;
 }
@@ -188,13 +188,138 @@ ul{
     left: -80px;
 }
 #myTabContent p{
-    font-size:18px;
+    font-size:17px;
     line-height:120%;
     padding:8px 0 2px;
     color: #000;
     text-align: center;
 }
 
+/* 热门话题部分 */
+ #topic{
+    position: relative;
+    left: 12.5%;
+    font-size: 20px;
+    /* background: rgb(211, 168, 209); */
+    width: 990px;
+    top: 20px;
+}
+
+#topic li a{
+    color: palevioletred;
+    /* background: rgb(161, 240, 243); */
+}
+#topicPart{
+    position: relative;
+    top:20px;
+    left: 13.7%;
+    height: 2500px;
+    width: 990px;
+    /* background-color: #ff6767; */
+    /* border: 1px solid #ddd; */
+    /* 多出来的ul要剪掉 */
+    overflow: hidden;
+}
 
 
+.clear img{
+    height: 100px;
+    width: 100px;
 
+}
+.u img{
+    height: 40px;
+    width: 40px;
+
+}
+ .row li{
+    padding:10px 0;
+    width:460px;
+    float:left;
+    height:250px;
+    overflow:hidden;
+    
+}
+.row  div.u{
+    /* background: palevioletred; */
+    height:50px;
+     width: 460px;
+    }
+.row  div .u div{
+     /* background:wheat; */
+     float:right;
+     width:410px;
+     height: 50px;
+     position: relative;
+     top: -40px;
+     line-height: 30px;
+    }
+
+.row div .u a.t{
+    color:#111;
+    display: block;
+    font-size:14px;
+  
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    float:left;
+    max-width:590px;
+}
+.row  div .u span{
+    color:#666;
+    font-size:10px;
+    float:left;
+    clear:both;
+    line-height:100%;
+}
+ .row  div .c{
+    display:block;
+     /* background: #650900; */
+       display:block;
+      padding:5px 0 0 0;
+
+      text-overflow:ellipsis;
+      white-space:nowrap;
+ }
+ .c a{
+     color: #000;
+ }
+ /* .row div .c div .pp i{
+     border:1px solid #ff6767;
+     border-radius:3px;
+     color:#ff6767;
+     display:inline-block;
+     font-size:12px;
+     font-style:normal;
+     line-height:140%;
+     margin:0 5px 0 0;
+     padding:0 3px;
+     vertical-align:text-bottom;
+    }  */
+.row div .c a.clear{
+    position:relative;
+    padding:10px 0 0;
+    float:left;
+}
+
+/* .row  div .c a .clear b{
+    position:absolute;
+    bottom:0;
+    right:10px;
+    font-size:12px;
+    height:20px;
+    width:20px;
+    text-align:center;
+    line-height:20px;
+    color:#fff;
+    background:#000;
+    background:rgba(0,0,0,.5);
+} */
+.row  div .c span{
+    clear:both;
+    float:left;
+    padding:10px 0 0;
+    font-size:12px;
+    color:#666;
+    line-height:100%;
+}

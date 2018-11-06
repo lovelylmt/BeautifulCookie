@@ -5,7 +5,7 @@ function register() {
     console.log(username)
     console.log(password)
  $.ajax({
-     url : "http://192.168.1.7:3000/api/register",
+     url : "http://172.20.10.2:3000/api/register",
      data:{
         "username" : username ,
         "password" : password
