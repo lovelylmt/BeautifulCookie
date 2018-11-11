@@ -14,14 +14,13 @@
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <title>首页</title>
-    
-<link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body>
 
     <!-- 导航栏 -->
-    <div class="top-bar" id="J_top_bar">
+    <div class="navigation">
 
         <ul class="bar-left left">
             <li>
@@ -57,7 +56,7 @@
     </div>
 
     <!-- 中间导航 -->
-    <div class="w logo_wrap2" style="margin-top: 1%" >
+    <div class="centreNavigation">
         <div class="logo_inner">
             <a href="#" title="美食天下">
                 <img src="./static//img/logo.png" alt="">
@@ -82,8 +81,8 @@
         </div>
     </div>
 
-
-    <div id="w1" class="carousel slide" data-ride="carousel"  >
+    <!-- 轮播 -->
+    <div id="w1" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#w1" data-slide-to="0" class="active"></li>
             <li data-target="#w1" data-slide-to="1"></li>
@@ -92,7 +91,7 @@
             <li data-target="#w1" data-slide-to="4"></li>
             <li data-target="#w1" data-slide-to="5"></li>
         </ul>
-        <div class="carousel-inner" >
+        <div class="carousel-inner">
             <div class="carousel-item active">
                 <a href="#"><img src="./static/img/one.jpg"></a>
             </div>
@@ -119,8 +118,8 @@
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
-</div>
-    <!-- 问题：轮播图左侧的列表会覆盖左右切换按钮 -->
+    </div>
+
     <div class="w1_1">
         <div class="container" style="width:200px">
             <ul class="list-group">
@@ -144,54 +143,674 @@
     </div>
 
 
-     
-  <ul id="myTab" class="nav nav-pills" >
-            <li class="nav-item">
-                    <a class="nav-link active" data-toggle="pill" href="#home">新秀菜谱</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" href="#hot">一周热门</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" href="#popular">最受欢迎的家常菜</a>
-                  </li>
+    <!-- 新秀菜谱 -->
+    <ul id="w2" class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#home">新秀菜谱</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#hot">一周热门</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#popular">最受欢迎的家常菜</a>
+        </li>
     </ul>
-   <div id="myTabContent" class="tab-content">
+    <div id="w2Content" class="tab-content">
 
         <div class="container tab-pane active" id="home">
-               home
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面炒面炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/chaomian.jpg">
+                        <span>炒面</span>
+                    </a>
+                </li>
+
+
+            </ul>
         </div>
 
-        <div class="container tab-pane fade" id="hot" style="height: 100px;width:100px;background: red">
-               hot
+        <div class="container tab-pane fade" id="hot">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/hongshaoyu.jpg">
+                        <span>红烧鱼</span>
+                    </a>
+                </li>
+
+            </ul>
         </div>
 
         <div class="container tab-pane fade" id="popular">
-             popular
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/doushasu.jpg">
+                        <span>豆沙酥</span>
+                    </a>
+                </li>
+
+            </ul>
         </div>
-    </div> 
+    </div>
 
+
+
+    <!-- 热门话题 -->
     <ul id="topic" class="nav nav-pills">
-
-
         <li class="nav-item">
-                <a class="nav-link active" data-toggle="pill" href="#theme">热门话题</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="pill" href="#log">精华日志</a>
-              </li>
+            <a class="nav-link active" data-toggle="pill" href="#theme">热门话题</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#log">精华日志</a>
+        </li>
     </ul>
 
-      <div id="topicPart" class="tab-content">
+    <div id="topicPart" class="tab-content">
 
-            <div class="container tab-pane active" id="theme">
-                   这里是theme
-            </div>
-    
-            <div class="container tab-pane" id="log" >
-                  这里是log
+        <div class="container tab-pane active" id="theme">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <a href="#" target="_blank"><img src="./static/img/qitou.jpg"></a>
+                                <div>
+                                    <a href="#" target="_blank">琪_feXjZ8E2</a><br>
+                                    <span>1小时前</span>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
+                                <a class="clear" href="#" target="_blank">
+                                    <img src="./static/img/qi.jpg">
+                                </a>
+                                <span>7个喜欢，5条评论</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+
+        <div class="container tab-pane" id="log">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./static/img/koushuiji.jpg">
+                        <span>口水鸡</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
 </body>
 <script src="./index.js"></script>
 

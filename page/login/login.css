@@ -16,6 +16,7 @@ body{
 .top-bar .right{
     float: right;
 }
+
 div li{
    float: left;
    list-style: none;

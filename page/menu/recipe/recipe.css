@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+}
+.top-bar{
+    height: 40px;
+    width: 100%;
+    background-color:palevioletred;
+ }
+ .topRight{
+     float: right;
+ }
+ .topRight img{
+     height: 40px;
+     width: 40px;
+    border-radius:100%;
+ }
+ div li{
+    float: left;
+    list-style: none;
+    line-height: 35px;
+  }
+  div a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width:70px;
+    font-size: 15px;
+  }
+.logo_wrap2{
+    padding: 20px 0;
+    height: 60px;
+}
+.logo_inner {
+    height: 100%;
+    width: 108px;
+    float: left;
+    margin-left: 13%;
+
+}
+.logo_inner img{
+     height: 60px;
+     width: 108px;
+}
+
+.logo_nav{
+    height:100%;
+    width: 40%;
+    float: left;
+    margin-left: 7%
+}
+.logo_nav a{
+    position:relative;
+    float:left;
+    font-size:20px;
+    line-height:50px;
+    color:palevioletred;
+}
+.logo_search{
+    height: 100%;
+    width: 250px;
+    float: left;
+    padding: 15px;
+}
