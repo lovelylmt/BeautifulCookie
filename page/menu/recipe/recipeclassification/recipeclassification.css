@@ -24,8 +24,6 @@
     position: relative;
     float: right;
     margin-top: -1.1%;
-
-
   }
 .navigation .right img{
       height: 40px;
@@ -93,8 +91,7 @@ div a{
     padding: 10px;
 }
 
-
-/* 全部菜谱 */
+/* 全部分类 */
 .centreNavigation2{
     height:34px;
     border-bottom:1px solid #ff6767;
@@ -125,90 +122,105 @@ div a{
     text-decoration:none;
 }
 
-/* 小图标 */
-.icon{
-    position: absolute;
-    left: 12%;
-    padding: 20px;
+/* 分类目录 */
+.category{
+    position: relative;
+    left: 13%;
+    /* background: orange;
+    height: 2000px; */
+    width:990px;
+    overflow:hidden;
+    border-top:1px solid #EAEAEA;
+    border-bottom:1px solid #EAEAEA;   
 }
-.icon a{
+.box1{
+    /* background: pink; */
+    height: 214px;  
+}
+.box1 ul{
+    width:804px;
+    height: 214px;
+    float:right;
+    background:#fff;
+    margin-bottom:-1px;
+    overflow:hidden;
+}
+.box2{
+    /* background: palegreen; */
+    height: 356px;
+}
+.box2 ul{
+    width:804px;
+    height: 356px;
+    float:right;
+    background:#fff;
+    margin-bottom:-1px;
+    overflow:hidden;
+}
+.box3{
+    /* background: palegreen; */
+    height: 143px;
+}
+.box3 ul{
+    width:804px;
+    height: 143px;
+    float:right;
+    background:#fff;
+    margin-bottom:-1px;
+    overflow:hidden;
+}
+.box4{
+    /* background: pink; */
+    height: 285px;
+}
+.box4 ul{
+    width:804px;
+    height: 285px;
+    float:right;
+    background:#fff;
+    margin-bottom:-1px;
+    overflow:hidden;
+}
+.category h3{
+    position: relative;;
     float:left;
-    width:100px;
-    height: 80px;
+    font-size:24px;
+    height:40px;
     text-align:center;
-    text-decoration:none;
-    font-size:14px;
-    display: block;
-    color: #000;
-}
-.icon span{
-    display: block;
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-}
-.icon a:hover{
-    text-decoration: none;
-    color: #ff6767;
-}
-.icon a img{
-    width:50px;
-    height:50px;
-    margin:0 auto 5px;
-    border-radius:50%;
-}
-
-/* 最新推荐 */
-#recommend {
-    position: absolute;
     top:45%;
-    left: 12.5%;
-    font-size: 20px;
-    /* background: rgb(211, 168, 209); */
-    width: 990px; 
-}
-#recommend li a {
-    color: #ff6767;
-    background: white;
+    /* background: green; */
+    width:186px;
+    color:#666;
+    /* 
+    height:40px;
+    line-height:40px;
+    margin-top:-20px;
+    position:absolute;
+    text-align:center;
+    top:50%;
+    width:186px;
+     */
 }
 
-#recommendContent {
-    position: absolute;
-    top: 50%;
-    left: 12.5%;
-    width: 1045px;
-    height: 1550px;
-    /* background-color: #ff6767;
-    border: 1px solid #ddd; */
-    overflow: hidden;
+.category li{
+    float:left;
+    position:relative;
 }
-#recommendContent li{
-    float: left;
-    margin: 20px 23px 0 0;
-    width: 230px;
-    height: 280px;
-    /* background: orange; */
+.category a{
+    position:relative;
+    float:left;
+    height:70px;
+    line-height:64px;
+    width:133px;
+    border-left:1px solid #EAEAEA;
+    border-bottom:1px solid #EAEAEA;
+    font-size:20px;color:#333;
+    text-decoration:none;
+    text-align:center;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
-#recommendContent li img{
-    display: block;
-    width: 230px;
-    height: 230px;
-  
-}
-#recommendContent li span{
-    display: block;
-    width: 328%;
-    height: 50px;
-    /* background: #000; */
-}
-#recommendContent li a{
-    color: #000;
-    line-height: 50px;
-    text-align: center;
-   font-size: 17px;
-   text-align: center;
-}
-#recommendContent li a:hover{
-    text-decoration: none;
-   color: #ff6767;
+.category a:hover{
+    color: #ff6767;
 }

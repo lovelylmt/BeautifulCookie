@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>菜谱分类</title>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="recipeclassification.css" />
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="navigation">
+
+        <ul class="bar-left left">
+            <li>
+                <a title="美食天下" href="#" target="_black" class="top_bar_logo">
+                    <i>美食天下</i>
+                </a>
+            </li>
+            <li>
+                <a title="首页" href="#" target="_black">首页</a>
+            </li>
+            <li>
+                <a title="菜谱" href="#" target="_black">菜谱</a>
+            </li>
+            <li>
+                <a title="珍选" href="#" target="_black">珍选</a>
+            </li>
+            <li>
+                <a title="专题" href="#" target="_black">专题</a>
+            </li>
+            <li>
+                <a title="社区" href="#" target="_black">社区</a>
+            </li>
+        </ul>
+
+        <ul class="bar-left right">
+            <div>
+                <a href="#" title="头像">
+                    <img src="../img/98_avatar_big.jpg" alt="">
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- 中间导航 -->
+    <div class="centreNavigation">
+        <div class="logo_inner">
+            <a href="#" title="美食天下">
+                <img src="../img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="logo_nav">
+            <a title="菜谱" href="#" target="_blank">菜谱</a>
+            <a title="分类" href="#" class="on" target="_blank">分类</a>
+            <a title="菜单" href="#" target="_blank">菜单</a>
+            <a title="排行" href="#" target="_blank">排行</a>
+        </div>
+        <div class="logo_search">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="background-color: palevioletred;color: white">
+                        搜索
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全部分类 -->
+    <div class="centreNavigation2">
+        <ul>
+            <li><a href="#" class="on">全部</a></li>
+            <li><a title="热菜" href="#">热菜</a></li>
+            <li><a title="凉菜" href="#">凉菜</a></li>
+            <li><a title="汤羹" href="#">汤羹</a></li>
+            <li><a title="主食" href="#">主食</a></li>
+            <li><a title="小吃" href="#">小吃</a></li>
+            <li><a title="西餐" href="#">西餐</a></li>
+            <li><a title="烘焙" href="#">烘焙</a></li>
+            <li><a title="饮品" href="#">饮品</a></li>
+            <li><a title="零食" href="#">零食</a></li>
+            <li><a title="泡酱腌菜" href="#">泡酱腌菜</a></li>
+            <li><a title="自制食材" href="#">自制食材</a></li>
+            <li><a title="最新菜谱" href="#">最新菜谱</a></li>
+        </ul>
+    </div>
+
+
+    <!-- 分类目录 -->
+    <div class="category">
+        <div class="box1">
+            <h3>常见菜式</h3>
+            <ul>
+                <li><a title="热菜" href="#" target="_blank">热菜</a></li>
+                <li><a title="凉菜" href="#" target="_blank">凉菜</a></li>
+                <li><a title="汤羹" href="#" target="_blank">汤羹</a></li>
+                <li><a title="主食" href="#" target="_blank">主食</a></li>
+                <li><a title="小吃" href="#" target="_blank">小吃</a></li>
+                <li><a title="家常菜" href="#" target="_blank">家常菜</a></li>
+                <li><a title="泡酱腌菜" href="#" target="_blank">泡酱腌菜</a></li>
+                <li><a title="西餐" href="#" target="_blank">西餐</a></li>
+                <li><a title="烘焙" href="#" target="_blank">烘焙</a></li>
+                <li><a title="烤箱菜" href="#" target="_blank">烤箱菜</a></li>
+                <li><a title="饮品" href="#" target="_blank">饮品</a></li>
+                <li><a title="零食" href="#" target="_blank">零食</a></li>
+                <li><a title="火锅" href="#" target="_blank">火锅</a></li>
+                <li><a title="自制食材" href="#" target="_blank">自制食材</a></li>
+                <li><a title="海鲜" href="#" target="_blank">海鲜</a></li>
+                <li><a title="宴客菜" href="#" target="_blank">宴客菜</a></li>
+            </ul>
+        </div>
+        <div class="box2">
+            <h3>主食/小吃</h3>
+            <ul>
+                <li><a title="米饭" href="#" target="_blank">米饭</a></li>
+                <li><a title="炒饭" href="#" target="_blank">炒饭</a></li>
+                <li><a title="面食" href="#" target="_blank">面食</a></li>
+                <li><a title="包子" href="#" target="_blank">包子</a></li>
+                <li><a title="饺子" href="#" target="_blank">饺子</a></li>
+                <li><a title="馒头花卷" href="#" target="_blank">馒头花卷</a></li>
+                <li><a title="面条" href="#" target="_blank">面条</a></li>
+                <li><a title="饼" href="#" target="_blank">饼</a></li>
+                <li><a title="粥" href="#" target="_blank">粥</a></li>
+                <li><a title="馄饨" href="#" target="_blank">馄饨</a></li>
+                <li><a title="五谷杂粮" href="#" target="_blank">五谷杂粮</a></li>
+                <li><a title="北京小吃" href="#" target="_blank">北京小吃</a></li>
+                <li><a title="陕西小吃" href="#" target="_blank">陕西小吃</a></li>
+                <li><a title="广东小吃" href="#" target="_blank">广东小吃</a></li>
+                <li><a title="四川小吃" href="#" target="_blank">四川小吃</a></li>
+                <li><a title="重庆小吃" href="#" target="_blank">重庆小吃</a></li>
+                <li><a title="天津小吃" href="#" target="_blank">天津小吃</a></li>
+                <li><a title="上海小吃" href="#" target="_blank">上海小吃</a></li>
+                <li><a title="福建小吃" href="#" target="_blank">福建小吃</a></li>
+                <li><a title="湖南小吃" href="#" target="_blank">湖南小吃</a></li>
+                <li><a title="湖北小吃" href="#" target="_blank">湖北小吃</a></li>
+                <li><a title="江西小吃" href="#" target="_blank">江西小吃</a></li>
+                <li><a title="山东小吃" href="#" target="_blank">山东小吃</a></li>
+                <li><a title="山西小吃" href="#" target="_blank">山西小吃</a></li>
+                <li><a title="河南小吃" href="#" target="_blank">河南小吃</a></li>
+                <li><a title="台湾小吃" href="#" target="_blank">台湾小吃</a></li>
+                <li><a title="江浙小吃" href="#" target="_blank">江浙小吃</a></li>
+                <li><a title="云贵小吃" href="#" target="_blank">云贵小吃</a></li>
+                <li><a title="东北小吃" href="#" target="_blank">东北小吃</a></li>
+                <li><a title="西北小吃" href="#" target="_blank">西北小吃</a></li>
+            </ul>
+        </div>
+         <div class="box1">
+                <h3>甜品/饮品</h3>
+                <ul>
+                <li><a title="甜品" href="#" target="_blank">甜品</a></li>
+                <li><a title="冰品" href="#" target="_blank">冰品</a></li>
+                <li><a title="果汁" href="#" target="_blank">果汁</a></li>
+                <li><a title="糖水" href="#" target="_blank">糖水</a></li>
+                <li><a title="布丁" href="#" target="_blank">布丁</a></li>
+                <li><a title="果酱" href="#" target="_blank">果酱</a></li>
+                <li><a title="果冻" href="#" target="_blank">果冻</a></li>
+                <li><a title="酸奶" href="#" target="_blank">酸奶</a></li>
+                <li><a title="鸡尾酒" href="#" target="_blank">鸡尾酒</a></li>
+                <li><a title="咖啡" href="#" target="_blank">咖啡</a></li>
+                <li><a title="豆浆" href="#" target="_blank">豆浆</a></li>
+                <li><a title="奶昔" href="#" target="_blank">奶昔</a></li>
+                <li><a title="冰淇淋" href="#" target="_blank">冰淇淋</a></li>
+                </ul>
+         </div>
+         <div class="box3">
+                <h3>适宜人群</h3>
+                <ul>
+                <li><a title="孕妇" href="#" target="_blank">孕妇</a></li>
+                <li><a title="产妇" href="#"  target="_blank">产妇</a></li>
+                <li><a title="婴儿" href="#"  target="_blank">婴儿</a></li>
+                <li><a title="儿童" href="#"  target="_blank">儿童</a></li>
+                <li><a title="老人" href="#"  target="_blank">老人</a></li>
+                <li><a title="幼儿" href="#"  target="_blank">幼儿</a></li>
+                <li><a title="哺乳期" href="#"  target="_blank">哺乳期</a></li>
+                <li><a title="青少年" href="#"  target="_blank">青少年</a></li>
+                </ul>
+         </div>
+         <div class="box3">
+                <h3>场景</h3>
+                <ul>
+                <li><a title="早餐" href="#" target="_blank">早餐</a></li>
+                <li><a title="下午茶" href="#" target="_blank">下午茶</a></li>
+                <li><a title="二人世界" href="#" target="_blank">二人世界</a></li>
+                <li><a title="野餐" href="#" target="_blank">野餐</a></li>
+                <li><a title="开胃菜" href="#" target="_blank">开胃菜</a></li>
+                <li><a title="私房菜" href="#" target="_blank">私房菜</a></li>
+                <li><a title="快餐" href="#" target="_blank">快餐</a></li>
+                <li><a title="快手菜" href="#" target="_blank">快手菜</a></li>
+                <li><a title="宿舍时代" href="#" target="_blank">宿舍时代</a></li>
+                <li><a title="中式宴请" href="#" target="_blank">中式宴请</a></li>
+                <li><a title="西式宴请" href="#" target="_blank">西式宴请</a></li>
+                </ul>
+         </div>
+         <div class="box3">
+                <h3>饮食方式</h3>
+                <ul>
+                <li><a title="素食" href="#" target="_blank">素食</a></li>
+                <li><a title="素菜" href="#" target="_blank">素菜</a></li>
+                <li><a title="清真菜" href="#" target="_blank">清真菜</a></li>
+                <li><a title="春季食谱" href="#" target="_blank">春季食谱</a></li>
+                <li><a title="夏季食谱" href="#" target="_blank">夏季食谱</a></li>
+                <li><a title="秋季食谱" href="#" target="_blank">秋季食谱</a></li>
+                <li><a title="冬季食谱" href="#" target="_blank">冬季食谱</a></li>
+                <li><a title="小清新" href="#" target="_blank">小清新</a></li>
+                <li><a title="高颜值" href="#" target="_blank">高颜值</a></li>
+                </ul>
+         </div>
+         <div class="box2">
+                <h3>中式菜系</h3>
+                <ul>
+                <li><a title="川菜" href="#" target="_blank">川菜</a></li>
+                <li><a title="鲁菜" href="#" target="_blank">鲁菜</a></li>
+                <li><a title="闽菜" href="#" target="_blank">闽菜</a></li>
+                <li><a title="粤菜" href="#" target="_blank">粤菜</a></li>
+                <li><a title="苏菜" href="#" target="_blank">苏菜</a></li>
+                <li><a title="浙菜" href="#" target="_blank">浙菜</a></li>
+                <li><a title="湘菜" href="#" target="_blank">湘菜</a></li>
+                <li><a title="徽菜" href="#" target="_blank">徽菜</a></li>
+                <li><a title="淮扬菜" href="#" target="_blank">淮扬菜</a></li>
+                <li><a title="豫菜" href="#" target="_blank">豫菜</a></li>
+                <li><a title="晋菜" href="#" target="_blank">晋菜</a></li>
+                <li><a title="鄂菜" href="#" target="_blank">鄂菜</a></li>
+                <li><a title="云南菜" href="#" target="_blank">云南菜</a></li>
+                <li><a title="北京菜" href="#" target="_blank">北京菜</a></li>
+                <li><a title="东北菜" href="#" target="_blank">东北菜</a></li>
+                <li><a title="西北菜" href="#" target="_blank">西北菜</a></li>
+                <li><a title="贵州菜" href="#" target="_blank">贵州菜</a></li>
+                <li><a title="上海菜" href="#" target="_blank">上海菜</a></li>
+                <li><a title="新疆菜" href="#" target="_blank">新疆菜</a></li>
+                <li><a title="客家菜" href="#" target="_blank">客家菜</a></li>
+                <li><a title="台湾美食" href="#" target="_blank">台湾美食</a></li>
+                <li><a title="香港美食" href="#" target="_blank">香港美食</a></li>
+                <li><a title="澳门美食" href="#" target="_blank">澳门美食</a></li>
+                <li><a title="赣菜" href="#" target="_blank">赣菜</a></li>
+                <li><a title="中式菜系" href="#" target="_blank">中式菜系</a></li>
+                </ul>
+         </div>
+         <div class="box3">
+                <h3>外国美食</h3>
+                <ul>
+                <li><a title="日本料理" href="#" target="_blank">日本料理</a></li>
+                <li><a title="韩国料理" href="#" target="_blank">韩国料理</a></li>
+                <li><a title="泰国菜" href="#" target="_blank">泰国菜</a></li>
+                <li><a title="印度菜" href="#" target="_blank">印度菜</a></li>
+                <li><a title="法国菜" href="#" target="_blank">法国菜</a></li>
+                <li><a title="意大利菜" href="#" target="_blank">意大利菜</a></li>
+                <li><a title="西班牙菜" href="#" target="_blank">西班牙菜</a></li>
+                <li><a title="英国菜" href="#" target="_blank">英国菜</a></li>
+                <li><a title="越南菜" href="#" target="_blank">越南菜</a></li>
+                <li><a title="墨西哥菜" href="#" target="_blank">墨西哥菜</a></li>
+                <li><a title="外国美食" href="#" target="_blank">外国美食</a></li>
+                </ul>
+         </div>
+         <div class="box1">
+                <h3>烘焙</h3>
+                <ul>
+                <li><a title="蛋糕" href="#" target="_blank">蛋糕</a></li>
+                <li><a title="面包" href="#" target="_blank">面包</a></li>
+                <li><a title="饼干" href="#" target="_blank">饼干</a></li>
+                <li><a title="派塔" href="#" target="_blank">派塔</a></li>
+                <li><a title="吐司" href="#" target="_blank">吐司</a></li>
+                <li><a title="戚风蛋糕" href="#" target="_blank">戚风蛋糕</a></li>
+                <li><a title="纸杯蛋糕" href="#" target="_blank">纸杯蛋糕</a></li>
+                <li><a title="蛋糕卷" href="#" target="_blank">蛋糕卷</a></li>
+                <li><a title="玛芬蛋糕" href="#" target="_blank">玛芬蛋糕</a></li>
+                <li><a title="乳酪蛋糕" href="#" target="_blank">乳酪蛋糕</a></li>
+                <li><a title="芝士蛋糕" href="#" target="_blank">芝士蛋糕</a></li>
+                <li><a title="奶油蛋糕" href="#" target="_blank">奶油蛋糕</a></li>
+                <li><a title="批萨" href="#" target="_blank">批萨</a></li>
+                <li><a title="慕斯" href="#" target="_blank">慕斯</a></li>
+                <li><a title="曲奇" href="#" target="_blank">曲奇</a></li>
+                <li><a title="翻糖" href="#" target="_blank">翻糖</a></li>
+                </ul>
+         </div>
+         <div>
+
+         </div>
+    </div>
+
+</body>
+
+</html>
