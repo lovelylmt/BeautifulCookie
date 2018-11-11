@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>菜谱</title>
+    <link rel="stylesheet" type="text/css" href="recipe.css" />
     <!-- 新 Bootstrap4 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
@@ -14,12 +15,12 @@
     <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="recipe.css" />
 </head>
 
 <body>
     <!-- 导航栏 -->
-    <div class="top-bar">
+    <div class="navigation">
+
         <ul class="bar-left left">
             <li>
                 <a title="美食天下" href="#" target="_black" class="top_bar_logo">
@@ -42,25 +43,29 @@
                 <a title="社区" href="#" target="_black">社区</a>
             </li>
         </ul>
- <ul>
-        <div class="topRight">
-            <a href="#" title="头像"><img src="./img/98_avatar_big.jpg" alt=""></a>
-        </div> 
+
+        <ul class="bar-left right">
+            <div>
+                <a href="#" title="头像">
+                    <img src="./img/98_avatar_big.jpg" alt="">
+                </a>
+            </div>
+        </ul>
     </div>
-</ul>
 
     <!-- 中间导航 -->
-    <div class="logo_wrap2">
+    <div class="centreNavigation">
         <div class="logo_inner">
             <a href="#" title="美食天下">
                 <img src="./img/logo.png" alt="">
             </a>
         </div>
         <div class="logo_nav">
-            <a title="首页" href="#" target="_blank">首页</a>
-            <a title="分类" href="#" target="_blank">分类</a>
-            <a title="菜单" href="#" target="_blank">菜单</a>
-            <a title="排行" href="#" target="_blank">排行</a>
+            <a title="首页" href="#" class="on" target="_blank">首页</a>
+            <a title="菜谱" href="#" target="_blank">菜谱</a>
+            <a title="珍选" href="#" target="_blank">珍选</a>
+            <a title="专题" href="#" target="_blank">专题</a>
+            <a title="社区" href="#" target="_blank">社区</a>
         </div>
         <div class="logo_search">
             <div class="input-group">
@@ -73,6 +78,1130 @@
             </div>
         </div>
     </div>
+
+    <!-- 全部菜谱 -->
+    <div class="centreNavigation2">
+        <ul>
+            <li><a href="#" class="on">首页</a></li>
+            <li><a title="热菜" href="#">热菜</a></li>
+            <li><a title="凉菜" href="#">凉菜</a></li>
+            <li><a title="汤羹" href="#">汤羹</a></li>
+            <li><a title="主食" href="#">主食</a></li>
+            <li><a title="小吃" href="#">小吃</a></li>
+            <li><a title="西餐" href="#">西餐</a></li>
+            <li><a title="烘焙" href="#">烘焙</a></li>
+            <li><a title="饮品" href="#">饮品</a></li>
+            <li><a title="零食" href="#">零食</a></li>
+            <li><a title="泡酱腌菜" href="#">泡酱腌菜</a></li>
+            <li><a title="自制食材" href="#">自制食材</a></li>
+            <li><a title="最新菜谱" href="#">最新菜谱</a></li>
+        </ul>
+    </div>
+
+    <!-- 小图标 -->
+    <div class="icon">
+        <ul><a href="#" target="_blank" title="一周最热"><img src="./img/r01.jpg"><span>一周最热</span></a>
+            <a href="#" target="_blank" title="人气菜肴"><img src="./img/r02.jpg"><span>人气菜肴</span></a>
+            <a href="#" target="_blank" title="夏季食谱"><img src="./img/r03.jpg"><span>夏季食谱</span></a>
+            <a href="#" target="_blank" title="高颜值"><img src="./img/r04.jpg"><span>高颜值</span></a>
+            <a href="#" target="_blank" title="快手菜"><img src="./img/r05.jpg"><span>快手菜</span></a>
+            <a href="#" target="_blank" title="早餐"><img src="./img/r06.jpg"><span>早餐</span></a></li>
+            <a href="#" target="_blank" title="家常菜谱"><img src="./img/r07.jpg"><span>家常菜谱</span></a>
+            <a href="#" target="_blank" title="烘焙大全"><img src="./img/r08.jpg"><span>烘焙大全</span></a>
+            <a href="#" target="_blank" title="亲子专区"><img src="./img/r09.jpg"><span>亲子专区</span></a>
+            <a href="#" target="_blank" title="所有菜谱"><img src="./img/r10.jpg"><span>所有菜谱</span></a>
+        </ul>
+    </div>
+
+    <!-- 最新推荐 -->
+    <ul id="recommend" class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#recommended" class="on">最新推荐</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#release">最新发布</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#hotDishes">热菜</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#coldDishes">凉菜</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#soup">汤羹</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#stapleFood">主食</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#snack">小吃</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#westernFood">西餐</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#baking">烘焙</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#diy">自制食材</a>
+        </li>
+    </ul>
+    <div id="recommendContent" class="tab-content">
+
+        <div class="container tab-pane active" id="recommended">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/hongzao.jpg">
+                        <span>红枣养生粥</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div class="container tab-pane fade" id="release">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="./img/qiaokeli.jpg">
+                        <span>巧克力芝麻饼</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container tab-pane fade" id="hotDishes">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jituirou.jpg">
+                        <span>鸡腿肉</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container tab-pane fade" id="coldDishes">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/hongzaofagao.jpg">
+                        <span>红枣发糕</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container tab-pane fade" id="soup">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jidanbing.jpg">
+                        <span>鸡蛋饼</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container tab-pane fade" id="stapleFood">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mapodoufu.jpg">
+                        <span>麻婆豆腐</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="container tab-pane fade" id="snack">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/malatang.jpg">
+                        <span>麻辣烫</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="container tab-pane fade" id="westernFood">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/suannai.jpg">
+                        <span>酸奶</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container tab-pane fade" id="baking">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/mafen.jpg">
+                        <span>马芬蛋糕</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container tab-pane fade" id="diy">
+            <ul>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_black"><img src="../static/img/jizhua.jpg">
+                        <span>自制鸡爪</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

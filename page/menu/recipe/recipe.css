@@ -1,64 +1,214 @@
-*{
-    margin:0;
-    padding:0;
-}
-.top-bar{
-    height: 40px;
-    width: 100%;
-    background-color:palevioletred;
- }
- .topRight{
-     float: right;
- }
- .topRight img{
-     height: 40px;
-     width: 40px;
-    border-radius:100%;
- }
- div li{
+* {
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    list-style: none;
+  }
+.navigation{
+      position: absolute;
+    top: 0px;
+   height: 40px;
+   width: 100%;
+   background-color: palevioletred;
+  }
+.navigation li a{
+    color: white;
+    font-size: 17px;
+  }
+.navigation li a:hover{
+    color: rgb(231, 197, 151);
+    text-decoration: none;
+  }
+.navigation .right{
+    position: relative;
+    float: right;
+    margin-top: -1.1%;
+
+
+  }
+.navigation .right img{
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+  }
+.navigation li{
     float: left;
     list-style: none;
-    line-height: 35px;
+    line-height: 40px;
   }
-  div a{
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    width:70px;
-    font-size: 15px;
+div a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width:70px;
   }
-.logo_wrap2{
-    padding: 20px 0;
+
+  /* 中间导航 */
+.centreNavigation{
+   position: relative;
+    /* background: orange; */
     height: 60px;
-}
+    margin-top: 5%;
+  }
 .logo_inner {
-    height: 100%;
+     position: relative;
+     display: block;
+      left: 14%;
+     height: 100%;
     width: 108px;
     float: left;
-    margin-left: 13%;
-
 }
-.logo_inner img{
-     height: 60px;
-     width: 108px;
+.logo_inner img {
+    height: 60px;
+    width: 108px;
 }
 
-.logo_nav{
-    height:100%;
+.logo_nav {
+    height: 100%;
     width: 40%;
     float: left;
-    margin-left: 7%
+    margin-left: 20%;
+    /* background: orange; */
 }
-.logo_nav a{
-    position:relative;
-    float:left;
-    font-size:20px;
-    line-height:50px;
-    color:palevioletred;
+
+.logo_nav a {
+    position: relative;
+    float: left;
+    font-size: 20px;
+    line-height: 50px;
+    color: black;
 }
-.logo_search{
+.logo_nav .on{
+    color: #ff6767
+}
+.logo_nav a:hover{
+    color: #ff6767;
+     text-decoration: none;
+}
+.logo_search {
     height: 100%;
     width: 250px;
     float: left;
-    padding: 15px;
+    padding: 10px;
+}
+
+
+/* 全部菜谱 */
+.centreNavigation2{
+    height:34px;
+    border-bottom:1px solid #ff6767;
+    border-top:1px solid #ff6767;
+    margin:auto;width:990px;
+}
+ .centreNavigation2 li{
+     list-style: none;
+    float:left;
+    padding:0 2px;
+    /* background: blue; */
+}
+.centreNavigation2 a{
+    display:block;
+    padding:0 3px;
+    height:34px;
+    font-size:14px;
+    line-height:34px;
+    color: #000;
+    width: 62px;
+    /* background: orange; */
+}
+.centreNavigation2 a.on{
+    color:#ff6767;
+}
+.centreNavigation2 a:hover{
+    color:#ff6767;
+    text-decoration:none;
+}
+
+/* 小图标 */
+.icon{
+    position: absolute;
+    left: 12%;
+    padding: 20px;
+}
+.icon a{
+    float:left;
+    width:100px;
+    height: 80px;
+    text-align:center;
+    text-decoration:none;
+    font-size:14px;
+    display: block;
+    color: #000;
+}
+.icon span{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.icon a:hover{
+    text-decoration: none;
+    color: #ff6767;
+}
+.icon a img{
+    width:50px;
+    height:50px;
+    margin:0 auto 5px;
+    border-radius:50%;
+}
+
+/* 最新推荐 */
+#recommend {
+    position: absolute;
+    top:45%;
+    left: 12.5%;
+    font-size: 20px;
+    /* background: rgb(211, 168, 209); */
+    width: 990px; 
+}
+#recommend li a {
+    color: #ff6767;
+    background: white;
+}
+
+#recommendContent {
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+    width: 1045px;
+    height: 1550px;
+    /* background-color: #ff6767;
+    border: 1px solid #ddd; */
+    overflow: hidden;
+}
+#recommendContent li{
+    float: left;
+    margin: 20px 23px 0 0;
+    width: 230px;
+    height: 280px;
+    /* background: orange; */
+}
+#recommendContent li img{
+    display: block;
+    width: 230px;
+    height: 230px;
+  
+}
+#recommendContent li span{
+    display: block;
+    width: 328%;
+    height: 50px;
+    /* background: #000; */
+}
+#recommendContent li a{
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+   font-size: 17px;
+   text-align: center;
+}
+#recommendContent li a:hover{
+    text-decoration: none;
+   color: #ff6767;
 }
