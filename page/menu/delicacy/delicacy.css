@@ -91,7 +91,7 @@ div a{
     padding: 10px;
 }
 
-/* 全部菜单 */
+/* 全部专题 */
 .centreNavigation2{
     height:34px;
     border-bottom:1px solid #ff6767;
@@ -121,7 +121,6 @@ div a{
     color:#ff6767;
     text-decoration:none;
 }
-
 /* 图片部分 */
 .allCarte{
     position: relative;
@@ -135,7 +134,7 @@ div a{
 }
 .allCarte li{
     float: left;
-    margin: 0 15px 60px 0;
+    margin: 0 15px 50px 0;
     width: 330px;
     height: 305px;
     /* background: orange; */
@@ -165,26 +164,10 @@ div a{
     width: 427%;
     text-decoration: none;
 }
-.allCarte li a span{
-    color:#999;
-     text-align: center;
-    /* background: greenyellow; */
-    width: 427%;
-    display: block;
-    font-size: 10px;
-    line-height:120%;
-    margin-top: -15px;
-}  
+
 .allCarte li a:hover{
     text-decoration: none;
 }
 .allCarte li p:hover{
     color: #ff6767;
 }
- /* 分页 */
- .Pagination{
-     position: relative;
-     left: 35%;
-     text-align: center;
-     font-size: 10px;
- }

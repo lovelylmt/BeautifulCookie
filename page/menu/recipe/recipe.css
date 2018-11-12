@@ -193,7 +193,17 @@ div a{
     display: block;
     width: 230px;
     height: 230px;
-  
+    -moz-transition:all .5s ease-in-out;  /*ease-in-out：（加速然后减速）*/
+    -o-transition:all .5s ease-in-out;
+    -ms-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out; 
+}
+#recommendContent li:hover img{
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+    -o-transform:scale(1.1,1.1);
+    -ms-transform:scale(1.1,1.1);
+    transform:scale(1.1,1.1);
 }
 #recommendContent li span{
     display: block;
