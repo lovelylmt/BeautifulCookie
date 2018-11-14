@@ -15,10 +15,11 @@ ul{
 .navigation li a{
   color: rgb(223, 217, 217);
   font-size: 17px;
+  text-align: center;
 }
 .navigation li a:hover{
-  color: rgb(231, 197, 151);
   text-decoration: none;
+  background: #666;
 }
 .navigation .right{
   position: relative;

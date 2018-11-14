@@ -12,13 +12,14 @@
    width: 100%;
    background-color: rgb(51, 51, 51);
   }
-.navigation li a{
-    color: rgb(211, 211, 211);
+  .navigation li a{
+    color: rgb(223, 217, 217);
     font-size: 17px;
+    text-align: center;
   }
-.navigation li a:hover{
-    color: rgb(231, 197, 151);
+  .navigation li a:hover{
     text-decoration: none;
+    background: #666;
   }
 .navigation .right{
     position: relative;

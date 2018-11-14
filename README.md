@@ -65,3 +65,5 @@ protected void onDestroy() {
 
 
 
+##问题
+>center.html的动态部分

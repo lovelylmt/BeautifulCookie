@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    list-style: none;
+  }
+.navigation{
+      position: absolute;
+    top: 0px;
+   height: 42px;
+   width: 100%;
+   background-color:  rgb(51, 51, 51);
+  }
+  .navigation li a{
+    color: rgb(223, 217, 217);
+    font-size: 17px;
+    text-align: center;
+  }
+  .navigation li a:hover{
+    text-decoration: none;
+    background: #666;
+  }
+.navigation .right{
+    position: relative;
+    float: right;
+    margin-top: -1.1%;
+  }
+.navigation .right img{
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+  }
+.navigation li{
+    float: left;
+    list-style: none;
+    line-height: 40px;
+  }
+div a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width:70px;
+  }
+/* 左侧导航栏 */
+
+.menuLeft{
+    width:110px;
+    height:100%;
+    background:#f8f8f8; 
+    /* background:pink;  */
+}
+.menu{
+    text-align:center;
+    font-size:16px;
+    
+    padding:60px 0 10px 15px;
+}
+.menu li{  
+    border-bottom:1px solid #e0e0e0;
+    position:relative;
+}
+.menu a{
+    display:block;
+    padding:12px 5px;
+    color: #000;
+}
+.menu a.on,.menu a:hover{
+    text-decoration:none;
+    color:#ff6767;
+    /* background-color:#eee; */
+}
+
+/* 右侧 */
+.memberCenter{
+  position: relative;
+  margin-top: -17%;
+  float: right;
+  /* background: pink; */
+  width: 1220px;
+  height: 180px;
+}
+.headPortrait{
+  /* background: blue; */
+  width: 170px;
+}
+.headPortrait img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+/* 昵称部分 */
+.detail{
+  /* background: orange; */
+  position: relative;
+  width: 500px;
+  height: 135px;
+  margin-top: -11%;
+  left: 15%;
+  float: left;
+
+}
+.detail a{
+     color: #ff6767;
+}
+
+.substatus li{
+  position: relative;
+
+  float: left;
+}
+
+.substatus li a{
+  /* background: pink; */
+  text-align: center;
+  font-size: 22px;
+  color: #000;
+}
+.substatus li a:hover{
+  text-decoration: none;
+  color: #ff6767;
+}
+
+.substatus span{
+     /* background: blue; */
+     position: relative;
+     float: left;
+     left: 50%;
+     top: 35px;
+     font-size:10px 
+    
+}
+/* 动态部分 */
+#dynamic{
+  position: relative;
+  font-size: 20px;
+  /* background: rgb(211, 168, 209); */
+  width: 900px;
+  top: 40px;
+
+}
+#dynamic li a {
+  width: 140px;
+  color: #333;
+  background: white;
+  text-align: center;
+}
+#dynamic li a:hover{
+  color: #ff6767;
+}
+#dynamicContent{
+  position: relative;
+  top: 25%;
+  width: 900px;
+  height: 500px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
