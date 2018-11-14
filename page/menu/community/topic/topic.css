@@ -73,13 +73,16 @@ div a{
 }
 
 .logo_nav a {
-    position: relative;
+    width: 100px;
     float: left;
     font-size: 20px;
     line-height: 50px;
     color: black;
 }
 .logo_nav .on{
+    position: relative;
+    display: block;
+    width: 70px;
     color: #ff6767
 }
 .logo_nav a:hover{
@@ -94,7 +97,7 @@ div a{
 }
 
 
-/* 全部排行*/
+/* 全部话题 */
 .centreNavigation2{
     height:34px;
     border-bottom:1px solid #ff6767;
@@ -114,11 +117,12 @@ div a{
     font-size:14px;
     line-height:34px;
     color: #000;
-    width: 62px;
+    width:85px;
     /* background: orange; */
 }
 .centreNavigation2 a.on{
     color:#ff6767;
+    width: 50px;
 }
 .centreNavigation2 a:hover{
     color:#ff6767;
@@ -146,81 +150,119 @@ div a{
     display: block;
     float: left;
     font-size: 25px;
+    width: 100px;
     color: #ff6767;
 }
 .title a:hover{
     text-decoration: none;   
 }
-/* 排行列表 */
-.ranklist li{
+/* 话题部分 */
+.topic{
     position: relative;
+    left: 13%;
+    /* background:rgb(177, 233, 139); */
+    height:1600px;
+    width:640px;
+}
+.topic li {
+    /* background:blue; */
+    padding: 10px 0;
+    float: left;
+    height: 250px;
+    overflow: hidden;
+    width: 640px;
+  }
+.left img {
     display: block;
-    
-    width: 990px;
-    left: 14%;
-    padding: 0 0 10px 0;
-    clear:both;
-    /* background: powderblue; */
-    height: 220px;
-}
- .ranklist li h2 a{
-     /* background: orange; */
-     display: block;
-     width: 50%;
-     margin-top: 18px;
-     font-size:20px;
-     padding:3px 0 10px;
-     color: #000;
-}
-.ranklist li h2 a:hover{
-    text-decoration: none;
-    color: #ff6767;
-}
-
-.ranklist .pic{
-
-    float:left;
-    height:180px;
-    width:180px;
-    margin:30px 0 20px;
-    /* overflow:hidden; */
-    position:relative;
-}
-
-.ranklist .detail{
-    color:#333;
-    padding:16px 0 0 200px;
-    font-size:14px;
-}
-.ranklist .subline a{
-    color:#999;
-}
-.ranklist li img{
-    height: 180px;
-    width: 180px;
-    -moz-transition:all .5s ease-in-out;  /*ease-in-out：（加速然后减速）*/
-    -o-transition:all .5s ease-in-out;
-    -ms-transition:all .5s ease-in-out;
-    transition:all .5s ease-in-out;
-}
-.ranklist li:hover img{
-    -webkit-transform:scale(1.1,1.1);
-    -moz-transform:scale(1.1,1.1);
-    -o-transform:scale(1.1,1.1);
-    -ms-transform:scale(1.1,1.1);
-    transform:scale(1.1,1.1);
-}
- /* 分页 */
-.Pagination{
     position: relative;
-    left: 35%;
-    text-align: center;
-    font-size: 10px;
+    left: 30%;
+    height: 40px;
+    width: 40px;
+    border-radius:100%;
+  }
+.left div{
+    /* background:wheat; */
+    float: right;
+    width:570px;
+    height: 50px;
+    position: relative;
+    line-height: 30px;
+   }
+  
+.left a{
+   color:#111;
+   display: block;
+   font-size:14px;
+   white-space:nowrap;
+   float:left;
+   
+  }
+.left span{
+   color:#666;
+   font-size:10px;
+   float:left;
+   /* clear:both; */
+   line-height:100%;
+  }
+.down{
+    display:block;
+    position: relative;
+    top: 50px;
+    /* background: #650900; */
+    height: 30px;
+    line-height: 20px;
+    padding:2px 0 0 71px;
+    text-overflow:ellipsis;  /*文本溢出用省略号表示  */
+    white-space:nowrap; 
+   
+  }
+.down a{
+    color:#666;
+  }
+  
+.down a.clear{
+   display: block;
+   position: relative;
+   top: -14px;
+   float:left;
+  }
+.clear img {
+    height: 100px;
+    width: 100px;
+  }
+.down span{
+   clear:both;
+   float:left;
+  
+   font-size:12px;
+   color:#666;
+   line-height:100%;
+  }
+  /* 发布话题 */
+  .release{
+      position: absolute;
+      top: 50%;
+      left: 64.5%;
+      height: 44px;
+      width: 300px;
+  }
+  .loginbtn{
+    height:44px;
+    line-height:40px;
+    border-radius:4px;
+    background:rgb(228, 87, 87);
+    color:#fff;
+    font-size:23px;
+    width:100%;
+    text-align:center;
+    border:0;
+    cursor:pointer;
+    margin:10px 0 0；
 }
-/* 右边图片 */
-.rightimg{
+
+  .rightimg{
     position: absolute;
-    top: 50%;
+    top: 61%;
     left: 64.5%;
   }
   .rightimg img{

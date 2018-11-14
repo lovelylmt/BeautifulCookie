@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    list-style: none;
+  }
+.navigation{
+      position: absolute;
+    top: 0px;
+   height: 42px;
+   width: 100%;
+   background-color: rgb(51, 51, 51);
+  }
+.navigation li a{
+    color: rgb(211, 211, 211);
+    font-size: 17px;
+  }
+.navigation li a:hover{
+    color: rgb(231, 197, 151);
+    text-decoration: none;
+  }
+.navigation .right{
+    position: relative;
+    float: right;
+    margin-top: -1.1%;
+
+
+  }
+.navigation .right img{
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+  }
+.navigation li{
+    float: left;
+    list-style: none;
+    line-height: 40px;
+  }
+div a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width:70px;
+  }
+
+  /* 中间导航 */
+.centreNavigation{
+   position: relative;
+    /* background: orange; */
+    height: 60px;
+    margin-top: 5%;
+  }
+.logo_inner {
+     position: relative;
+     display: block;
+      left: 14%;
+     height: 100%;
+    width: 108px;
+    float: left;
+}
+.logo_inner img {
+    height: 60px;
+    width: 108px;
+}
+
+.logo_nav {
+    height: 100%;
+    width: 40%;
+    float: left;
+    margin-left: 20%;
+    /* background: orange; */
+}
+
+.logo_nav a {
+    position: relative;
+    float: left;
+    font-size: 20px;
+    line-height: 50px;
+    color: black;
+}
+.logo_nav .on{
+    color: #ff6767
+}
+.logo_nav a:hover{
+    color: #ff6767;
+     text-decoration: none;
+}
+.logo_search {
+    height: 100%;
+    width: 250px;
+    float: left;
+    padding: 10px;
+}
+
+
+/* 全部排行*/
+.centreNavigation2{
+    height:34px;
+    border-bottom:1px solid #ff6767;
+    border-top:1px solid #ff6767;
+    margin:auto;width:990px;
+}
+ .centreNavigation2 li{
+     list-style: none;
+    float:left;
+    padding:0 2px;
+    /* background: blue; */
+}
+.centreNavigation2 a{
+    display:block;
+    padding:0 3px;
+    height:34px;
+    font-size:14px;
+    line-height:34px;
+    color: #000;
+    width: 62px;
+    /* background: orange; */
+}
+.centreNavigation2 a.on{
+    color:#ff6767;
+}
+.centreNavigation2 a:hover{
+    color:#ff6767;
+    text-decoration:none;
+}
+/* 图片 */
+.centreimg{
+    display: block;
+    position: relative;
+    left: 13.5%;
+    margin-top: 1%;
+    width: 990px;
+    height: 90px;
+}
+/* 菜名 */
+.dishesName{
+    position: relative;
+    left: 13.5%;
+    /* background: orange; */
+    padding:15px 0 10px 0;
+    width: 640px;
+    height: 80px;
+}
+
+.dishesName a.uright{   
+     float:right;
+    width:100px;
+}
+.dishesName a#recipe_title{
+  
+    display: block;
+    /* background: pink; */
+    float:left;
+    width:535px;
+  
+    line-height:36px;
+    padding:15px 0 0;
+    font-size:32px;
+    width: 535px;
+    text-decoration:none;
+    color:#333;
+   
+}
+.dishesName a{
+    font-size:12px;
+    color:#999;
+    text-decoration:none
+}
+.dishesName a:hover{
+    color:#ff6767;
+    text-decoration: none; 
+}
+.dishesName span{
+    position: relative;
+    display: block;
+    left: 38%;
+}
+.dishesName img{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    display:block;
+    margin:10px auto 2px;
+}
+/* 做菜步骤 */
+.box{
+    position: relative;
+    left: 13.5%;
+    /* background: pink; */
+    height: 3000px;
+    width: 640px;
+}
+.recipeimg img{
+    width: 640px;
+}
+.block_txt{
+    /* background: orange; */
+    margin:30px 0 0 0;
+    font-size:16px
+}
+.mo{
+    /* background: green; */
+    position: relative;
+    top: 40px;
+    width: 640px;
+    height: 50px;
+}
+.mo h3{
+    font-size: 20px;
+    width: 50%;
+    padding: 10px 10px;
+    color: #ff6767;
+}
+.particulars{
+    position: relative;
+    top: 1.5%;
+    border-radius:15px;
+    border:1px solid #ddd;
+    height: 120px;
+}
+.particulars legend{
+    font-size:16px;
+    margin:0 35px;
+    padding:0 10px;
+}
+
+
+.material li{
+    position: relative;   
+    /* background: blueviolet; */
+    float: left;
+    left: 10%;
+}
+.material a{
+    font-size: 20px;
+    color: #000;
+}
+.material span{
+    /* background: blue; */
+    color: #666;
+   position: relative;
+   top: 35px;
+   float: left;
+   left: 35%;
+}
+
+/* 详细步骤 */
+.dishesName1{
+    position: relative;
+    top: 2%;
+    /* background: orange; */
+    padding:15px 0 10px 0;
+    width: 640px;
+    height: 70px;
+    
+}
+
+.dishesName1 a#recipe_title1{
+    display: block;
+    
+    float:left;
+    width:535px;
+    line-height:36px;
+    padding:5px 0 0;
+    font-size: 20px;
+    /* background: blue; */
+    width: 535px;
+    text-decoration:none;
+    color:#ff6767;
+   
+}
+.recipeStep{
+    /* background: pink; */
+    position: relative;
+    top: 2%;
+}
+.recipeStep li{
+    display:block;
+    margin:0 0 40px 0;
+}
+.stepimg{
+    width:240px;
+    display:inline-block; 
+}
+.stepimg img{
+    width:220px;
+}
+.stepword{
+    position:relative;
+    width:390px;
+    display:inline-block;
+    vertical-align:middle;
+    font-size:18px;
+}
+.stepnum{
+    border:1px solid #ddd;
+    border-radius:50%;
+    font-size:18px;
+    height:34px;
+    line-height:34px;
+    position:absolute;
+    text-align:center;
+    top:-44px;
+    width:34px;
+} 
+ /* 右边图片 */
+.rightimg{
+    position: absolute;
+    top: 50%;
+    left: 64.5%;
+  }
+  .rightimg img{
+      width: 300px;
+      height: 600px;
+  }

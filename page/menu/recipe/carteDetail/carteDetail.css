@@ -6,7 +6,7 @@
     list-style: none;
   }
 .navigation{
-      position: absolute;
+    position: absolute;
     top: 0px;
    height: 42px;
    width: 100%;
@@ -91,7 +91,7 @@ div a{
     padding: 10px;
 }
 
-/* 全部专题 */
+/* 全部菜单 */
 .centreNavigation2{
     height:34px;
     border-bottom:1px solid #ff6767;
@@ -121,53 +121,94 @@ div a{
     color:#ff6767;
     text-decoration:none;
 }
-/* 图片部分 */
-.allCarte{
+/* 标题 */
+.dishesName{
     position: relative;
-    top: 20px;
-   left:-6%;
-    width: 1047px;
-    height: 1200px;
-   /* background-color: #ff6767;  
-    border: 1px solid #ddd;   */
-    overflow: hidden;
-}
-.allCarte li{
-    float: left;
-    margin: 0 15px 50px 0;
-    width: 330px;
-    height: 305px;
+    left: 13.5%;
     /* background: orange; */
+    padding:15px 0 10px 0;
+    width: 640px;
+    height: 80px;
 }
- .allCarte li a img{
-    width:300px;
-    height:250px;
+.dishesName a#recipe_title{
+  
+    display: block;
+    /* background: pink; */
+    float:left;
+    width:535px;
+  
+    line-height:36px;
+    padding:15px 0 0;
+    font-size:32px;
+    width: 535px;
+    text-decoration:none;
+    color:#333;
+   
+}
+/* 菜谱列表 */
+.ranklist li{
+    position: relative;
+    width: 990px;
+    left: 14%;
+    padding: 0 0 20px 0;
+    clear:both;
+    /* background: powderblue; */
+    height: 220px;
+}
+ .ranklist li h2 a{
+     /* background: orange; */
+     display: block;
+     width: 50%;
+     margin-top: 18px;
+     font-size:20px;
+     padding:3px 0 10px;
+     color: #000;
+}
+.ranklist li h2 a:hover{
+    text-decoration: none;
+    color: #ff6767;
+}
+
+.ranklist .pic{
+
+    float:left;
+    height:180px;
+    width:180px;
+    margin:30px 0 20px;
+    /* overflow:hidden; */
+    position:relative;
+}
+
+.ranklist .detail{
+    color:#333;
+    padding:16px 0 0 200px;
+    font-size:14px;
+}
+.ranklist .subline a{
+    color:#999;
+}
+.ranklist li img{
+    height: 180px;
+    width: 180px;
     -moz-transition:all .5s ease-in-out;  /*ease-in-out：（加速然后减速）*/
     -o-transition:all .5s ease-in-out;
     -ms-transition:all .5s ease-in-out;
-    transition:all .5s ease-in-out; 
+    transition:all .5s ease-in-out;
 }
-.allCarte li a:hover img{
+.ranklist li:hover img{
     -webkit-transform:scale(1.1,1.1);
     -moz-transform:scale(1.1,1.1);
     -o-transform:scale(1.1,1.1);
     -ms-transform:scale(1.1,1.1);
     transform:scale(1.1,1.1);
 }
-.allCarte li a p{
-    color: #000;
-    font-size:18px;
-    /* line-height:120%; */
-    padding:20px 0; 
-    text-align: center;
-    /* background: greenyellow; */
-    width: 427%;
-    text-decoration: none;
-}
-
-.allCarte li a:hover{
-    text-decoration: none;
-}
-.allCarte li p:hover{
-    color: #ff6767;
-}
+/* 右边图片 */
+.rightimg{
+    position: absolute;
+    top: 30%;
+    left: 64.5%;
+  }
+  .rightimg img{
+      width: 300px;
+      height: 600px;
+  }

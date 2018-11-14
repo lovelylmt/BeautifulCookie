@@ -8,12 +8,12 @@ ul{
 .navigation{
     position: absolute;
   top: 0px;
- height: 40px;
+ height: 42px;
  width: 100%;
- background-color: palevioletred;
+ background-color: rgb(51, 51, 51);
 }
 .navigation li a{
-  color: white;
+  color: rgb(223, 217, 217);
   font-size: 17px;
 }
 .navigation li a:hover{
@@ -50,9 +50,9 @@ width:70px;
 .logo_inner {
     position: relative;
     display: block;
-     left: 14%;
+     left: 13%;
     height: 100%;
-   width: 108px;
+    width: 108px;
    float: left;
 }
 .logo_inner img {
@@ -278,7 +278,7 @@ width:70px;
  font-size:10px;
  float:left;
  /* clear:both; */
- line-height:100%;
+ line-height:100%
 }
 .down{
   display:block;
