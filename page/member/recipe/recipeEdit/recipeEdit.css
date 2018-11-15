@@ -71,7 +71,7 @@ div a{
     /* background-color:#eee; */
 }
 .releaseTopic{
-    /* background: orange; */
+    
     position: relative;
     left: 10%;
    width: 1200px;
@@ -87,35 +87,58 @@ div a{
     text-align: center;
   
 }
-
 .releaseTopic a:hover{
-    color: #ff6767;
+    text-decoration: none;
   }
-.topicContent{
+
+  .mr_edit{
     position: relative;
     left: 11%;
-    width: 1187px;
-    height: 500px;
+    width: 1000px;
+    height:3000px;
     /* background-color: #eaec6c; */
-    border: 1px solid #ddd;
+    
     overflow: hidden;
-  }
-.topicContent a{
-   
-    width: 100px;
-    color: #000;
+    margin: 20px 10px 0 0;
+  
 }
+.mr_edit li{  
+    padding:0 0 15px 0;
+}
+.mr_edit label{
+    color:#888;
+}
+.mr_edit .must:after{
+    content:'*';
+    color:red;
+}
+.mr_edit .tip{
+    color:#999
+}
+.mr_edit input{
+    font-size:14px;
+    margin:5px 0;
+    border:1px solid #ccc;
+    height:24px;
+    line-height:24px;
+    text-indent:1%;
+    padding:3px 0;
+}
+.mr_edit textarea{
+    font-size:14px;
+    width:98%;
+    margin:5px 0;
+    border:1px solid #ccc;
+    resize:both;
+    height:120px;
+    padding:3px 1%;
+}
+.mr_edit input.inputL{width:100%;}
+/* .mr_edit input.inputM{width:50%;}
+.mr_edit input.inputS{width:25%;} */
+/* 发布菜谱按钮.mr_edit input.btn1{background:#ff6767;border:1px solid #ff6767;color:#fff;border-radius:3px;cursor:pointer;font-size:16px;height:38px;margin-right:16px;width:140px} */
 
-.topicContent a:hover{
-    color: #ff6767;
-    text-decoration: none;
-}
-  .topicContent p{
-    width: 600px;
-    text-align: center;
-    display: block;
-    margin-top: 3%;
-    /* background: green; */
-   font-size: 20px;
-   color: #666;
-}
+
+
+
+
