@@ -25,7 +25,7 @@
         <ul class="bar-left left">
             <li>
                 <a title="美食天下" href="#" target="_black" class="top_bar_logo">
-                    <i>我爱美食</i>
+                    <span>美食至上</span>
                 </a>
             </li>
             <li>
@@ -78,114 +78,100 @@
     <div class="releaseTopic">
         <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\recipe\recipeEdit\recipeEdit.html" class="on">编辑菜谱</a>
     </div>
-    <div class="mr_edit mr_edit_center clear">
+    <div class="edit">
         <ul>
-            
+
             <li>
                 <label class="must">菜谱名称</label><br>
-                <input name="subject" class="inputL" type="text" value="阿拉年糕">
+                <input name="subject" class="inputL" type="text" value="">
             </li>
 
             <li>
                 <label class="must">成品图片（最多9张）</label><br>
 
-                <div class="J_upload">上传成品图
-                    <input multiple class="J_img" id="J_m_cover" type="file" accept="image/png,image/gif,image/jpeg"
-                        name="file">
-                </div>
-                <span class="img_status" id="multi_cover_status"> </span>
-
-                <div id="cover" class="clear">
+                <div class="upload1">上传成品图
+                    <input multiple class="uploadimg" type="file" accept="image/png,image/gif,image/jpeg" name="file">
                 </div>
             </li>
 
             <li>
-                <textArea class="J_input" name="message" maxlength="500" placeholder="请输入菜谱描述，最多输入500字"></textArea>
+                <textArea class="" name="message" maxlength="500" placeholder="请输入菜谱描述，最多输入500字"></textArea>
             </li>
-
 
             <li class="ingredient clear">
                 <label class="must">食材明细</label>
                 <span class="tip">（新功能：支持添加多组食材，并可以修改食材组名。）</span>
 
                 <blockquote>
-                    <p><span>主料</span><a href="javascript:void(0);" title="修改食材组名" class="edit"></a></p>
-                    <div class="J_addDiv">
-                        <input type="text" class="liao" placeholder="食材名" autocomplete="off">
-                        <input type="text" class="yongliang" placeholder="用量" autocomplete="off">
+                    <p>主料</p>
+                    <div>
+                        <input type="text" class="liao" placeholder="食材名">
+                        <input type="text" class="yongliang" placeholder="用量">
                     </div>
                 </blockquote>
                 <blockquote>
-                    <p><span>辅料</span><a href="javascript:void(0);" title="修改食材组名" class="edit"></a></p>
-                    <div class="J_addDiv">
-                        <input type="text" class="liao" placeholder="食材名" autocomplete="off">
-                        <input type="text" class="yongliang" placeholder="用量" autocomplete="off">
+                    <p>辅料</p>
+                    <div>
+                        <input type="text" class="liao" placeholder="食材名">
+                        <input type="text" class="yongliang" placeholder="用量">
                     </div>
                 </blockquote>
-
-                <div class="J_upload" id="add_ingredient">添加食材组</div>
-
-
             </li>
+
             <li class="step">
                 <label class="must">做法步骤</label><br>
-                <div class="J_upload">批量上传
-                    <input multiple class="J_img" id="J_s_cover" type="file" accept="image/png,image/gif,image/jpeg"
-                        name="file">
+                <div class="upload1">批量上传
+                    <input multiple class="uploadimg" type="file" accept="image/png,image/gif,image/jpeg" name="file">
                 </div>
-                <span class="img_status" id="multi_step_status"></span>
+
 
                 <div id="dragsort">
-                    <blockquote class="cp_block J_blockQ clear">
-                        <div class="left addicon J_fileImag">
-                            <input type="hidden" value="" name="step_img" class="J_imghidden" />
+                    <blockquote class="upload ">
+                        <div class="addicon">
                             <input type="file" name="file" class="file" accept="image/png,image/gif,image/jpeg" value="" />
                             <p class="p1">点击上传步骤图</p>
-                            <p class="p3">（可不填）</p>
+                            <p>（可不填）</p>
                         </div>
                         <div class="right">
-                            <textArea class="textArea J_input" name="note" placeholder="请输入做法说明菜谱描述，最多输入200字" maxlength="200"></textArea>
-                            <span class="J_step_num">1、</span> <a href="javascript:void(0);" class="add J_addTextarea"></a>
-                            <a href="javascript:void(0);" class="up J_upTextarea"></a> <a href="javascript:void(0);"
-                                class="down J_downTextarea"></a> <a href="javascript:void(0);" class="delete J_delTextarea"></a>
+                            <textArea class="textArea " name="note" placeholder="请输入做法说明菜谱描述，最多输入200字" maxlength="200"></textArea>
+                            <span class="stepNum">1、</span> <a href="javascript:void(0);" class="add "></a>
+                            <a href="javascript:void(0);" class="up "></a> <a href="javascript:void(0);"
+                                class="down "></a> <a href="javascript:void(0);" class="delete "></a>
                         </div>
                     </blockquote>
-                    <blockquote class="cp_block J_blockQ clear">
-                        <div class="left addicon J_fileImag">
-                            <input type="hidden" value="" name="step_img" class="J_imghidden" />
+                    <blockquote class="upload ">
+                        <div class="addicon">
                             <input type="file" name="file" class="file" accept="image/png,image/gif,image/jpeg" value="" />
                             <p class="p1">点击上传步骤图</p>
-                            <p class="p3">（可不填）</p>
+                            <p>（可不填）</p>
                         </div>
                         <div class="right">
-                            <textArea class="textArea J_input" name="note" placeholder="请输入做法说明菜谱描述，最多输入200字" maxlength="200"></textArea>
-                            <span class="J_step_num">2、</span> <a href="javascript:void(0);" class="add J_addTextarea"></a>
-                            <a href="javascript:void(0);" class="up J_upTextarea"></a> <a href="javascript:void(0);"
-                                class="down J_downTextarea"></a> <a href="javascript:void(0);" class="delete J_delTextarea"></a>
+                            <textArea class="textArea " name="note" placeholder="请输入做法说明菜谱描述，最多输入200字" maxlength="200"></textArea>
+                            <span class="stepNum">2、</span> <a href="javascript:void(0);" class="add "></a>
+                            <a href="javascript:void(0);" class="up "></a> <a href="javascript:void(0);"
+                                class="down "></a> <a href="javascript:void(0);" class="delete "></a>
                         </div>
                     </blockquote>
-                    <blockquote class="cp_block J_blockQ clear">
-                        <div class="left addicon J_fileImag">
-                            <input type="hidden" value="" name="step_img" class="J_imghidden" />
+                    <blockquote class="upload ">
+                        <div class="addicon">
                             <input type="file" name="file" class="file" accept="image/png,image/gif,image/jpeg" value="" />
                             <p class="p1">点击上传步骤图</p>
-                            <p class="p3">（可不填）</p>
+                            <p>（可不填）</p>
                         </div>
                         <div class="right">
-                            <textArea class="textArea J_input" name="note" placeholder="请输入做法说明菜谱描述，最多输入200字" maxlength="200"></textArea>
-                            <span class="J_step_num">3、</span> <a href="javascript:void(0);" class="add J_addTextarea"></a>
-                            <a href="javascript:void(0);" class="up J_upTextarea"></a> <a href="javascript:void(0);"
-                                class="down J_downTextarea"></a> <a href="javascript:void(0);" class="delete J_delTextarea"></a>
+                            <textArea class="textArea " name="note" placeholder="请输入做法说明菜谱描述，最多输入200字" maxlength="200"></textArea>
+                            <span class="stepNum">3、</span> <a href="javascript:void(0);" class="add "></a>
+                            <a href="javascript:void(0);" class="up "></a> <a href="javascript:void(0);"
+                                class="down "></a> <a href="javascript:void(0);" class="delete "></a>
                         </div>
                     </blockquote>
                 </div>
-
             </li>
-
-            
         </ul>
-
-
+    </div>
+    <!-- 发布 -->
+    <div class="release">
+        <input id="loginbtn" class="loginbtn" value="发布菜谱" />
     </div>
 </body>
 

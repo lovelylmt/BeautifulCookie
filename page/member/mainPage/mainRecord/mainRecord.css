@@ -43,9 +43,7 @@
   width:70px;
   }
 /* 背景 */
-.backgroundimg{
-     
-}
+
 .backgroundimg img{
     width: 100%;
     height: 270px;  
@@ -135,42 +133,44 @@
 .maincontent{
     position: relative;
     left: 13.5%;
-    height: 1500px;
+    height: 2944px;
     width: 1045px;
     /* background: pink; */
 }
-/* 菜谱 */
+
+/* 标题 */
 .title{
-    display: block;
     position: relative;
-    height: 35px;
-    /* background: yellow; */
-    margin: 30px 0 0;
-    width: 1045px;
+    margin-top: 2%;
+    left: 14%;
+    /* background:blue; */
+    height: 36px;
+    width: 990px;
 }
-h3{
-    color: #ff6767;
+.title a{
+    float: left;
     font-size: 25px;
+    width: 100%;
+    color: #ff6767;
 }
-/* 排行列表 */
+/* 日志列表 */
+
 .ranklist li{
     position: relative;
     width: 990px;
- 
+    left: 14%;
     padding: 0 0 20px 0;
     clear:both;
-    /* background: powderblue; */
+   
     height: 220px;
 }
  .ranklist li h2 a{
      position: relative;
      /* background: orange; */
      display: block;
-     width: 50%;
-    
-     margin-top: -11%;
+     width: 100%;
      font-size:20px;
-     padding:3px 0 10px;
+     padding:0 0 10px;
      color: #000;
 }
 .ranklist li h2 a:hover{
@@ -189,10 +189,15 @@ h3{
 }
 
 .ranklist .detail{
+    position: relative;
+    display: block;
+   left: 1%;
+   margin-top: 3%;
+    
+    width: 50%;
     color:#333;
-    padding:16px 0 0 200px;
+    padding:10px 0 0 10px;
     font-size:14px;
-    left: -0.5%;
 }
 .ranklist .subline a{
     color:#999;
@@ -216,8 +221,8 @@ h3{
 /* 右边图片 */
 .rightimg{
    position: absolute;
-    top: 0px;
-    left: 64.5%;
+    top: 55%;
+    left: 66%;
   }
 .rightimg img{
       width: 300px;

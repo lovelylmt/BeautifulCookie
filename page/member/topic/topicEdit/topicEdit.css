@@ -73,7 +73,7 @@ div a{
 .releaseTopic{
     
     position: relative;
-    left: 10%;
+    left: 11%;
    width: 1200px;
    font-size: 20px;
    margin-top: -17%;
@@ -90,12 +90,12 @@ div a{
 .releaseTopic a:hover{
     text-decoration: none;
   }
-  /* 编辑部分 */
-.edit{
+/* 编辑 */
+  .edit{
     position: relative;
     left: 11%;
     width: 1000px;
-    height:1250px;
+    height:450px;
     /* background-color: #eaec6c; */
     
     overflow: hidden;
@@ -124,7 +124,6 @@ div a{
     text-indent:1%;
     padding:3px 0;
 }
-/* 上传成品图 */
 .upload1{
     position:relative;
     display:inline-block;
@@ -153,7 +152,6 @@ div a{
     opacity:0;
     cursor:pointer;
 }
-
 .edit textarea{
     font-size:14px;
     width:100%;
@@ -163,167 +161,8 @@ div a{
     height:120px;
     padding:3px 1%;
 }
-.edit input.inputL{
-    width:100%;
-}
-/* .edit input.inputM{width:50%;}
-.edit input.inputS{width:25%;} */
-/* 发布菜谱按钮.edit input.btn1{background:#ff6767;border:1px solid #ff6767;color:#fff;border-radius:3px;cursor:pointer;font-size:16px;height:38px;margin-right:16px;width:140px} */
-.ingredient blockquote p{
-    font-size:16px;
-    color:#666;
-    height:30px;
-    line-height:30px;
-    padding:10px 0 0;
-}
-.ingredient blockquote p {
-    vertical-align:middle;
-}
-.ingredient blockquote p:hover a{
-    display:inline-block;
-}
-.ingredient blockquote div{
-    padding:5px 40px 10px 0;
-    position:relative;
-    font-size:0;
-    width:524px;
-}
-.ingredient blockquote div input{
-    font-size:14px;
-    margin:0;
-    border:1px solid #ccc;
-    box-sizing:border-box;
-    height:30px;
-    line-height:30px;
-}
-.ingredient div input.liao{
-    width:54%;
-    border-right:0;
-}
-.ingredient div input.yongliang{
-    width:46%;
-}
-/* 做法步骤 */
-
-.step .right{
-    position: relative;
-  
-   /* background:orange; */
-   position: relative;
-   height: 160px; 
-   width: 740px;
-}
-
-
-.step .right a{
-    position: relative;
-    float: right;
-    /* background: #000; */
-    width:24px;
-    height:24px;
-    position:absolute;
-    right:-35px;
-    padding:0 5px 6px;
-}
-.step a.delete{
-    top:-1px
-}
-.step a.up{
-    top:29px
-}
-.step a.down{
-    top:59px
-}
-.step a.add{
-    top:89px
-}
-.step .right a:after{
-    content:'';
-    display:block;
-    width:22px;
-    height:22px;
-    border:1px solid #ccc;
-}
-
-.step .right a.add:after{
-    background-position:center 4px;
-    background-color:#ff6767;
-}
-.step blockquote.upload{
-    /* background: pink; */
-    clear:both;
-    position:relative;
-    top:0;
-    padding:0 0 0 0;
-    width:100%;
-}
-.step blockquote.upload .right{
-    float:none;
-    margin:-150px 0 0 220px;
-    padding:10px 5px 10px 40px;
-    border:1px solid #ccc;
-    position:relative;
-}
-
-.step .textArea{
-    width:100%;
-    height:135px;
-    margin:0;
-    padding:0;
-    border:none;
-    resize:none
-}
-
-.addicon{
-    
-    overflow:hidden;
-    position:relative;
-    top:10px;
-    left:0;
-    z-index:70;
-    border:#ccc solid 1px;
-    width:208px;
-    height:156px;
-    background-color:#f7f7f7;
-    text-align:center;
-    cursor:pointer;
-}
-.addicon p{
-    font-size:12px;
-    color:#a1a1a1;
-}
-.addicon p.p1{
-    margin-top:65px;
-    font-size:14px;
-    margin-bottom:3px;
-    color:#5b5b5b;
-}
-.addicon input.file{
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:90;
-    opacity:0;
-    cursor:pointer;
-}
-
-.stepNum{
-    position:absolute;
-    top:5px;
-    left:-3px;
-    display:block;
-    overflow:hidden;
-    width:50px;
-    height:37px;
-    color:#ccc;
-    text-align:right;
-    font-size:18px;
-}
-
   /* 发布 */
-.release{
+  .release{
     position: absolute;
     left: 11%;  
     height: 44px;

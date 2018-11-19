@@ -98,7 +98,7 @@ div a{
 }
 
 
-/* 全部话题 */
+/* 全部日志 */
 .centreNavigation2{
     height:34px;
     border-bottom:1px solid #ff6767;
@@ -129,7 +129,7 @@ div a{
     color:#ff6767;
     text-decoration:none;
 }
-/* 排行列表 */
+/* 日志列表 */
 .ranklist li{
     position: relative;
     width: 640px;

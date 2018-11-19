@@ -225,3 +225,6 @@ div a{
 .category a:hover{
     color: #ff6767;
 }
+.category .on{
+    color: #ff6767
+}

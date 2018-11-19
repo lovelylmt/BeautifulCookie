@@ -8,9 +8,9 @@ ul{
 .navigation{
     position: absolute;
   top: 0px;
- height: 42px;
- width: 100%;
- background-color: rgb(51, 51, 51);
+  height: 42px;
+  width: 100%;
+  background-color: rgb(51, 51, 51);
 }
 .navigation li a{
   color: rgb(223, 217, 217);
@@ -21,16 +21,15 @@ ul{
   text-decoration: none;
   background: #666;
 }
+.top_bar_logo{
+  height: 42px;
+}
 .navigation .right{
-  position: relative;
+ 
   float: right;
-  margin-top: -1.1%;
+  margin-top: -0.8%;
 }
-.navigation .right img{
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-}
+
 .navigation li{
   float: left;
   list-style: none;
@@ -38,10 +37,12 @@ ul{
 }
 div a{
 text-decoration: none;
-color: white;
+
 display: inline-block;
 width:70px;
 }
+
+
 .centreNavigation{
   position: relative;
    /* background: orange; */
@@ -51,14 +52,14 @@ width:70px;
 .logo_inner {
     position: relative;
     display: block;
-     left: 13%;
+     left: 12%;
     height: 100%;
     width: 108px;
    float: left;
 }
 .logo_inner img {
    height: 60px;
-   width: 108px;
+   width: 140px;
 }
 .logo_nav {
    height: 100%;
@@ -106,6 +107,7 @@ width:70px;
   position: absolute;
   top: 40%
 }
+
 .carousel-control-next {
   /* background: #000; */
   position: absolute;
@@ -114,6 +116,7 @@ width:70px;
   width: 3%;
   top: 40%;
 }
+
 .w1_1 {
   position: absolute;
   left: 12.5%;

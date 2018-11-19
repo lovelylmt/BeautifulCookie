@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>我的日志</title>
+    <title>编辑日志</title>
     <!-- 新 Bootstrap4 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
@@ -14,7 +14,7 @@
     <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="dailyrecord.css" />
+    <link rel="stylesheet" type="text/css" href="recordEdit.css" />
 </head>
 
 <body>
@@ -72,14 +72,26 @@
             </ul>
         </div>
     </div>
-
-    <!-- 创建日志 -->
+    <!-- 编辑部分 -->
     <div class="releaseTopic">
-        <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\dailyrecord\dailyrecord.html" class="on">我的日志</a>
+        <a href="#" class="on">编辑日志</a>
     </div>
-    <div class="topicContent">
-        <p>您还没有发布新日志噢，快点击这里<a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\dailyrecord\recordEdit\recordEdit.html">发布新日志</a>吧！</p>
+    <div class="edit">
+        <ul>
+            <li>
+                <label class="must">菜谱名称</label><br>
+                <input name="subject" class="inputL" type="text" value="">
+            </li>
+            <li>
+                <label class="must">日志正文</label><br>
+                <textarea id="myEditor" name="myEditor" style="height:400px;width: 600px;"></textarea>
+            </li>
+        </ul>
     </div>
+     <!-- 发布 -->
+     <div class="release">
+            <input id="loginbtn" class="loginbtn" value="发布话题" />
+        </div>
 </body>
 
 </html>

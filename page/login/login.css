@@ -9,24 +9,33 @@ body{
      background-size: 100%;
 }
 .top-bar{
-    height: 40px;
+    height: 42px;
     width: 100%;
-    background-color: palevioletred;
+    background-color: rgb(51, 51, 51);
 }
 .top-bar .right{
+    margin-top: -0.65%;
     float: right;
 }
 
 div li{
    float: left;
    list-style: none;
-   line-height: 20px;
+   margin-top: -0.65%;
+   line-height: 42px;
+}
+div li a:hover{
+    text-decoration: none;
+    background: #666;
 }
 div a{
-   text-decoration: none;
-   color: white;
-   display: inline-block;
-   width:70px;
+    color: rgb(223, 217, 217);
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+   
+    display: inline-block;
+    width:70px;
 }
 .login{
     width: 450px;
@@ -73,7 +82,7 @@ div a{
 .register-left{
     height:50px;   
     font-size: 20px;
-    background: palevioletred;
+    background: rgb(51, 51, 51);
     position: relative;
     width: 50%; 
     line-height: 50px;

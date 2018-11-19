@@ -240,26 +240,25 @@ div a{
    line-height:100%;
   }
   /* 发布话题 */
-  .release{
+  .r_pai-add{display:block;
+    height:44px;
+    line-height:44px;
+    font-size:20px;
+    text-align:center;
+    color:#fff;
+    text-decoration:none;
+    background:#ff6767;
+    border-radius:5px;
+    width:100%;
+}
+ .release{
       position: absolute;
       top: 50%;
       left: 64.5%;
       height: 44px;
       width: 300px;
   }
-  .loginbtn{
-    height:44px;
-    line-height:40px;
-    border-radius:4px;
-    background:rgb(228, 87, 87);
-    color:#fff;
-    font-size:23px;
-    width:100%;
-    text-align:center;
-    border:0;
-    cursor:pointer;
-    margin:10px 0 0；
-}
+
 
   .rightimg{
     position: absolute;
