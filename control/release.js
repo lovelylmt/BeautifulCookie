@@ -9,12 +9,18 @@ module.exports = {
     var mainMaterialUsage = req.body.mainMaterialUsage;
     var accessories = req.body.accessories;
     var accessoriesUsage = req.body.accessoriesUsage;
-    releases.addRecipe(recipeName, recipeDescription, mainMaterial, mainMaterialUsage, accessories, accessoriesUsage, err => {
+    var step1 = req.body.step1;
+    var step2 = req.body.step2;
+    var step3 = req.body.step3;
+
+
+    releases.addRecipe(recipeName, recipeDescription, mainMaterial, mainMaterialUsage, accessories, accessoriesUsage, step1, step2, step3, err => {
       if (err == null) {
         res.json({
-          date: "成功存入"
+          date: "菜谱成功存入"
         })
       }
     })
   },
+
 }
