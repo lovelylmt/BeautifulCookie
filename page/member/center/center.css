@@ -81,14 +81,17 @@ div a{
   height: 180px;
 }
 .headPortrait{
-  /* background: blue; */
+
+  position: relative;
+ 
   width: 170px;
 }
 .headPortrait img{
-  width: 150px;
-  height: 150px;
+  width:150px;
+  height:150px;
   border-radius: 100%;
 }
+
 
 /* 昵称部分 */
 .detail{
@@ -147,7 +150,7 @@ div a{
   width: 140px;
   color: #333;
   background: white;
-  text-align: center;
+ 
 }
 #dynamic li a:hover{
   color: #ff6767;
@@ -156,7 +159,7 @@ div a{
   position: relative;
   top: 25%;
   width: 900px;
-  height: 500px;
+ 
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   overflow: hidden;

@@ -23,10 +23,10 @@
         </ul>
         <ul class="bar-left right">
                 <li>
-                        <a title="注册" href="./page/register/register.html" target="_black">注册</a>
+                        <a title="注册" href="../register/register.html" target="_black">注册</a>
                     </li>
                     <li>
-                            <a title="登录" href="./page/login/login.html" target="_black">登录</a>
+                            <a title="登录" href="../login/login.htm" target="_black">登录</a>
                         </li>
         </ul>
     </div>
@@ -34,10 +34,10 @@
     <div class="login">
         <div class="loginbox">
             <div class="register-left">
-                <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\register\register.html">注册</a>
+                <a href="../register/register.html">注册</a>
             </div>
             <div class="login-right">
-                <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\login\login.html" class="on" >登录</a>
+                <a href="../login/login.html" class="on" >登录</a>
             </div>
 
         </div>
@@ -51,13 +51,13 @@
                             <li style="border:0;"><label for="password">密 码:</label><input type="password" name="password"
                                     id="password" /></li> -->
                             <li><input type="text" name="username" id="username" placeholder="手机号码/昵称："/></li>
-                            <li><input type="password" name="username" id="username" placeholder="密码："/></li>
+                            <li><input type="password" name="username" id="password" placeholder="密码："/></li>
                         </ul>
                         <p class="clear">
                             <label for="cookietime"><input type="checkbox" id="cookietime" name="cookietime" value="" /><span style="font-size:10px;">&nbsp;下次自动登录</span></label>
 
                         </p>
-                        <input type="submit" id="loginbtn" class="loginbtn" value="登&nbsp;录" />
+                        <input type="button" id="loginbtn" class="loginbtn" onclick="login()"  value="登&nbsp;录" />
                     </div>
                 </form>
             </div>
@@ -70,7 +70,7 @@
     </div>
 
 </body>
-<script>
-
-</script>
+<!-- 对jQuery库的引用 -->
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> 
+<script src="./login.js"></script>
 </html>

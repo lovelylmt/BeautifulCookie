@@ -164,7 +164,7 @@ div a{
     padding:3px 1%;
 }
 .edit input.inputL{
-    width:100%;
+    width:850px;
 }
 /* .edit input.inputM{width:50%;}
 .edit input.inputS{width:25%;} */
@@ -211,7 +211,7 @@ div a{
    /* background:orange; */
    position: relative;
    height: 160px; 
-   width: 740px;
+   width: 630px;
 }
 
 
@@ -323,11 +323,11 @@ div a{
 }
 
   /* 发布 */
-.release{
-    position: absolute;
-    left: 11%;  
+.release1{
+  position: absolute;
+    top: 15%;
     height: 44px;
-    width: 300px;
+    width: 200px;
 }
 .loginbtn{
   height:44px;
@@ -341,4 +341,38 @@ div a{
   border:0;
   cursor:pointer;
   margin:10px 0 0；
+}
+#recipeDescription{
+    height: 100px;
+    width:850px;
+}
+.edit1{
+    /* background: pink; */
+    height:100%;
+    position:fixed;
+    width:300px;
+    right:20px;
+    top:40px;
+    margin:70px 0 0;
+}
+.release label{
+    color:#888
+}
+.things span{
+    line-height:140%;
+    display:block;
+    float:left;
+    border-radius:4px;
+    border:1px solid #bbb;
+    padding:3px;
+    margin:5px 8px 2px 0;
+    color:#999;
+    cursor:pointer;
+    font-size:12px;
+}
+.things span.on{
+    border:1px solid #ff8d8d;
+    background:#ff8d8d;
+    color:#fff;
+    display:block;
 }

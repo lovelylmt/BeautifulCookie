@@ -28,28 +28,33 @@
                 </a>
             </li>
             <li>
-                <a title="首页" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\index.html" target="_black">首页</a>
+                <a title="首页" href="../../../../index.html" target="_black">首页</a>
             </li>
             <li>
-                <a title="菜谱" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\recipe.html" target="_black">菜谱</a>
+                <a title="菜谱" href="../../../menu/recipe/recipe.html" target="_black">菜谱</a>
             </li>
 
             <li>
-                <a title="专题" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\delicacy\delicacy.html" target="_black">专题</a>
+                <a title="专题" href="../../../menu/delicacy/delicacy.html" target="_black">专题</a>
             </li>
             <li>
-                <a title="社区" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\communitysquare\communitysquare.html"
-                    target="_black">社区</a>
+                <a title="社区" href="../../../menu/community/communitysquare/communitysquare.html" target="_black">社区</a>
             </li>
         </ul>
 
-        <ul class="bar-left right">
-            <div>
-                <a href="#" title="头像">
-                    <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg" alt="">
-                </a>
-            </div>
+        <ul id="users" class="bar-left right">
+            <li>
+                <a title="注册" href="../../../register/register.html" target="_black">注册</a>
+            </li>
+            <li>
+                <a title="登录" href="../../../login/login.html" target="_black">登录</a>
+            </li>
         </ul>
+        <ul id="user1" style="display: none" class="bar-left right">
+            <a id="userinfrom" href="" style="color:aliceblue"></a>
+            <a href="../../mainPage/mainPage.html"> <img id="userIcon" style="height:40px;width:40px;border-radius: 20px"></a>
+        </ul>
+
 
 
     </div>
@@ -58,40 +63,64 @@
         <div class="menu">
             <ul>
                 <li>
-                    <a class=on href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\center\center.html">会员<br>中心</a>
+                    <a class=on href="../../center/center.html">会员<br>中心</a>
                 </li>
                 <li>
-                    <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\recipe\recipe.html">菜谱</a>
+                    <a href="../../recipe/recipeEdit/recipeEdit.html">菜谱</a>
                 </li>
                 <li>
-                    <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\topic\topic.html">话题</a>
+                    <a href="../../topic/topicEdit/topicEdit.html">话题</a>
                 </li>
                 <li>
-                    <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\dailyrecord\dailyrecord.html">日志</a>
+                    <a href="../../dailyrecord/recordEdit/recordEdit.html">日志</a>
                 </li>
             </ul>
         </div>
     </div>
     <!-- 编辑部分 -->
     <div class="releaseTopic">
-        <a href="#" class="on">编辑日志</a>
+        <a href="./recordEdit.html" class="on">编辑日志</a>
     </div>
     <div class="edit">
         <ul>
             <li>
-                <label class="must">菜谱名称</label><br>
-                <input name="subject" class="inputL" type="text" value="">
+                <label class="must">日志标题</label><br>
+                <input name="recordTitle" id="recordTitle" class="inputL" type="text" value="">
+            </li>
+            <li>
+                <label class="must">成品图片</label><br>
+
+                <div class="upload1" id="upload1">上传成品图
+                    <input multiple class="uploadimg" id="photo" type="file" accept="image/*" onchange="go()" />
+
+                </div>
+                <img id="uploadNesc" src="" alt="" srcset="" style="width:206px;height:156px">
             </li>
             <li>
                 <label class="must">日志正文</label><br>
-                <textarea id="myEditor" name="myEditor" style="height:400px;width: 600px;"></textarea>
+                <textarea id="recordContent" name="recordContent" style="height:400px;width: 850px;"></textarea>>
             </li>
         </ul>
     </div>
-     <!-- 发布 -->
-     <div class="release">
-            <input id="loginbtn" class="loginbtn" value="发布话题" />
+    <!-- 发布 -->
+    <div class="release edit1">
+        <ul>
+            <li>
+                <label>发表到分类</label><br>
+                <input type="hidden" id="things" name="classify" value="1">
+                <div class="things" id="type">
+                    <span id="originalRecord" onclick="choose('originalRecord')">&nbsp;原创日志&nbsp;</span>
+                    <span id="essenceRecord" onclick="choose('essenceRecord')">&nbsp;精华日志&nbsp;</span>
+                </div>
+            </li>
+        </ul>
+        <!-- 发布 -->
+        <div class="release1">
+            <input id="loginbtn" class="loginbtn" onclick="recordEdit()" value="发布日志" />
         </div>
+    </div>
 </body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./recordEdit.js"></script>
 
 </html>

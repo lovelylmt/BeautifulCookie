@@ -74,11 +74,11 @@ div a{
 }
 
 .logo_nav a {
-    width: 100px;
-    float: left;
-    font-size: 20px;
-    line-height: 50px;
-    color: black;
+    position: relative;
+   float: left;
+   font-size: 20px;
+   line-height: 50px;
+   color: black;
 }
 .logo_nav .on{
     position: relative;
@@ -101,14 +101,18 @@ div a{
 /* 全部话题 */
 .centreNavigation2{
     height:34px;
+   
     border-bottom:1px solid #ff6767;
     border-top:1px solid #ff6767;
-    margin:auto;width:990px;
+    margin:auto;
+    width:990px;
 }
  .centreNavigation2 li{
+   
      list-style: none;
     float:left;
     padding:0 2px;
+   width: 90px;
     /* background: blue; */
 }
 .centreNavigation2 a{
@@ -118,12 +122,12 @@ div a{
     font-size:14px;
     line-height:34px;
     color: #000;
-    width:85px;
-    /* background: orange; */
 }
 .centreNavigation2 a.on{
+
+    width: 100%;
     color:#ff6767;
-    width: 50px;
+    width: 90px;
 }
 .centreNavigation2 a:hover{
     color:#ff6767;
@@ -132,12 +136,12 @@ div a{
 /* 图片 */
 .centreimg{
     display: block;
-    position: relative;
+   position: absolute;
     left: 13.5%;
     margin-top: 1%;
     width: 990px;
     height: 90px;
-}
+}   
 /* 标题 */
 .title{
     position: relative;
@@ -158,14 +162,16 @@ div a{
     text-decoration: none;   
 }
 /* 话题部分 */
-.topic{
+#topic{
     position: relative;
-    left: 13%;
+    
     /* background:rgb(177, 233, 139); */
     height:1600px;
     width:640px;
 }
-.topic li {
+#topic li {
+    position: relative;
+   top:100px;
     /* background:blue; */
     padding: 10px 0;
     float: left;
@@ -185,46 +191,56 @@ div a{
     /* background:wheat; */
     float: right;
     width:570px;
-    height: 50px;
+    height: 40px;
     position: relative;
     line-height: 30px;
    }
   
 .left a{
-   color:#111;
+  
    display: block;
-   font-size:14px;
+   width: 15px;
    white-space:nowrap;
-   float:left;
+   float: left;
+   /* background: green; */
    
   }
-.left span{
+  .left .name a{
+     font-size:14px;
+      /* background: red; */
+     left:-4.5% ;
+      text-align: center;
+      display: block;
+    position: relative;
+  }
+/* .left span{
    color:#666;
    font-size:10px;
    float:left;
-   /* clear:both; */
+  
    line-height:100%;
-  }
+  } */
 .down{
     display:block;
     position: relative;
-    top: 50px;
+    top: 40px;
     /* background: #650900; */
-    height: 30px;
+    height: 40px;
     line-height: 20px;
-    padding:2px 0 0 71px;
+    padding:2px 0 0 60px;
     text-overflow:ellipsis;  /*文本溢出用省略号表示  */
     white-space:nowrap; 
    
   }
 .down a{
+    font-size: 17px;
     color:#666;
   }
   
 .down a.clear{
    display: block;
    position: relative;
-   top: -14px;
+   
    float:left;
   }
 .clear img {

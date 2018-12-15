@@ -97,7 +97,8 @@ div a{
     height:34px;
     border-bottom:1px solid #ff6767;
     border-top:1px solid #ff6767;
-    margin:auto;width:990px;
+    margin:auto;
+    width:990px;
 }
  .centreNavigation2 li{
      list-style: none;

@@ -1,104 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的菜谱</title>
-     <!-- 新 Bootstrap4 核心 CSS 文件 -->
-     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-     <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
-     <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
-     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
-     <link rel="stylesheet" type="text/css" href="recipe.css" />
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="recipe.css" />
 </head>
+
 <body>
-      <!-- 导航栏 -->
-      <div class="navigation">
+    <!-- 导航栏 -->
+    <div class="navigation">
 
-            <ul class="bar-left left">
+        <ul class="bar-left left">
+            <li>
+                <a title="美食天下" href="#" target="_black" class="top_bar_logo">
+                    <span>美食至上</span>
+                </a>
+            </li>
+            <li>
+                <a title="首页" href="../../../index.html" target="_black">首页</a>
+            </li>
+            <li>
+                <a title="菜谱" href="../../menu/recipe/recipe.html" target="_black">菜谱</a>
+            </li>
+
+            <li>
+                <a title="专题" href="../../menu/delicacy/delicacy.html" target="_black">专题</a>
+            </li>
+            <li>
+                <a title="社区" href="../../menu/community/communitysquare/communitysquare.html" target="_black">社区</a>
+            </li>
+        </ul>
+
+        <ul id="users" class="bar-left right">
+            <li>
+                <a title="注册" href="./page/register/register.html" target="_black">注册</a>
+            </li>
+            <li>
+                <a title="登录" href="./page/login/login.html" target="_black">登录</a>
+            </li>
+        </ul>
+        <ul id="user1" style="display: none" class="bar-left right">
+            <a id="userinfrom" href="" style="color:aliceblue"></a>
+            <a href="../mainPage/mainPage.html"> <img id="userIcon" style="height:40px;width:40px;border-radius: 20px"></a>
+        </ul>
+
+
+    </div>
+    <!-- 左侧导航栏 -->
+    <div class="menuLeft">
+        <div class="menu">
+            <ul>
                 <li>
-                    <a title="美食天下" href="#" target="_black" class="top_bar_logo">
-                        <span>美食至上</span>
-                    </a>
+                    <a class=on href="../center/center.html">会员<br>中心</a>
                 </li>
                 <li>
-                    <a title="首页" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\index.html" target="_black">首页</a>
+                    <a href="./recipe.html">菜谱</a>
                 </li>
                 <li>
-                    <a title="菜谱" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\recipe.html" target="_black">菜谱</a>
-                </li>
-    
-                <li>
-                    <a title="专题" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\delicacy\delicacy.html" target="_black">专题</a>
+                    <a href="../topic/topic.html">话题</a>
                 </li>
                 <li>
-                    <a title="社区" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\communitysquare\communitysquare.html"
-                        target="_black">社区</a>
+                    <a href="../dailyrecord/dailyrecord.html">日志</a>
                 </li>
             </ul>
-    
-            <ul class="bar-left right">
-                <div>
-                    <a href="#" title="头像">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg" alt="">
-                    </a>
-                </div>
-            </ul>
-    
-    
         </div>
-        <!-- 左侧导航栏 -->
-        <div class="menuLeft">
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a class=on href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\center\center.html">会员<br>中心</a>
-                    </li>
-                    <li>
-                        <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\recipe\recipe.html">菜谱</a>
-                    </li>
-                    <li>
-                        <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\topic\topic.html">话题</a>
-                    </li>
-                    <li>
-                        <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\dailyrecord\dailyrecord.html">日志</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    </div>
 
-        <!-- 创建菜谱 -->
-        <div class="releaseTopic">
-            <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\recipe\recipe.html" class="on">我的菜谱</a>
-        </div>
-        <div class="topicContent">
-            <p>您还没有发布新菜谱噢，快点击这里<a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\recipe\recipeEdit\recipeEdit.html">发布新菜谱</a>吧！</p> 
-        </div>
-        <!-- <ul id="dynamic" class="nav nav-tabs">
-                <li class="active">
-                    <a href="#home" data-toggle="tab">我的菜谱 </a>
-                </li>
-                <li>
-                    <a href="#all" data-toggle="tab">草稿箱</a>
-                </li>
-               
-    
-            </ul>
-            <div id="dynamicContent" class="tab-content">
-                <div class="tab-pane fade in active" id="home">
-                       <p>您还没有发布新菜谱噢，快点击这里<a href="#">发布新菜谱</a>吧！</p> 
-                </div>
-                <div class="tab-pane fade" id="all">
-                       <p>您还没有任何草稿箱</p> 
-                </div>
-                
-            </div> -->
+    <!-- 创建菜谱 -->
+    <div class="releaseTopic">
+        <a href="../recipe/recipe.html" class="on">我的菜谱</a>
+    </div>
+    <div class="topicContent">
+        <p>您还没有发布新菜谱噢，快点击这里<a href="../recipe/recipeEdit/recipeEdit.html">发布新菜谱</a>吧！</p>
+    </div>
 
-    
-    
+
+
+
 </body>
+<script src="./recipe.js"></script>
 </html>

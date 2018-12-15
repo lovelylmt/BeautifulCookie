@@ -29,27 +29,31 @@
                 </a>
             </li>
             <li>
-                <a title="首页" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\index.html" target="_black">首页</a>
+                <a title="首页" href="../../../../index.html" target="_black">首页</a>
             </li>
             <li>
-                <a title="菜谱" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\recipe.html" target="_black">菜谱</a>
+                <a title="菜谱" href="../../../menu/recipe/recipe.html" target="_black">菜谱</a>
             </li>
 
             <li>
-                <a title="专题" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\delicacy\delicacy.html" target="_black">专题</a>
+                <a title="专题" href="../../../menu/delicacy/delicacy.html" target="_black">专题</a>
             </li>
             <li>
-                <a title="社区" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\communitysquare\communitysquare.html"
-                    target="_black">社区</a>
+                <a title="社区" href="../../../menu/community/communitysquare/communitysquare.html" target="_black">社区</a>
             </li>
         </ul>
 
-        <ul class="bar-left right">
-            <div>
-                <a href="#" title="头像">
-                    <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg" alt="">
-                </a>
-            </div>
+        <ul id="users" class="bar-left right">
+            <li>
+                <a title="注册" href="../../../register/register.html" target="_black">注册</a>
+            </li>
+            <li>
+                <a title="登录" href="../../../login/login.html" target="_black">登录</a>
+            </li>
+        </ul>
+        <ul id="user1" style="display: none" class="bar-left right">
+            <a id="userinfrom" href="" style="color:aliceblue"></a>
+            <a href="../../mainPage/mainPage.html"> <img id="userIcon" style="height:40px;width:40px;border-radius: 20px"></a>
         </ul>
 
 
@@ -59,16 +63,16 @@
         <div class="menu">
             <ul>
                 <li>
-                    <a class=on href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\center\center.html">会员<br>中心</a>
+                    <a class=on href="../../center/center.html">会员<br>中心</a>
                 </li>
                 <li>
-                    <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\recipe\recipe.html">菜谱</a>
+                    <a href="./recipeEdit.html">菜谱</a>
                 </li>
                 <li>
-                    <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\topic\topic.html">话题</a>
+                    <a href="../../topic/topicEdit/topicEdit.html">话题</a>
                 </li>
                 <li>
-                    <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\dailyrecord\dailyrecord.html">日志</a>
+                    <a href="../../dailyrecord/recordEdit/recordEdit.html">日志</a>
                 </li>
             </ul>
         </div>
@@ -76,26 +80,28 @@
 
     <!-- 编辑部分 -->
     <div class="releaseTopic">
-        <a href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\recipe\recipeEdit\recipeEdit.html" class="on">编辑菜谱</a>
+        <a href="../recipeEdit/recipeEdit.html" class="on">编辑菜谱</a>
     </div>
     <div class="edit">
         <ul>
 
             <li>
                 <label class="must">菜谱名称</label><br>
-                <input name="subject" class="inputL" type="text" value="">
+                <input name="recipeName" class="inputL" type="text" id="recipeName">
             </li>
 
             <li>
                 <label class="must">成品图片（最多9张）</label><br>
 
-                <div class="upload1">上传成品图
-                    <input multiple class="uploadimg" type="file" accept="image/png,image/gif,image/jpeg" name="file">
+                <div class="upload1" id="upload1">上传成品图
+                    <input multiple class="uploadimg" id="photo" type="file" accept="image/*" onchange="go()" />
+
                 </div>
+                <img id="uploadNesc" src="" alt="" srcset="" style="width:100px;height:100px">
             </li>
 
             <li>
-                <textArea class="" name="message" maxlength="500" placeholder="请输入菜谱描述，最多输入500字"></textArea>
+                <textarea id="recipeDescription" name="recipeDescription" placeholder="请输入菜谱描述，最多输入500字"></textarea>
             </li>
 
             <li class="ingredient clear">
@@ -105,64 +111,67 @@
                 <blockquote>
                     <p>主料</p>
                     <div>
-                        <input type="text" class="liao" placeholder="食材名">
-                        <input type="text" class="yongliang" placeholder="用量">
+                        <input type="text" id="mainMaterial" class="liao" placeholder="食材名">
+                        <input type="text" id="mainMaterialUsage" class="yongliang" placeholder="用量">
                     </div>
                 </blockquote>
                 <blockquote>
                     <p>辅料</p>
                     <div>
-                        <input type="text" class="liao" placeholder="食材名">
-                        <input type="text" class="yongliang" placeholder="用量">
+                        <input type="text" id="accessories" class="liao" placeholder="食材名">
+                        <input type="text" id="accessoriesUsage" class="yongliang" placeholder="用量">
                     </div>
                 </blockquote>
             </li>
 
             <li class="step">
                 <label class="must">做法步骤</label><br>
-                <div class="upload1">批量上传
-                    <input multiple class="uploadimg" type="file" accept="image/png,image/gif,image/jpeg" name="file">
-                </div>
 
 
                 <div id="dragsort">
                     <blockquote class="upload ">
                         <div class="addicon">
-                            <input type="file" name="file" class="file" accept="image/png,image/gif,image/jpeg" value="" />
-                            <p class="p1">点击上传步骤图</p>
+                            <input type="file" name="file" class="file" id="photo1" accept="image/*" value="" onchange="go()" />
+                            <p class="p1" id="p1">点击上传步骤图</p>
+                            <img id="uploadNesc1" src="" alt="" srcset="" style="width:208px;height:156px">
                             <p>（可不填）</p>
                         </div>
                         <div class="right">
-                            <textArea class="textArea " name="note" placeholder="请输入做法说明菜谱描述，最多输入200字" maxlength="200"></textArea>
-                            <span class="stepNum">1、</span> <a href="javascript:void(0);" class="add "></a>
-                            <a href="javascript:void(0);" class="up "></a> <a href="javascript:void(0);"
-                                class="down "></a> <a href="javascript:void(0);" class="delete "></a>
+                            <textarea class="textArea " id="step1" name="step1" placeholder="请输入做法说明菜谱描述，最多输入200字"
+                                maxlength="200"></textarea>>
+                            <span class="stepNum">1、</span> <a href="javascript:void(0);" class="add"></a>
+                            <a href="javascript:void(0);" class="up "></a> <a href="javascript:void(0);" class="down "></a>
+                            <a href="javascript:void(0);" class="delete "></a>
                         </div>
                     </blockquote>
                     <blockquote class="upload ">
                         <div class="addicon">
-                            <input type="file" name="file" class="file" accept="image/png,image/gif,image/jpeg" value="" />
-                            <p class="p1">点击上传步骤图</p>
+                            <input type="file" name="file" class="file" id="photo2" accept="image/*" value="" onchange="go()" />
+                            <p class="p1" id="p2">点击上传步骤图</p>
+                            <img id="uploadNesc2" src="" alt="" srcset="" style="width:208px;height:156px">
                             <p>（可不填）</p>
                         </div>
                         <div class="right">
-                            <textArea class="textArea " name="note" placeholder="请输入做法说明菜谱描述，最多输入200字" maxlength="200"></textArea>
+                            <textarea class="textArea " id="step2" name="step2" placeholder="请输入做法说明菜谱描述，最多输入200字"
+                                maxlength="200"></textarea>>
                             <span class="stepNum">2、</span> <a href="javascript:void(0);" class="add "></a>
-                            <a href="javascript:void(0);" class="up "></a> <a href="javascript:void(0);"
-                                class="down "></a> <a href="javascript:void(0);" class="delete "></a>
+                            <a href="javascript:void(0);" class="up "></a> <a href="javascript:void(0);" class="down "></a>
+                            <a href="javascript:void(0);" class="delete "></a>
                         </div>
                     </blockquote>
                     <blockquote class="upload ">
                         <div class="addicon">
-                            <input type="file" name="file" class="file" accept="image/png,image/gif,image/jpeg" value="" />
-                            <p class="p1">点击上传步骤图</p>
+                            <input type="file" name="file" class="file" id="photo3" accept="image/*" value="" onchange="go()" />
+                            <p class="p1" id="p3">点击上传步骤图</p>
+                            <img id="uploadNesc3" src="" alt="" srcset="" style="width:208px;height:156px">
                             <p>（可不填）</p>
                         </div>
                         <div class="right">
-                            <textArea class="textArea " name="note" placeholder="请输入做法说明菜谱描述，最多输入200字" maxlength="200"></textArea>
+                            <textarea class="textArea " id="step3" name="step3" placeholder="请输入做法说明菜谱描述，最多输入200字"
+                                maxlength="200"></textarea>
                             <span class="stepNum">3、</span> <a href="javascript:void(0);" class="add "></a>
-                            <a href="javascript:void(0);" class="up "></a> <a href="javascript:void(0);"
-                                class="down "></a> <a href="javascript:void(0);" class="delete "></a>
+                            <a href="javascript:void(0);" class="up "></a> <a href="javascript:void(0);" class="down "></a>
+                            <a href="javascript:void(0);" class="delete "></a>
                         </div>
                     </blockquote>
                 </div>
@@ -170,9 +179,29 @@
         </ul>
     </div>
     <!-- 发布 -->
-    <div class="release">
-        <input id="loginbtn" class="loginbtn" value="发布菜谱" />
+    <div class="release edit1">
+        <ul>
+            <li>
+                <label>发表到分类</label><br>
+                <input type="hidden" id="things" name="classify" value="1">
+                <div class="things" id="type">
+                    <span id="hotMeal" onclick="choose('hotMeal')">&nbsp;热菜&nbsp;</span>
+                    <span id="coolMeal" onclick="choose('coolMeal')">&nbsp;凉菜&nbsp;</span>
+                    <span id="soup" onclick="choose('soup')">&nbsp;汤羹&nbsp;</span>
+                    <span id="rice" onclick="choose('rice')">&nbsp;主食&nbsp;</span>
+                    <span id="snake" onclick="choose('snake')">&nbsp;小吃&nbsp;</span>
+                    <span id="westDin" onclick="choose('westDin')">&nbsp;西餐&nbsp;</span>
+                    <span id="cake" onclick="choose('cake')">&nbsp;烘焙&nbsp;</span>
+                </div>
+            </li>
+        </ul>
+        <!-- 发布 -->
+        <div class="release1">
+            <input id="loginbtn" class="loginbtn" onclick="recipeEdit()" value="发布话菜谱" />
+        </div>
     </div>
 </body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="recipeEdit.js"></script>
 
 </html>

@@ -315,3 +315,16 @@ div a{
       width: 300px;
       height: 600px;
   }
+
+  /* 评论 */
+  .Iscomment{
+      height: 200px;
+      width: 100%;
+      background: blue;
+  }
+  .img111{
+     margin: 70px 0;
+    width:640px;
+    height:90px;
+    
+  }

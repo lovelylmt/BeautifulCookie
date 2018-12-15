@@ -21,34 +21,37 @@
     <!-- 导航栏 -->
     <div class="navigation">
 
-            <ul class="bar-left left">
-                    <li>
-                        <a title="美食天下" href="#" target="_black" class="top_bar_logo">
-                            <span>美食至上</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a title="首页" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\index.html" target="_black">首页</a>
-                    </li>
-                    <li>
-                        <a title="菜谱" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\recipe.html" target="_black">菜谱</a>
-                    </li>
-        
-                    <li>
-                        <a title="专题" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\delicacy\delicacy.html" target="_black">专题</a>
-                    </li>
-                    <li>
-                        <a title="社区" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\communitysquare\communitysquare.html"
-                            target="_black">社区</a>
-                    </li>
-                </ul>
+        <ul class="bar-left left">
+            <li>
+                <a title="首页" href="../../../../index.html" target="_black">首页</a>
+            </li>
+            <li>
+                <a title="菜谱" href="../../../../index.html" target="_black">菜谱</a>
+            </li>
 
-        <ul class="bar-left right">
-            <div>
-                <a href="#" title="头像">
-                    <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg" alt="">
-                </a>
-            </div>
+            <li>
+                <a title="专题" href="../../delicacy/delicacy.html" target="_black">专题</a>
+            </li>
+           
+            <li>
+                <a title="话题" href="../../community/topic/topic.html" target="_black">话题</a>
+            </li>
+            <li>
+                <a title="日志" href="../../community/record/recond.html" target="_black">日志</a>
+            </li>
+        </ul>
+
+        <ul id="users" class="bar-left right">
+            <li>
+                <a title="注册" href="./page/register/register.html" target="_black">注册</a>
+            </li>
+            <li>
+                <a title="登录" href="./page/login/login.html" target="_black">登录</a>
+            </li>
+        </ul>
+        <ul id="user1" style="display: none" class="bar-left right">
+            <a id="userinfrom" href="" style="color:aliceblue"></a>
+            <a href="../../../member/mainPage/mainPage.html"> <img id="userIcon" style="height:40px;width:40px;border-radius: 20px"></a>
         </ul>
     </div>
 
@@ -56,15 +59,16 @@
     <div class="centreNavigation">
         <div class="logo_inner">
             <a href="#" title="美食天下">
-                <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\logo.png" alt="">
+                <img src="../../../../static/img/logo.png" alt="">
             </a>
         </div>
         <div class="logo_nav">
-            <a title="社区广场" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\communitysquare\communitysquare.html" target="_blank">社区</a>
-            <a title="话题" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\topic\topic.html"
-                target="_blank">话题</a>
-            <a title="日志" class="on" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\record\recond.html"
-                target="_blank">日志</a>
+            <a title="首页" href="../../../../index.html" target="_blank">首页</a>
+            <a title="菜谱" href="../../../../index.html">菜谱</a>
+            <a title="专题" href="../../delicacy/delicacy.html" target="_blank">专题</a>
+         
+            <a title="话题" href="../../community/topic/topic.html" target="_blank">话题</a>
+            <a title="日志" class="on"  href="../../community/record/recond.html" target="_blank">日志</a>
 
         </div>
         <div class="logo_search">
@@ -81,97 +85,27 @@
 
     <!-- 全部日志 -->
     <div class="centreNavigation2">
-        <ul>
-            <li><a href="#" class="on">精华日志</a></li>
-            <li><a title="最新日志" href="#">最新日志</a></li>
-
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" class="on"  href="#essenceRecordList">精华日志</a></li>
+            <li><a data-toggle="tab" href="#originalRecordList">原创日志</a></li>
         </ul>
+        <div id="record" class="tab-content">
+            <div class="tab-pane active" id="essenceRecordList">
+                <ul id="recordList1"></ul>
+            </div>
+            <div class="tab-pane" id="originalRecordList">
+                <ul id="recordList2"></ul>
+            </div>
+
+        </div>
     </div>
 
-    <!-- 日志列表 -->
-    <div class="ranklist">
-        <ul>
-            <li>
-                <div class="pic">
-                    <a target="_blank" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\cookdetail\cookdetail.html" title="养生红枣">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\doushasu.jpg">
-                    </a>
-                </div>
-                <div class="detail">
-                    <h2><a target="_blank" href="#">【食·色饮品】—— 奶粉版大麦奶茶</a></h2>
-                    <p class="subline"><a target="_blank" href="#">1小时前</a></p>
-                    <p>大麦奶茶其实也可以是大麦茶直接兑牛奶，但总是固执地认为奶茶之茶定是红茶。所以，大麦奶茶就是大麦茶+奶茶</p>
-                </div>
-            </li>
-            <li>
-                <div class="pic">
-                    <a target="_blank" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\cookdetail\cookdetail.html" title="养生红枣">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\doushasu.jpg">
-                    </a>
-                </div>
-                <div class="detail">
-                    <h2><a target="_blank" href="#">【食·色饮品】—— 奶粉版大麦奶茶</a></h2>
-                    <p class="subline"><a target="_blank" href="#">1小时前</a></p>
-                    <p>大麦奶茶其实也可以是大麦茶直接兑牛奶，但总是固执地认为奶茶之茶定是红茶。所以，大麦奶茶就是大麦茶+奶茶</p>
-                </div>
-            </li>
-            <li>
-                <div class="pic">
-                    <a target="_blank" href="#" title="养生红枣">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\doushasu.jpg">
-                    </a>
-                </div>
-                <div class="detail">
-                    <h2><a target="_blank" href="#">【食·色饮品】—— 奶粉版大麦奶茶</a></h2>
-                    <p class="subline"><a target="_blank" href="#">1小时前</a></p>
-                    <p>大麦奶茶其实也可以是大麦茶直接兑牛奶，但总是固执地认为奶茶之茶定是红茶。所以，大麦奶茶就是大麦茶+奶茶</p>
-                </div>
-            </li>
-            <li>
-                <div class="pic">
-                    <a target="_blank" href="#" title="养生红枣">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\doushasu.jpg">
-                    </a>
-                </div>
-                <div class="detail">
-                    <h2><a target="_blank" href="#">【食·色饮品】—— 奶粉版大麦奶茶</a></h2>
-                    <p class="subline"><a target="_blank" href="#">1小时前</a></p>
-                    <p>大麦奶茶其实也可以是大麦茶直接兑牛奶，但总是固执地认为奶茶之茶定是红茶。所以，大麦奶茶就是大麦茶+奶茶</p>
-                </div>
-            </li>
-            <li>
-                <div class="pic">
-                    <a target="_blank" href="#" title="养生红枣">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\doushasu.jpg">
-                    </a>
-                </div>
-                <div class="detail">
-                    <h2><a target="_blank" href="#">【食·色饮品】—— 奶粉版大麦奶茶</a></h2>
-                    <p class="subline"><a target="_blank" href="#">1小时前</a></p>
-                    <p>大麦奶茶其实也可以是大麦茶直接兑牛奶，但总是固执地认为奶茶之茶定是红茶。所以，大麦奶茶就是大麦茶+奶茶</p>
-                </div>
-            </li>
-            <li>
-                <div class="pic">
-                    <a target="_blank" href="#" title="养生红枣">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\doushasu.jpg">
-                    </a>
-                </div>
-                <div class="detail">
-                    <h2><a target="_blank" href="#">【食·色饮品】—— 奶粉版大麦奶茶</a></h2>
-                    <p class="subline"><a target="_blank" href="#">1小时前</a></p>
-                    <p>大麦奶茶其实也可以是大麦茶直接兑牛奶，但总是固执地认为奶茶之茶定是红茶。所以，大麦奶茶就是大麦茶+奶茶</p>
-                </div>
-            </li>
-
-        </ul>
-    </div>
-
-  <!-- 右边图片 -->
-  <div class="rightimg">
-        <a href="#"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\r3.jpg" alt=""></a>
+    <!-- 右边图片 -->
+    <div class="rightimg">
+        <a href="#"><img src="../../../../static/img/r3.jpg" alt=""></a>
 
     </div>
 </body>
+<script src="./record.js"></script>
 
 </html>

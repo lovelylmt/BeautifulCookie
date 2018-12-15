@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的话题</title>
-     <!-- 新 Bootstrap4 核心 CSS 文件 -->
-     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-     <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
-     <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
-     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
- 
-     <link rel="stylesheet" type="text/css" href="mainTopic.css" />
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="mainTopic.css" />
 </head>
+
 <body>
     <!-- 导航栏 -->
     <div class="navigation">
@@ -27,36 +29,40 @@
                 </a>
             </li>
             <li>
-                <a title="首页" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\index.html" target="_black">首页</a>
+                <a title="首页" href="../../../../index.html" target="_black">首页</a>
             </li>
             <li>
-                <a title="菜谱" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\recipe.html" target="_black">菜谱</a>
+                <a title="菜谱" href="../../../menu/recipe/recipe.html" target="_black">菜谱</a>
             </li>
 
             <li>
-                <a title="专题" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\delicacy\delicacy.html" target="_black">专题</a>
+                <a title="专题" href="../../../menu/delicacy/delicacy.html" target="_black">专题</a>
             </li>
             <li>
-                <a title="社区" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\communitysquare\communitysquare.html"
-                    target="_black">社区</a>
+                <a title="社区" href="../../../menu/community/communitysquare/communitysquare.html" target="_black">社区</a>
             </li>
         </ul>
 
-        <ul class="bar-left right">
-            <div>
-                <a href="#" title="头像">
-                    <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg" alt="">
-                </a>
-            </div>
+        <ul id="users" class="bar-left right">
+            <li>
+                <a title="注册" href="./page/register/register.html" target="_black">注册</a>
+            </li>
+            <li>
+                <a title="登录" href="./page/login/login.html" target="_black">登录</a>
+            </li>
+        </ul>
+        <ul id="user1" style="display: none" class="bar-left right">
+            <a id="userinfrom" href="" style="color:aliceblue"></a>
+            <a href="../mainPage.html"> <img id="userIcon" style="height:40px;width:40px;border-radius: 20px"></a>
         </ul>
     </div>
 
     <!-- 背景 -->
     <div class="backgroundimg">
-        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\bg1.jpg" alt="">
+        <img src="../../../../static/img/bg1.jpg" alt="">
         <div class="memberCenter">
             <div class="headPortrait">
-                <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
+                <a href="#" target="_blank"><img src="../../../../static/img/qitou.jpg"></a>
             </div>
             <div class="detail">
                 <h2><a href="#" target="_blank">MtXkXQB</a></h2>
@@ -74,17 +80,17 @@
 
                     <ul class="substatus">
                         <li>
-                            <a title="粉丝" href="https://home.meishichina.com/space-34360-do-followed.html" rel="nofollow">
+                            <a title="粉丝"  rel="nofollow">
                                 <b class="followedcount">624932</b><br>
                                 访问
                             </a></li>
                         <li>
-                            <a title="关注" href="https://home.meishichina.com/space-34360-do-following.html" rel="nofollow">
+                            <a title="关注"  rel="nofollow">
                                 <b class="followingcount">1770</b><br>
                                 关注
                             </a></li>
                         <li class="last">
-                            <a title="访问" href="https://home.meishichina.com/space-34360-do-visitor.html" rel="nofollow">
+                            <a title="访问"  rel="nofollow">
                                 <b class="viewnum">13220272</b><br>
                                 粉丝
                             </a></li>
@@ -94,27 +100,27 @@
 
         </div>
     </div>
-   
+
     <!-- 中间导航 -->
     <div class="centerNavigation">
         <ul data-id="#">
-            <li><a title="主页" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\mainPage\mainPage.html" >主页</a></li>
-            <li><a title="菜谱" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\mainPage\mainRecipe\mainRecipe.html" >菜谱</a></li>
-            <li><a title="话题" class="on" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\mainPage\mainTopic\mainTopic.html">话题</a></li>
-            <li><a title="日志" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\mainPage\mainRecord\mainRecord.html">日志</a></li>
+            <li><a title="主页" href="../mainPage.html">主页</a></li>
+            <li><a title="菜谱" href="../mainRecipe/mainRecipe.html">菜谱</a></li>
+            <li><a title="话题" class="on" href="./mainTopic.html">话题</a></li>
+            <li><a title="日志" href="../mainRecord/mainRecord.html">日志</a></li>
         </ul>
     </div>
-        <!--标题-->
-        <div class="title">
-            <h1 class="on"><a class="" href="#" >MtXkXQB的话题</a></h1>
-        </div>
+    <!--标题-->
+    <div class="title">
+        <h1 class="on"><a class="" href="#">MtXkXQB的话题</a></h1>
+    </div>
 
-     <!-- 话题部分 -->
-     <div class="topic">
+    <!-- 话题部分 -->
+    <div class="topic">
         <ul>
             <li>
                 <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
+                    <a href="#" target="_blank"><img src="../../../../static/img/qitou.jpg"></a>
                     <div>
                         <a href="#" target="_blank">琪_feXjZ8E2</a><br>
                         <span>1小时前</span>
@@ -123,122 +129,24 @@
                 <div class="down">
                     <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
                     <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
+                        <img src="../../../../static/img/qi.jpg">
+                        <img src="../../../../static/img/qi.jpg">
+                        <img src="../../../../static/img/qi.jpg">
+                        <img src="../../../../static/img/qi.jpg">
+                        <img src="../../../../static/img/qi.jpg">
                     </a>
                     <span>7个喜欢，5条评论</span>
                 </div>
             </li>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
+           
         </ul>
     </div>
     <!-- 右边图片 -->
     <div class="rightimg">
-        <a href="#"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\r3.jpg" alt=""></a>
+        <a href="#"><img src="../../../../static/img/r3.jpg" alt=""></a>
 
     </div>
 
 </body>
+<script src="./mainTopic.js"></script>
 </html>

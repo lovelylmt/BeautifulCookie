@@ -21,34 +21,38 @@
     <!-- 导航栏 -->
     <div class="navigation">
 
-            <ul class="bar-left left">
-                    <li>
-                        <a title="美食天下" href="#" target="_black" class="top_bar_logo">
-                            <span>美食至上</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a title="首页" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\index.html" target="_black">首页</a>
-                    </li>
-                    <li>
-                        <a title="菜谱" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\recipe.html" target="_black">菜谱</a>
-                    </li>
-        
-                    <li>
-                        <a title="专题" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\delicacy\delicacy.html" target="_black">专题</a>
-                    </li>
-                    <li>
-                        <a title="社区" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\communitysquare\communitysquare.html"
-                            target="_black">社区</a>
-                    </li>
-                </ul>
+        <ul class="bar-left ">
 
-        <ul class="bar-left right">
-            <div>
-                <a href="#" title="头像">
-                    <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg" alt="">
-                </a>
-            </div>
+            <li>
+                <a title="首页" href="../../../../index.html" target="_black">首页</a>
+            </li>
+            <li>
+                <a title="菜谱" href="../../../../index.html" target="_black">菜谱</a>
+            </li>
+
+            <li>
+                <a title="专题" href="../../delicacy/delicacy.html" target="_black">专题</a>
+            </li>
+
+            <li>
+                <a title="话题" href="../../community/topic/topic.html" target="_black">话题</a>
+            </li>
+            <li>
+                <a title="日志" href="../../community/record/recond.html" target="_black">日志</a>
+            </li>
+        </ul>
+
+        <ul id="users" class="bar-left right">
+            <li>
+                <a title="注册" href="./page/register/register.html" target="_black">注册</a>
+            </li>
+            <li>
+                <a title="登录" href="./page/login/login.html" target="_black">登录</a>
+            </li>
+        </ul>
+        <ul id="user1" style="display: none" class="bar-left right">
+            <a id="userinfrom" href="" style="color:aliceblue"></a>
+            <a href="../../../member/mainPage/mainPage.html"> <img id="userIcon" style="height:40px;width:40px;border-radius: 20px"></a>
         </ul>
     </div>
 
@@ -56,15 +60,16 @@
     <div class="centreNavigation">
         <div class="logo_inner">
             <a href="#" title="美食天下">
-                <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\logo.png" alt="">
+                <img src="../../../../static/img/logo.png" alt="">
             </a>
         </div>
         <div class="logo_nav">
-            <a title="社区广场"  href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\communitysquare\communitysquare.html"
-                target="_blank">社区广场</a>
-            <a title="话题" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\record\recond.html"
-                target="_blank" class="on">话题</a>
-            <a title="日志" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\record\recond.html" target="_blank">日志</a>
+            <a title="首页" href="../../../../index.html" target="_blank">首页</a>
+            <a title="菜谱" href="../../../../index.html">菜谱</a>
+            <a title="专题" href="../../delicacy/delicacy.html" target="_blank">专题</a>
+
+            <a title="话题" class="on" href="../../community/topic/topic.html" target="_blank">话题</a>
+            <a title="日志" href="../../community/record/recond.html" target="_blank">日志</a>
 
         </div>
         <div class="logo_search">
@@ -81,159 +86,39 @@
 
     <!-- 全部话题 -->
     <div class="centreNavigation2">
-        <ul>
-            <li><a href="#" class="on">全部</a></li>
-            <li><a title="美食随手拍" href="#">美食随手拍</a></li>
-            <li><a title="厨艺交流" href="#">厨艺交流</a></li>
-            <li><a title="美好时光" href="#">美好时光</a></li>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" class="on" href="#hotTopicList">热门话题</a></li>
+            <li><a data-toggle="tab" href="#essenceTopicList">精华话题</a></li>
         </ul>
+        <!-- 话题部分 -->
+        <div id="topic" class="tab-content">
+            <div class="tab-pane active" id="hotTopicList">
+                <ul id="topicList1"></ul>
+            </div>
+            <div class="tab-pane" id="essenceTopicList">
+                <ul id="topicList2"></ul>
+            </div>
+
+        </div>
     </div>
 
     <!-- 图片 -->
     <div class="centreimg">
-        <a href="#"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\zhongjiantupian.jpg"></a>
+        <a href="#"><img src="../../../../static/img/zhongjiantupian.jpg"></a>
 
     </div>
 
-    <!--标题-->
-    <div class="title">
-        <h1 class="on"><a title="话题" href="#">话题</a></h1>
-    </div>
 
-    <!-- 话题部分 -->
-    <div class="topic">
-        <ul>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
-            <li>
-                <div class="left">
-                    <a href="#" target="_blank"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qitou.jpg"></a>
-                    <div>
-                        <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-                        <span>1小时前</span>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣</a></div>
-                    <a class="clear" href="#" target="_blank">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg">
-                    </a>
-                    <span>7个喜欢，5条评论</span>
-                </div>
-            </li>
-        </ul>
+    <!-- 发布话题 -->
+    <div class="release">
+        <a class="r_pai-add" target="_blank" href="../../../member/topic/topic.html">发布话题</a>
     </div>
-   <!-- 发布话题 -->
-   <div class="release">
-        <a class="r_pai-add" target="_blank" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\member\topic\topic.html">发布话题</a>
-   </div>
-   <!-- 右边图片 -->
-   <div class="rightimg">
-       <a href="#"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\r3.jpg" alt=""></a>
+    <!-- 右边图片 -->
+    <div class="rightimg">
+        <a href="#"><img src="../../../../static/img/r3.jpg" alt=""></a>
 
-   </div>
+    </div>
 </body>
+<script src="./topic.js"></script>
 
 </html>

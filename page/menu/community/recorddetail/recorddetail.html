@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>某某日志</title>
+    <link rel="stylesheet" type="text/css" href="../../recipe/cookdetail/cookdetail.css" />
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="navigation">
+
+        <ul class="bar-left left">
+            <li>
+                <a title="美食天下" href="#" target="_black" class="top_bar_logo">
+                    <span>美食至上</span>
+                </a>
+            </li>
+            <li>
+                <a title="首页" href="../../../../index.html" target="_black">首页</a>
+            </li>
+            <li>
+                <a title="菜谱" href="../recipe.html" target="_black">菜谱</a>
+            </li>
+
+            <li>
+                <a title="专题" href="../../delicacy/delicacy.html" target="_black">专题</a>
+            </li>
+            <li>
+                <a title="社区" href="../../community/communitysquare/communitysquare.html"
+                    target="_black">社区</a>
+            </li>
+        </ul>
+
+        <ul id="users" class="bar-left right">
+            <li>
+                <a title="注册" href="./page/register/register.html" target="_black">注册</a>
+            </li>
+            <li>
+                <a title="登录" href="./page/login/login.html" target="_black">登录</a>
+            </li>
+        </ul>
+        <ul id="user1" style="display: none" class="bar-left right">
+            <a id="userinfrom" href="" style="color:aliceblue"></a>
+            <a href="../../../member/mainPage/mainPage.html"> <img id="userIcon"  style="height:40px;width:40px;border-radius: 20px"></a>
+        </ul>
+    </div>
+
+    <!-- 中间导航 -->
+    <div class="centreNavigation">
+        <div class="logo_inner">
+            <a href="#" title="美食天下">
+                <img src="../../../../static/img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="logo_nav">
+            <a title="社区广场"  href="../communitysquare/communitysquare.html">社区</a>
+            <a title="话题" href="../topic/topic.html">话题</a>
+            <a title="日志" class="on" href="../record/recond.html">日志</a>
+
+        </div>
+        <div class="logo_search">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="background-color: rgb(153, 153, 153);color: white">
+                        搜索
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="centreNavigation2">
+        <ul>
+            <li><a title="精华话题" class="on" href="#">精华话题</a></li>
+            <li><a title="精华日志" href="#">精华日志</a></li>
+        </ul>
+    </div>
+    <!-- 图片 -->
+    <div class="centreimg">
+        <a href="#"><img src="../../../../static/img/zhongjiantupian.jpg"></a>
+    </div>
+
+    <!-- 菜名 -->
+    <div class="dishesName">
+        <h1><a id="recipe_title" title="补血养肺红枣莲子薏米粥">补血养肺红枣莲子薏米粥</a></h1>
+        <a title="食·色" href="#" target="_blank" class="uright">
+            <img id="userIcon" />
+            <span class="userName" >食·色</span>
+        </a>
+    </div>
+    <!-- 做菜步骤 -->
+    <div class="box">
+        <div class="recipeimg">
+            <img src="../../../../static/img/shise.jpg" alt="">
+        </div>
+        <blockquote class="block_txt">
+            <div id="block_txt1">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;秋养脾胃，最宜食粥。一碗热粥下肚，不仅补充营养让脾胃得到滋养，减少消化系统的负担，还能让人浑身都暖和起来。<br />
+                粥中有米，即指粥以五谷为基础。不喜欢白米粥，但绝不会拒绝各式杂粮。秋日愈深愈寒凉，且来一碗红枣莲子薏米粥，补血养肺。懒人电饭煲版，省去不少事情。<br />
+                红枣的甜香其实已经足以让粥带上淡淡的甜味，不加糖味道也是不错。。。
+            </div>
+        </blockquote>
+       
+    </div>
+     <!-- 右边图片 -->
+     <div class="rightimg">
+            <a href="#"><img src="../../../../static/img/r3.jpg" alt=""></a>
+    
+        </div>
+
+
+
+</body>
+<script src="./cookdetail.js"></script>
+</html>

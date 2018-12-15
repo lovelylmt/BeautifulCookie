@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,189 +16,134 @@
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
-<body>
-      <!-- 导航栏 -->
-      <div class="navigation">
 
-            <ul class="bar-left left">
-                    <li>
-                        <a title="美食天下" href="#" target="_black" class="top_bar_logo">
-                            <span>美食至上</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a title="首页" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\index.html" target="_black">首页</a>
-                    </li>
-                    <li>
-                        <a title="菜谱" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\recipe.html" target="_black">菜谱</a>
-                    </li>
-        
-                    <li>
-                        <a title="专题" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\delicacy\delicacy.html" target="_black">专题</a>
-                    </li>
-                    <li>
-                        <a title="社区" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\community\communitysquare\communitysquare.html"
-                            target="_black">社区</a>
-                    </li>
-                </ul>
-    
-            <ul class="bar-left right">
-                <div>
-                    <a href="#" title="头像">
-                        <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\qi.jpg" alt="">
+<body>
+    <!-- 导航栏 -->
+    <div class="navigation">
+
+        <ul class="bar-left left">
+            <li>
+                <a title="美食天下" href="#" target="_black" class="top_bar_logo">
+                    <span>美食至上</span>
+                </a>
+            </li>
+            <li>
+                <a title="首页" href="../../../../../index.html" target="_black">首页</a>
+            </li>
+            <li>
+                <a title="菜谱" href="../../recipe.html" target="_black">菜谱</a>
+            </li>
+
+            <li>
+                <a title="专题" href="../../../delicacy/delicacy.html" target="_black">专题</a>
+            </li>
+            <li>
+                <a title="社区" href="../../../community/communitysquare/communitysquare.html" target="_black">社区</a>
+            </li>
+        </ul>
+
+        <ul id="users" class="bar-left right">
+            <li>
+                <a title="注册" href="./page/register/register.html" target="_black">注册</a>
+            </li>
+            <li>
+                <a title="登录" href="./page/login/login.html" target="_black">登录</a>
+            </li>
+        </ul>
+        <ul id="user1" style="display: none" class="bar-left right">
+            <a id="userinfrom" href="" style="color:aliceblue"></a>
+            <a href="../../../../member/mainPage/mainPage.html"> <img id="userIcon" src="" alt="" srcset="" style="height:40px;width:40px;border-radius: 20px"></a>
+        </ul>
+    </div>
+
+    <!-- 中间导航 -->
+    <div class="centreNavigation">
+        <div class="logo_inner">
+            <a href="#" title="美食天下">
+                <img src="../../../../../static/img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="logo_nav">
+            <a title="菜谱" href="../../recipe.html">菜谱</a>
+            <a title="分类" class="on" href="../classficationdetail/classficationdetail.html">分类</a>
+            <a title="菜单" href="../../carte/carte.html">菜单</a>
+            <a title="排行" href="../../rank/rank.html">排行</a>
+        </div>
+        <div class="logo_search">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="background-color: rgb(153, 153, 153);color: white">
+                        搜索
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全部排行 -->
+    <div class="centreNavigation2">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a title="热菜" class="on" href="#">热菜</a></li>
+            <li><a title="凉菜" href="#">凉菜</a></li>
+            <li><a title="汤羹" href="#">汤羹</a></li>
+            <li><a title="主食" href="#">主食</a></li>
+            <li><a title="小吃" href="#">小吃</a></li>
+            <li><a title="西餐" href="#">西餐</a></li>
+            <li><a title="烘焙" href="#">烘焙</a></li>
+            <li><a title="饮品" href="#">饮品</a></li>
+            <li><a title="零食" href="#">零食</a></li>
+            <li><a title="泡酱腌菜" href="#">泡酱腌菜</a></li>
+            <li><a title="自制食材" href="#">自制食材</a></li>
+            <li><a title="最新菜谱" href="#">最新菜谱</a></li>
+        </ul>
+    </div>
+    <!-- 图片 -->
+    <div class="centreimg">
+        <a href="#"><img src="../../../../../static/img/zhongjiantupian.jpg"></a>
+
+    </div>
+
+    <!--标题-->
+    <div class="title">
+        <h1 class="on"><a title="热菜" href="#">热菜</a></h1>
+    </div>
+
+    <!-- 排行列表 -->
+    <div class="ranklist">
+        <ul>
+            <li>
+                <div class="pic">
+                    <a target="_blank" href="../../cookdetail/cookdetail.html" title="养生红枣">
+                        <img src="../../../../../static/img/mapodoufu.jpg">
                     </a>
                 </div>
-            </ul>
-        </div>
-    
-        <!-- 中间导航 -->
-        <div class="centreNavigation">
-            <div class="logo_inner">
-                <a href="#" title="美食天下">
-                    <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\logo.png" alt="">
-                </a>
-            </div>
-            <div class="logo_nav">
-                    <a title="菜谱" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\recipe.html"  target="_blank">菜谱</a>
-                    <a title="分类" class="on" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\recipeclassification\classficationdetail\classficationdetail.html" target="_blank">分类</a>
-                    <a title="菜单" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\carte\carte.html" target="_blank">菜单</a>
-                    <a title="排行" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\rank\rank.html" target="_blank">排行</a>
-            </div>
-            <div class="logo_search">
-                <div class="input-group">
-                    <input type="text" class="form-control">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button" style="background-color: rgb(153, 153, 153);color: white">
-                            搜索
-                        </button>
-                    </span>
+                <div class="detail">
+                    <h2><a target="_blank" href="#">养生红枣6</a></h2>
+                    <p class="subline"><a target="_blank" href="#">作者</a></p>
+                    <p>原料：红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣。</p>
                 </div>
-            </div>
-        </div>
-
-        <!-- 全部排行 -->
-        <div class="centreNavigation2">
-                <ul>
-                        <li><a href="#" >首页</a></li>
-                        <li><a title="热菜" class="on" href="#">热菜</a></li>
-                        <li><a title="凉菜" href="#">凉菜</a></li>
-                        <li><a title="汤羹" href="#">汤羹</a></li>
-                        <li><a title="主食" href="#">主食</a></li>
-                        <li><a title="小吃" href="#">小吃</a></li>
-                        <li><a title="西餐" href="#">西餐</a></li>
-                        <li><a title="烘焙" href="#">烘焙</a></li>
-                        <li><a title="饮品" href="#">饮品</a></li>
-                        <li><a title="零食" href="#">零食</a></li>
-                        <li><a title="泡酱腌菜" href="#">泡酱腌菜</a></li>
-                        <li><a title="自制食材" href="#">自制食材</a></li>
-                        <li><a title="最新菜谱" href="#">最新菜谱</a></li>
-                    </ul>
-        </div>
-          <!-- 图片 -->
-    <div class="centreimg">
-            <a href="#"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\zhongjiantupian.jpg"></a>
-    
-        </div>
- 
-         <!--标题-->
-         <div class="title"> 
-            <h1 class="on"><a title="热菜" href="#">热菜</a></h1>
-         </div>
-
-        <!-- 排行列表 -->
-        <div class="ranklist">
-            <ul>
-                <li>
-                    <div class="pic">
-                        <a target="_blank" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\cookdetail\cookdetail.html" title="养生红枣">
-                            <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\mapodoufu.jpg">
-                        </a>
-                    </div>
-                    <div class="detail">
-                        <h2><a target="_blank" href="#">养生红枣</a></h2>
-                        <p class="subline"><a target="_blank" href="#">作者</a></p>
-                        <p>原料：红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣。</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="pic">
-                        <a target="_blank" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\menu\recipe\cookdetail\cookdetail.html" title="养生红枣">
-                            <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\mapodoufu.jpg">
-                        </a>
-                    </div>
-                    <div class="detail">
-                        <h2><a target="_blank" href="#">养生红枣</a></h2>
-                        <p class="subline"><a target="_blank" href="#">作者</a></p>
-                        <p>原料：红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣。</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="pic">
-                        <a target="_blank" href="#" title="养生红枣">
-                            <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\mapodoufu.jpg">
-                        </a>
-                    </div>
-                    <div class="detail">
-                        <h2><a target="_blank" href="#">养生红枣</a></h2>
-                        <p class="subline"><a target="_blank" href="#">作者</a></p>
-                        <p>原料：红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣。</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="pic">
-                        <a target="_blank" href="#" title="养生红枣">
-                            <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\mapodoufu.jpg">
-                        </a>
-                    </div>
-                    <div class="detail">
-                        <h2><a target="_blank" href="#">养生红枣</a></h2>
-                        <p class="subline"><a target="_blank" href="#">作者</a></p>
-                        <p>原料：红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣。</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="pic">
-                        <a target="_blank" href="#" title="养生红枣">
-                            <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\mapodoufu.jpg">
-                        </a>
-                    </div>
-                    <div class="detail">
-                        <h2><a target="_blank" href="#">养生红枣</a></h2>
-                        <p class="subline"><a target="_blank" href="#">作者</a></p>
-                        <p>原料：红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣。</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="pic">
-                        <a target="_blank" href="#" title="养生红枣">
-                            <img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\mapodoufu.jpg">
-                        </a>
-                    </div>
-                    <div class="detail">
-                        <h2><a target="_blank" href="#">养生红枣</a></h2>
-                        <p class="subline"><a target="_blank" href="#">作者</a></p>
-                        <p>原料：红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣，红枣。</p>
-                    </div>
-                </li>
-    
-            </ul>
-        </div>
-         <!-- 右边图片 -->
-   <div class="rightimg">
-        <a href="#"><img src="E:\毕业设计\BeautifulCookie\BeautifulCookie\static\img\r3.jpg" alt=""></a>
- 
+            </li>
+        </ul>
     </div>
-        <!-- 分页 -->
-        <div class="Pagination">
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#">上一页</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">下一页</a></li>
-            </ul>
-        </div>
-    
-    
+    <!-- 右边图片 -->
+    <div class="rightimg">
+        <a href="#"><img src="../../../../../static/img/r3.jpg" alt=""></a>
+
+    </div>
+    <!-- 分页 -->
+    <div class="Pagination">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+        </ul>
+    </div>
+
+
 </body>
+<script src="./classficationdetail.js"></script>
 </html>

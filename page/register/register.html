@@ -36,17 +36,17 @@
         </ul>
         <ul class="bar-left right">
                 <li>
-                        <a title="注册" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\register\register.html" target="_black">注册</a>
+                        <a title="注册" href="../register/register.html" target="_black">注册</a>
                     </li>
                     <li>
-                            <a title="登录" href="E:\毕业设计\BeautifulCookie\BeautifulCookie\page\login\login.html" target="_black">登录</a>
+                            <a title="登录" href="../login/login.html" target="_black">登录</a>
                         </li>
         </ul>
     </div>
     <div class="login">
         <div class="loginbox">
             <div class="register-left">
-                <a href="./register.html" >注册</a>
+                <a href="../register/register.html" >注册</a>
             </div>
             <div class="login-right">
                 <a href="../login/login.html" class="on" >登录</a>
@@ -69,13 +69,15 @@
                 </form>
                 
             </div>
-            <div class="loginFormRight">
-                <img src="2dcode.jpg" />
-                <p>扫描二维码下载客户端</p>
+
+           
+            <div class="headPortrait">
+                    <input type="file" name="file" class="file" id="photo" accept="image/*" value="" onchange="go()" />
+                    <p class="upload" id="upload">点击上传头像</p>
+                    <img id="uploadNesc" src="" alt="" srcset="" style="width:120px;height:120px">
             </div>
         </div>
     </div>
-
 </body>
 <!-- 对jQuery库的引用 -->
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> 
