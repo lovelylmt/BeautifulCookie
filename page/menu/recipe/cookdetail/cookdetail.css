@@ -137,16 +137,25 @@ div a{
 /* 菜名 */
 .dishesName{
     position: relative;
-    left: 13.5%;
+    /* left: 13.5%; */
     /* background: orange; */
     padding:15px 0 10px 0;
     width: 640px;
     height: 80px;
 }
-
-.dishesName a.uright{   
+/* 头像 */
+.dishesName a.uright{    
      float:right;
     width:100px;
+  
+}
+.dishesName a.uright span{
+    position: relative;
+    display: block;
+    text-align: center;
+    left: -1%;
+  
+
 }
 .dishesName a#recipe_title{
   
@@ -187,7 +196,7 @@ div a{
 /* 做菜步骤 */
 .box{
     position: relative;
-    left: 13.5%;
+    /* left: 13.5%; */
     /* background: pink; */
     height: 3000px;
     width: 640px;
@@ -326,5 +335,12 @@ div a{
      margin: 70px 0;
     width:640px;
     height:90px;
+    /* background: #000; */
     
+  }
+  .recipeContent{
+      position: relative;
+      /* background: pink; */
+      width: 640px;
+      left: 13.5%;
   }

@@ -17,29 +17,9 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#section1">Section 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section2">Section 2</a>
-          </li>
-        
-        </ul>
-      </nav>
-      <div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
-        <h1>Section 1</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      </div>
-      <div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
-        <h1>Section 2</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      </div> -->
-    
+<body>
+
+
     <!-- 导航栏 -->
     <div class="navigation">
 
@@ -51,12 +31,6 @@
             <li>
                 <a title="菜谱" href="index.html">菜谱</a>
             </li>
-
-            <li>
-                <a title="专题" href="page\menu\delicacy\delicacy.html" target="_black">专题</a>
-            </li>
-
-
             <li>
                 <a title="话题" href="./page/menu/community/topic/topic.html" target="_black">话题</a>
             </li>
@@ -80,17 +54,18 @@
     </div>
 
     <!-- 中间导航 -->
-    
-    <div class="centreNavigation">
+
+    <div class="centreNavigation" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <!-- 监听 -->
         <div class="logo_inner">
             <a href="#" title="美食至上">
                 <img src="./static//img/logo.png" alt="">
             </a>
         </div>
         <div class="logo_nav">
-            <a title="首页" href="index.html" class="on" target="_blank">首页</a>
-            <a title="菜谱" href="index.html">菜谱</a>
-            <a title="专题" href="page\menu\delicacy\delicacy.html" target="_blank">专题</a>
+            <a title="首页" class="on" target="_blank">首页</a>
+            <a title="菜谱" href="#section2">菜谱</a>
+
 
             <a title="话题" href="./page/menu/community/topic/topic.html" target="_blank">话题</a>
             <a title="日志" href="./page/menu/community/record/recond.html" target="_blank">日志</a>
@@ -98,7 +73,8 @@
         </div>
         <div class="logo_search">
             <div class="input-group">
-                <input type="text" class="form-control" id="searchItem">
+                <!--  -->
+                <input type="text" class="form-control" id="searchItem" id="campus" class="layui-input" onkeyup="ck(this.value);">
                 <span class="input-group-btn">
                     <button onclick="changesearch()" class="btn btn-default" type="button" style="background-color: rgb(153, 153, 153);color: white">
                         搜索
@@ -146,7 +122,7 @@
         </a>
     </div>
     <!-- 小图标 -->
-    <div class="icon">
+    <div class="icon" id="section2">
         <ul><a href="#" title="一周最热"><img src="./static/img/r01.jpg"><span>一周最热</span></a>
             <a href="#" title="人气菜肴"><img src="./static/img/r02.jpg"><span>人气菜肴</span></a>
             <a href="#" title="夏季食谱"><img src="./static/img/r03.jpg"><span>夏季食谱</span></a>
@@ -156,7 +132,7 @@
             <a href="#" title="家常菜谱"><img src="./static/img/r07.jpg"><span>家常菜谱</span></a>
             <a href="#" title="烘焙大全"><img src="./static/img/r08.jpg"><span>烘焙大全</span></a>
             <a href="#" title="亲子专区"><img src="./static/img/r09.jpg"><span>亲子专区</span></a>
-            <a href="#" title="所有菜谱"><img src="./static/img/r10.jpg"><span>所有菜谱</span></a>
+            <a href="" title="所有菜谱"><img src="./static/img/r10.jpg"><span>所有菜谱</span></a>
         </ul>
     </div>
 
@@ -170,7 +146,8 @@
         <li><a data-toggle="tab" href="#westernFood">西餐</a> </li>
         <li> <a data-toggle="tab" href="#baking">烘焙</a> </li>
     </ul>
-    <div id="w2Content" class="tab-content">
+    <!--  -->
+    <div id="w2Content" class="tab-content" class="layui-input-block layui-form" id="cam" lay-filter="cam">
 
         <div class="tab-pane active" id="hotDishes">
             <ul id="hotDishesList"></ul>
@@ -206,5 +183,38 @@
     </div>
 </body>
 <script src="./index.js"></script>
+<!-- <script src="./index.js" id="searchText" >
+ #for(x : CampusKit.findListByAccount(loginAccount))//jfinal的语句，循环 
+    //这里把原来选择的数据显示出来，已经选择的数据，显示，如果不显示，保存的话，会把这些数据默认成没有选择的 
+    #if(sysAccountCampusIds.contains(x.id.toString())) 
+      <input type='checkbox' value="#(x.id)" name='campus' 
+        #(sysAccountCampusIds.contains(x.id.toString()) ? 'checked="checked"':'') 
+        title="#(x.campusName)" id='campusBox#(x.id)'> 
+    #end   
+
+    {{#("#") if(isContains("#(x.campusName)",d.val)){ }} 
+        <input type='checkbox' value="#(x.id)" name='campus' 
+        #(sysAccountCampusIds.contains(x.id.toString()) ? 'checked="checked"':'') 
+        title="#(x.campusName)" id='campusBox#(x.id)'> 
+    {{#("#") } }} 
+    #end 
+</script> 
+//str字符串是否包含substr字符串 
+function isContains(str, substr) { 
+  return str.indexOf(substr) >= 0; 
+} 
+//layui模板的写法 
+var getTpl = searchText.innerHTML;//写到js方法外边这样只加载一次，不用每次都加载，速度快 
+/* 前端页面的搜索 */
+ function ck(campusName){ 
+  //渲染模版 
+  layui.laytpl(getTpl).render({"val":campusName}, //json值 
+      function(html){ 
+    $("#cam").html(html);//jquery把模板加载到div  id是cam中<div id="cam"></div> 
+    console.log(html); 
+    layui.form.render(null,"cam"); //更新这个容器中的页面 
+  }); 
+}
+</script> -->
 
 </html>

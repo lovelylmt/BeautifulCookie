@@ -23,23 +23,16 @@
 
         <ul class="bar-left left">
             <li>
-                <a title="美食天下" href="#" target="_black" class="top_bar_logo">
-                    <span>美食至上</span>
-                </a>
-            </li>
-            <li>
                 <a title="首页" href="../../../../index.html" target="_black">首页</a>
             </li>
             <li>
-                <a title="菜谱" href="../recipe.html" target="_black">菜谱</a>
-            </li>
-
-            <li>
-                <a title="专题" href="../../delicacy/delicacy.html" target="_black">专题</a>
+                <a title="菜谱" href="../../../../index.html">菜谱</a>
             </li>
             <li>
-                <a title="社区" href="../../community/communitysquare/communitysquare.html"
-                    target="_black">社区</a>
+                <a title="话题" href="../../community/topic/topic.html" target="_black">话题</a>
+            </li>
+            <li>
+                <a title="日志" href="../../community/record/recond.html" target="_black">日志</a>
             </li>
         </ul>
 
@@ -53,7 +46,7 @@
         </ul>
         <ul id="user1" style="display: none" class="bar-left right">
             <a id="userinfrom" href="" style="color:aliceblue"></a>
-            <a href="../../../member/mainPage/mainPage.html"> <img id="userIcon"  style="height:40px;width:40px;border-radius: 20px"></a>
+            <a href="../../../member/mainPage/mainPage.html"> <img id="userIcon" style="height:40px;width:40px;border-radius: 20px"></a>
         </ul>
     </div>
 
@@ -65,10 +58,10 @@
             </a>
         </div>
         <div class="logo_nav">
-            <a title="菜谱" href="../recipe.html"  >菜谱</a>
-            <a title="分类" class="on"  href="../cookdetail/cookdetail.html" >分类</a>
-            <a title="菜单" href="../carte/carte.html" >菜单</a>
-            <a title="排行"  href="../rank/rank.html" >排行</a>
+            <a title="首页" target="_blank" href="../../../../index.html">首页</a>
+            <a title="菜谱" class="on" href="#section2" href="../../../../index.html">菜谱</a>
+            <a title="话题" href="../../community/topic/topic.html" target="_blank">话题</a>
+            <a title="日志" href="../../community/record/recond.html" target="_blank">日志</a>
         </div>
         <div class="logo_search">
             <div class="input-group">
@@ -85,19 +78,15 @@
     <!-- 全部排行 -->
     <div class="centreNavigation2">
         <ul>
-            <li><a href="#">首页</a></li>
-            <li><a title="热菜" class="on" href="#">热菜</a></li>
+        
+            <li><a title="热菜"  href="#">热菜</a></li>
             <li><a title="凉菜" href="#">凉菜</a></li>
             <li><a title="汤羹" href="#">汤羹</a></li>
             <li><a title="主食" href="#">主食</a></li>
             <li><a title="小吃" href="#">小吃</a></li>
             <li><a title="西餐" href="#">西餐</a></li>
             <li><a title="烘焙" href="#">烘焙</a></li>
-            <li><a title="饮品" href="#">饮品</a></li>
-            <li><a title="零食" href="#">零食</a></li>
-            <li><a title="泡酱腌菜" href="#">泡酱腌菜</a></li>
-            <li><a title="自制食材" href="#">自制食材</a></li>
-            <li><a title="最新菜谱" href="#">最新菜谱</a></li>
+ 
         </ul>
     </div>
     <!-- 图片 -->
@@ -106,112 +95,25 @@
     </div>
 
     <!-- 菜名 -->
-    <div class="dishesName">
-        <h1><a id="recipe_title" title="补血养肺红枣莲子薏米粥">补血养肺红枣莲子薏米粥</a></h1>
-        <a title="食·色" href="#" target="_blank" class="uright">
-            <img id="userIcon" />
-            <span class="userName" >食·色</span>
-        </a>
+    <div class="recipeContent" id="recipeContent">
+      
     </div>
-    <!-- 做菜步骤 -->
-    <div class="box">
-        <div class="recipeimg">
-            <img src="../../../../static/img/shise.jpg" alt="">
-        </div>
-        <blockquote class="block_txt">
-            <div id="block_txt1">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;秋养脾胃，最宜食粥。一碗热粥下肚，不仅补充营养让脾胃得到滋养，减少消化系统的负担，还能让人浑身都暖和起来。<br />
-                粥中有米，即指粥以五谷为基础。不喜欢白米粥，但绝不会拒绝各式杂粮。秋日愈深愈寒凉，且来一碗红枣莲子薏米粥，补血养肺。懒人电饭煲版，省去不少事情。<br />
-                红枣的甜香其实已经足以让粥带上淡淡的甜味，不加糖味道也是不错。。。
-            </div>
-        </blockquote>
-        <div class="mo">
-            <h3>食材明细</h3>
-        </div>
-        <fieldset class="particulars">
-            <legend>主料</legend>
-            <div class="material">
-                <ul>
-                    <li>
-                        <a>薏米</a>
-                        <span>50克</span>
-                    </li>
-                    <li>
-                        <a>莲子</a>
-                        <span>30克</span>
-                    </li>
-                    <li>
-                        <a>糯米</a>
-                        <span>20克</span>
-                    </li>
-                </ul>
-            </div>
-        </fieldset>
-        <fieldset class="particulars">
-            <legend>辅料</legend>
-            <div class="material">
-                <ul>
-                    <li>
-                        <a>大枣</a>
-                        <span>40克</span>
-                    </li>
+    <!-- <div class="img111">
+        <iframe src="../../../../static/img/r3.jpg" width="640" height="90" scrolling="no" frameborder="0"></iframe>
+    </div>
+   
+    <div class="Iscomment" id="comment"></div>  -->
 
-                </ul>
-            </div>
-        </fieldset>
-        <!-- 详细步骤 -->
-        <div class="dishesName1">
-            <h1><a id="recipe_title1">补血养肺红枣莲子薏米粥的做法步骤</a></h1>
 
-        </div>
-
-        <div class="recipeStep">
-            <ul>
-                <li>
-                    <div class="stepimg">
-                        <img src="../../../../static/img/step.jpg"
-                            alt="补血养肺红枣莲子薏米粥的做法步骤：1">
-                    </div>
-                    <div class="stepword">
-                        <div class="stepnum">1</div>用料：薏米50克，莲子30克，糯米20克，大枣40克.
-                    </div>
-                </li>
-                <li>
-                    <div class="stepimg">
-                        <img src="../../../../static/img/step.jpg"
-                            alt="补血养肺红枣莲子薏米粥的做法步骤：2">
-                    </div>
-                    <div class="stepword">
-                        <div class="stepnum">2</div>莲子洗去表面浮尘，用清水浸泡3小时。
-                    </div>
-                </li>
-                <li>
-                    <div class="stepimg">
-                        <img src="../../../../static/img/step.jpg"
-                            alt="补血养肺红枣莲子薏米粥的做法步骤：3">
-                    </div>
-                    <div class="stepword">
-                        <div class="stepnum">3</div>薏米也洗去表面浮尘，用清水浸泡3小时。
-                    </div>
-                </li>
-               
-            </ul>
-        </div>
-        <div class="img111">
-            <iframe src="../../../../static/img/r3.jpg" width="640" height="90" scrolling="no" frameborder="0"></iframe>
-            </div>
-        <!--评论  -->
-        <div class="Iscomment" id="comment"></div>
+    <!-- 右边图片 -->
+    <div class="rightimg">
+        <a href="#"><img src="../../../../static/img/r3.jpg" alt=""></a>
 
     </div>
-     <!-- 右边图片 -->
-     <div class="rightimg">
-            <a href="#"><img src="../../../../static/img/r3.jpg" alt=""></a>
-    
-        </div>
 
 
 
 </body>
 <script src="./cookdetail.js"></script>
+
 </html>

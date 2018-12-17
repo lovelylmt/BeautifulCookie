@@ -36,6 +36,7 @@ function recordEdit() {
             console.log(datass1);
 
             $.post('http://172.20.10.2:3000/api/releaseRecord', datass1)
+            window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/member/center/center.html'
         }
     }
 

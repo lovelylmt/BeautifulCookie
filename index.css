@@ -103,10 +103,17 @@ width:70px;
 }
 
 /* 轮播 */
-.carousel-inner {
+#w1{
+  width: 990px;
+  height: 360px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* .carousel-inner {
   margin-left: 12.5%;
   position: relative;
-}
+} */
 .carousel-control-prev {
   left: 12.5%;
   background: #000;
