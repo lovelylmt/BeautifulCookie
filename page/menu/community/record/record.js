@@ -31,25 +31,20 @@ $.ajax({
         for (index in datas) {
             switch (datas[index].recordType) {
                 case 'essenceRecord':
-                    $('#recordList1').append('<li><div class="pic"><a target="_blank" href="#"><img src="'+datas[index].recordImg+'"/></a></div><div class="detail"><h2><a target="_blank" href="#">'+datas[index].recordTitle+'</a></h2><p>'+datas[index].username+'</p><p>'+ datas[index].recordContent+'</p></div></li>');
+                    $('#recordList1').append('<li onclick="recordDetail(this)"><div class="pic" ><a ><img src="' + datas[index].recordImg + '"/></a></div><div class="detail"><h2 ><span >' + datas[index].recordTitle + '</span></h2><p>' + datas[index].username + '</p><p>' + datas[index].recordContent + '</p></div></li>');
                     break;
                 case 'originalRecord':
-                    $('#recordList2').append('<li><div class="pic"><a target="_blank" href="#"><img src="'+datas[index].recordImg+'"/></a></div><div class="detail"><h2><a target="_blank" href="#">'+datas[index].recordTitle+'</a></h2><p>'+datas[index].username+'</p><p>'+ datas[index].recordContent+'</p></div></li>');
+                    $('#recordList2').append('<li onclick="recordDetail(this)"><div class="pic" ><a ><img src="' + datas[index].recordImg + '" /></a></div><div class="detail"><h2><span>' + datas[index].recordTitle + '</span></h2><p>' + datas[index].username + '</p><p>' + datas[index].recordContent + '</p></div></li>');
+                    break;
             }
         }
     },
 })
 
+function recordDetail(data) {
+    var datas = data.getElementsByTagName("span")[0].innerText;
+    console.log(data);
+    localStorage.setItem('recordTitle', datas);
+    window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/menu/community/recorddetail/recorddetail.html'
 
-// <!-- <li>
-// <div class="pic">
-//     <a target="_blank" href="#" title="养生红枣">
-//         <img src="../../../../static/img/doushasu.jpg">
-//     </a>
-// </div>
-// <div class="detail">
-//     <h2><a target="_blank" href="#">【食·色饮品】—— 奶粉版大麦奶茶6</a></h2>
-//     <p class="subline"><a target="_blank" href="#">1小时前</a></p>
-//     <p>大麦奶茶其实也可以是大麦茶直接兑牛奶，但总是固执地认为奶茶之茶定是红茶。所以，大麦奶茶就是大麦茶+奶茶</p>
-// </div>
-// </li> -->
+};

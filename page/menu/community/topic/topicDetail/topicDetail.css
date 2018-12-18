@@ -79,12 +79,8 @@ div a{
     font-size: 20px;
     line-height: 50px;
     color: black;
-   
 }
 .logo_nav .on{
-    position: relative;
-    display: block;
-    width: 70px;
     color: #ff6767
 }
 .logo_nav a:hover{
@@ -99,18 +95,18 @@ div a{
 }
 
 
-/* 全部日志 */
+/* 全部排行*/
 .centreNavigation2{
     height:34px;
     border-bottom:1px solid #ff6767;
     border-top:1px solid #ff6767;
     margin:auto;width:990px;
 }
- .centreNavigation2  li{
+ .centreNavigation2 li{
      list-style: none;
     float:left;
     padding:0 2px;
-   
+    /* background: blue; */
 }
 .centreNavigation2 a{
     display:block;
@@ -119,92 +115,111 @@ div a{
     font-size:14px;
     line-height:34px;
     color: #000;
-    width:100%;
+    width: 80px;
     /* background: orange; */
 }
 .centreNavigation2 a.on{
     color:#ff6767;
-    width: 100px;
 }
 .centreNavigation2 a:hover{
     color:#ff6767;
     text-decoration:none;
 }
-/* 日志列表 */
-
-
-.tab-content ul li{
-    position: relative;
-    height: 180px;
-    clear:both;
-    /* background: powderblue; */
-    float: left;
-    overflow: hidden;
-   
-}
- .tab-content li h2{
-   
-     display: block;
-     width: 440px;
-     margin-top: 18px;
-     color: #000;
-     font-size: 20px;
-}
-.tab-content li h2 :hover{
-    text-decoration: none;
-    color: #ff6767;
-}
-
-.tab-content .pic{
-
-    float:left;
-    margin:30px 0 20px;
-    /* overflow:hidden; */
-    position:relative;
-    background: pink;
-}
-.tab-content .pic h2{
-    position: relative;
+/* 图片 */
+.centreimg{
     display: block;
-    background: green;
-    font-size: 20px;
-    color: #000;
-    height: 40px;
-}
-.tab-content .detail{
-    color:#333;
     position: relative;
-    left: 2%;
-    padding:16px 10px 10px 200px;
-    font-size:14px;
-    display: block;
+    left: 13.5%;
+    margin-top: 1%;
+    width: 990px;
+    height: 90px;
+}
+
+/* 话题部分 */
+.topic{
     width: 640px;
+    height: 640px;
+    position: relative;
+    left: 13.5%;
+    /* background: pink; */
 }
-.tab-content .detail p{
-    white-space:nowrap; 
-    text-overflow: ellipsis;
+.topic li {
+    position: relative;
+    /* background:blue; */
+    padding: 10px 0;
+    float: left;
+    height: 100%;
     overflow: hidden;
-    -webkit-box-orient: vertical;
+    width: 640px;
+  }
+
+.left div{
+    /* background:wheat; */
+    float: right;
+    width:570px;
+    height: 40px;
+    position: relative;
+    line-height: 30px;
+   }
+  
+.topicContent .left a{
+  
+   display: block;
+   width: 15px;
+   white-space:nowrap;
+   float: left;
+   /* background: green; */
+  
+
+  }
+  .left img {
+    display: block;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius:100%;
+    float: left;
+  }
+  .left .name a{
+      font-size:14px;
+      color: rgb(28, 177, 247);
+      display: block;
+      position: relative;
+      width: 100%;
+      float: left;
+      
+  }
+
+.down{
+   
+    position: relative;
+    top: 50px;
+    background: #a0dafc; 
+    width:560px;
+    left: 12%;
+    height: 100%;
+   
+  } 
+.down div{
+    display: block;
+    position: relative;
+    background: pink;
+    width: 560px;
+   /* text-align: center */
+  
 }
-.tab-content li img{
-    height: 135px;
-    width: 180px;
-    -moz-transition:all .5s ease-in-out;  /*ease-in-out：（加速然后减速）*/
-    -o-transition:all .5s ease-in-out;
-    -ms-transition:all .5s ease-in-out;
-    transition:all .5s ease-in-out;
-}
-.tab-content li:hover img{
-    -webkit-transform:scale(1.1,1.1);
-    -moz-transform:scale(1.1,1.1);
-    -o-transform:scale(1.1,1.1);
-    -ms-transform:scale(1.1,1.1);
-    transform:scale(1.1,1.1);
-}
-/* 右边图片 */
+
+.clear img {
+    display: block;
+    height: 500px;
+    width: 500px;
+  }
+
+
+ /* 右边图片 */
 .rightimg{
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 64.5%;
   }
   .rightimg img{
@@ -212,3 +227,22 @@ div a{
       height: 600px;
   }
 
+  /* 评论 */
+  .Iscomment{
+      height: 200px;
+      width: 100%;
+      background: blue;
+  }
+  .img111{
+     margin: 70px 0;
+    width:640px;
+    height:90px;
+    /* background: #000; */
+    
+  }
+  .recipeContent{
+      position: relative;
+      /* background: pink; */
+      width: 640px;
+      left: 13.5%;
+  }

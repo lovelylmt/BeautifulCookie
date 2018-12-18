@@ -36,10 +36,18 @@ $.ajax({
         console.log(data);
         var datas = data.recipeinfo;
         for (index in datas) {
-            $('#recipe').append('<li ><a style="line-height: 50px;text-align: center; font-size: 17px;"><img src="' + datas[index].img666 + '" style="display: block;height: 230px;width: 230px;" /></a><div><a  href="#" target="_blank" style="color:black">' + datas[index].username + '</a></div><span style=" display: block;width: 328%; height: 50px;" >' + datas[index].recipeName + '</span><li>');
+            $('#recipe').append('<li ><a onclick="cookdetail(this)" ><img src="' + datas[index].img666 + '"  /><span >' + datas[index].recipeName + '</span></a></li>');
         }
     },
 })
+
+function cookdetail(data) {
+    var datas = data.getElementsByTagName("span")[0].innerText;   //获取菜谱名字
+    console.log(data);  
+    localStorage.setItem('recipeName', datas);
+    window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/menu/recipe/cookdetail/cookdetail.html'
+  
+  };
 
 $.ajax({
     url: "http://172.20.10.2:3000/api/relTopic",     //显示发布的话题
@@ -51,26 +59,18 @@ $.ajax({
         console.log(data);
         var datas = data.topicinfo;
         for (index in datas) {
-            $('#topic').append('<div><a>'+ datas[index].topicContent+'</a></div><a><img src="'+ datas[index].topicImg+'"/></a>');
+            $('#topic').append('<li><div class="left"><a  href="#" target="_blank"><img src="' + datas[index].userIcon + '"/><div class="name"><a href="#" target="_blank">' + datas[index].username + '</a></div></a></div><div class="down" onclick="topicDetail(this)"><div class="pp"  ><a >' + datas[index].topicContent + '</a></div><a class="clear"  target="_blank" ><img src="' + datas[index].topicImg + '" /></a></div></li>');
         }
     },
-    // <li>
-    //             <div class="left">
-    //                 <a href="#" target="_blank"><img src="../../../../static/img/qitou.jpg"></a>
-    //                 <div>
-    //                     <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-    //                     <span>1小时前</span>
-    //                 </div>
-    //             </div>
-    //             <div class="down">
-    //                 <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣6</a></div>
-    //                 <a class="clear" href="#" target="_blank">
-    //                     <img src="../../../../static/img/qi.jpg">
-    //                 </a>
-    //                 <span>5条评论</span>
-    //             </div>
-    //         </li>
 })
+
+function topicDetail(data) {   //获取话题内容
+    var datas = data.getElementsByTagName("div")[0].innerText;   
+    console.log(data);
+    localStorage.setItem('topicContent', datas);
+    window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/menu/community/topic/topicDetail/topicDetail.html'
+
+ };
 
 $.ajax({
     url: "http://172.20.10.2:3000/api/relRecord",     //显示发布的日志
@@ -82,17 +82,36 @@ $.ajax({
         console.log(data);
         var datas = data.recordinfo;
         for (index in datas) {
-            $('#record').append('<div><a>'+ datas[index].recordContent+'</a></div><a><img src="'+ datas[index].recordImg+'"/></a>');
+            $('#record').append('<li onclick="recordDetail(this)"><div class="pic" ><a ><img src="' + datas[index].recordImg + '" /></a></div><div class="detail"><h2><span>' + datas[index].recordTitle + '</span></h2><p>' + datas[index].username + '</p><p>' + datas[index].recordContent + '</p></div></li>');
         }
     },
 })
-{/* <div class="pic">
-<a target="_blank" href="../../recipe/cookdetail/cookdetail.html" title="养生红枣">
-    <img src="../../../../static/img/doushasu.jpg">
-</a>
-</div>
-<div class="detail">
-<h2><a target="_blank" href="#">【食·色饮品】—— 奶粉版大麦奶茶6</a></h2>
-<p class="subline"><a target="_blank" href="#">1小时前</a></p>
-<p>大麦奶茶其实也可以是大麦茶直接兑牛奶，但总是固执地认为奶茶之茶定是红茶。所以，大麦奶茶就是大麦茶+奶茶</p>
-</div> */}
+
+function recordDetail(data) {
+     var datas = data.getElementsByTagName("span")[0].innerText;
+    console.log(data);
+    localStorage.setItem('recordTitle', datas);
+    window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/menu/community/recorddetail/recorddetail.html'
+
+};
+
+
+
+// //个人中心
+// $.ajax({
+//     url: "http://172.20.10.2:3000/api/userCenter",     //显示发布的菜谱
+//     data: {
+//         "username": localStorage.getItem("username")
+//     },
+//     type: "post",
+//     success: function (data) {
+
+//         console.log(data);
+//         var datas = data.recipeinfo;
+//         var datas = data.topicinfo;
+//         var datas = data.recordinfo;
+//         for (index in datas) {
+//             // $('#recipe').append('<li ><a onclick="cookdetail(this)" ><img src="' + datas[index].img666 + '"  /><span >' + datas[index].recipeName + '</span></a></li>');
+//         }
+//     },
+// })

@@ -30,32 +30,24 @@ $.ajax({
         for (index in datas) {
             switch (datas[index].topicType) {
                 case 'hotTopic':
-                    $('#topicList1').append('<li><div class="left"><a  href="#" target="_blank"><img src="' + datas[index].userIcon + '"/><div class="name"><a href="#" target="_blank">'+datas[index].username +'</a></div></a></div><div class="down"><div class="pp"><a href="#" target="_blank">'+ datas[index].topicContent + '</a></div><a class="clear" href="#" target="_blank"><img src="' + datas[index].topicImg + '"/></a></div></li>')
+                    $('#topicList1').append('<li><div class="left"><a  href="#" target="_blank"><img src="' + datas[index].userIcon + '"/><div class="name"><a href="#" target="_blank">' + datas[index].username + '</a></div></a></div><div class="down" onclick="topicDetail(this)"><div class="pp"  >' + datas[index].topicContent + '</div><a class="clear"  target="_blank" ><img src="' + datas[index].topicImg + '" /></a></div></li>')
                     break;
                 case 'essenceTopic':
-                    $('#topicList2').append('<li><div class="left"><a  href="#"><img src="' + datas[index].userIcon + '"/></a><div><a  href="#" target="_blank">' + datas[index].username + '</a></div></div><div class="down"><div class="pp"><a href="#" target="_blank">' + datas[index].topicContent + '</a></div><a class="clear" href="#" target="_blank"><img src="' + datas[index].topicImg + '"/></a></div></li>');
+                    $('#topicList2').append('<li><div class="left"><a  href="#" target="_blank"><img src="' + datas[index].userIcon + '"/><div class="name"><a href="#" target="_blank">' + datas[index].username + '</a></div></a></div><div class="down" onclick="topicDetail(this)"><div class="pp"  >' + datas[index].topicContent + '</div><a class="clear"  target="_blank" ><img src="' + datas[index].topicImg + '" /></a></div></li>')
                     break;
             }
         }
     },
 })
 
-{/* <li>
-    <div class="left">
-        <a href="#" target="_blank"><img src="../../../../static/img/qitou.jpg"></a>
-        <div class="name">
-            <a href="#" target="_blank">琪_feXjZ8E2</a><br>
-            <span>1小时前</span>
-        </div>
-    </div>
-    <div class="down">
-        <div class="pp"><a href="#" target="_blank">#早餐#各位早安🤗🤗天氣转凉适时添衣6</a></div>
-        <a class="clear" href="#" target="_blank">
-            <img src="../../../../static/img/qi.jpg">
-        </a>
-        <span>5条评论</span>
-    </div>
-</li> */}
+function topicDetail(data) {
+    var datas = data.getElementsByTagName("div")[0].innerText;   
+    console.log(data);
+    localStorage.setItem('topicContent', datas);
+    window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/menu/community/topic/topicDetail/topicDetail.html'
+
+ };
+
 
 //分类
 function choose(element) {

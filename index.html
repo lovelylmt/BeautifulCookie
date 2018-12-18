@@ -74,7 +74,7 @@
         <div class="logo_search">
             <div class="input-group">
                 <!--  -->
-                <input type="text" class="form-control" id="searchItem" id="campus" class="layui-input" onkeyup="ck(this.value);">
+                <input  type="text" class="form-control" id="searchItem" id="campus" class="layui-input" onkeyup="ck(this.value);">
                 <span class="input-group-btn">
                     <button onclick="changesearch()" class="btn btn-default" type="button" style="background-color: rgb(153, 153, 153);color: white">
                         搜索
@@ -183,38 +183,5 @@
     </div>
 </body>
 <script src="./index.js"></script>
-<!-- <script src="./index.js" id="searchText" >
- #for(x : CampusKit.findListByAccount(loginAccount))//jfinal的语句，循环 
-    //这里把原来选择的数据显示出来，已经选择的数据，显示，如果不显示，保存的话，会把这些数据默认成没有选择的 
-    #if(sysAccountCampusIds.contains(x.id.toString())) 
-      <input type='checkbox' value="#(x.id)" name='campus' 
-        #(sysAccountCampusIds.contains(x.id.toString()) ? 'checked="checked"':'') 
-        title="#(x.campusName)" id='campusBox#(x.id)'> 
-    #end   
-
-    {{#("#") if(isContains("#(x.campusName)",d.val)){ }} 
-        <input type='checkbox' value="#(x.id)" name='campus' 
-        #(sysAccountCampusIds.contains(x.id.toString()) ? 'checked="checked"':'') 
-        title="#(x.campusName)" id='campusBox#(x.id)'> 
-    {{#("#") } }} 
-    #end 
-</script> 
-//str字符串是否包含substr字符串 
-function isContains(str, substr) { 
-  return str.indexOf(substr) >= 0; 
-} 
-//layui模板的写法 
-var getTpl = searchText.innerHTML;//写到js方法外边这样只加载一次，不用每次都加载，速度快 
-/* 前端页面的搜索 */
- function ck(campusName){ 
-  //渲染模版 
-  layui.laytpl(getTpl).render({"val":campusName}, //json值 
-      function(html){ 
-    $("#cam").html(html);//jquery把模板加载到div  id是cam中<div id="cam"></div> 
-    console.log(html); 
-    layui.form.render(null,"cam"); //更新这个容器中的页面 
-  }); 
-}
-</script> -->
 
 </html>

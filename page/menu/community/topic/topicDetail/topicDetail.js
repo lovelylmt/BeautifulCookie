@@ -14,30 +14,29 @@ $.ajax({
     },
     type: "post",
     success: function (data) {
-        var imgsrc = data.userIcon;  
+        var imgsrc = data.userIcon;
+        console.log($('#userIcon'));
         $('#userIcon')[0].src = imgsrc;
-     
     },
-
 
 })
 
 
 
   $.ajax({
-    url: "http://172.20.10.2:3000/api/recordDetail",
+    url: "http://172.20.10.2:3000/api/topicDetail",
     data: {
-        "recordTitle": localStorage.getItem("recordTitle")
+        "topicContent": localStorage.getItem("topicContent")
    },
     type: "post",
     success: function (data) {
-      console.log(data);
-      var datas = data.recordinfo
-        $('#recordContent').append('<div class="recordName"><h3>'+datas.recordTitle+'</h3><a class="uright"><img id="userIcon1"  src="'+datas.userIcon+'"/><span class="userName">'+datas.username+'</span></a></div><div class="box"><div class="recondImg"><img src="'+datas.recordImg+'"/></div><div class="recordContent">'+datas.recordContent+'</div></div> ')
-       
-   
+    
+    
+      var datas = data.topicinfo
+        $('#topicContent').append('<ul><li><div class="left"><a href="#" target="_blank"><img src="'+datas.userIcon+'"></a><div class="name"><a href="#" target="_blank">'+datas.username+'</a><br></div></div><div class="down"><div>'+datas.topicContent+'</div><a ><img src="'+datas.topicImg+'"></a></li></ul>')
+     
     },
   })
 
 
-   
+  
