@@ -6,6 +6,7 @@ var recipe = require('../control/release');//用户上传菜谱
 var topic = require('../control/releaseTopic'); //用户上传话题
 var record = require('../control/releaseRecord'); //上传日志
 var date2 = require('../control/admin'); //管理员登录
+var comment = require('../control/comment');  //评论
 
 
 
@@ -37,6 +38,15 @@ route.post('/searchRecipe', recipe.searchRecipe);  //查询菜谱(搜索)
 route.post('/searchRecord', record.searchRecord);
 route.post('/searchTopic', topic.searchTopic);
 
-route.post('/cookdetail', recipe.cookdetail);  //具体菜谱
+route.post('/cookdetail', recipe.cookdetail); //具体菜谱
+route.post('/topicDetail', topic.topicDetail); 
+route.post('/recordDetail', record.recordDetail); 
+
+route.post('/commentRecipe', comment.commentRecipe);  //用户评论
+route.post('/getALLcomment', comment.getComment);   //管理员获取未审核的评论
+route.post('/examineComment', comment.examineComment); //审核菜谱
+route.post('/releaseComment', comment.releaseComment);  //发表评论
+
+
 
 module.exports = route;

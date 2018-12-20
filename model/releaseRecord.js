@@ -5,6 +5,7 @@ var mongoose = require('../util/database');
 const topic = mongoose.model('records', {
     recordTitle: String,
     recordContent: String,
+    date1: String,
     recordImg: String,
     username: String,
     userIcon: String,
@@ -14,10 +15,11 @@ const topic = mongoose.model('records', {
 
 module.exports = {
     //用户发布日志
-    addRecord: function (recordTitle, recordContent, recordImg, username, userIcon, status, recordType, cb) {
+    addRecord: function (recordTitle, recordContent,date1, recordImg, username, userIcon, status, recordType, cb) {
         var topics = new topic({
             recordTitle: recordTitle,
             recordContent: recordContent,
+            date1: date1,
             recordImg: recordImg,
             username: username,
             userIcon: userIcon,
@@ -32,9 +34,11 @@ module.exports = {
         var total = 0;
         var limit = parseInt(limit);
         var offset = parseInt(offset);
+        var mysort = { date1: -1 };
         topic.find({}).then(result => {
             total = result.length;
             topic.find()
+            .sort(mysort)
             .limit(limit)
             .skip((offset/ limit) * limit)
             .then(result => {
@@ -53,16 +57,33 @@ module.exports = {
         })
     },
 
-    upRecord: (cb) => {    //管理员发布审核的日志
-        topic.find({ status: "1", }).then(result => { console.log(result); cb(result) })
+    upRecord: (cb) => { 
+           //管理员发布审核的日志
+        var mysort = { date1: -1 };
+        topic.find({ status: "1", }).sort(mysort).then(result => { console.log(result); cb(result) })
     },
 
-      //用户发布菜谱
+   //具体日志
+   recordDetail: (recordTitle, cb) => {
+    console.log(recordTitle)
+    topic.findOne({
+        recordTitle: recordTitle
+    }).then(result => {
+        if (result !== null) {
+            console.log(result)
+            cb(result);
+        } else {
+            cb(false);
+        }
+    });
+},
+      //用户发布日志
       relRecord: (username, cb) => {
+        var mysort = { date1: -1 };
         topic.find({
             username: username ,
             status: "1", 
-        }).then(result => {
+        }).limit(2).sort(mysort).then(result => {
             console.log(result);
             cb(result)
         })

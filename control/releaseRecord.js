@@ -5,12 +5,13 @@ module.exports = {
   addRecord: (req, res) => {
     var recordTitle = req.body.recordTitle;
     var recordContent = req.body.recordContent;
+    var date1=req.body.date1;
     var recordImg = req.body.recordImg;
     var username = req.body.username;
     var userIcon = req.body.userIcon;
     var status = req.body.status;
     var recordType = req.body.recordType;
-    releases.addRecord(recordTitle, recordContent, recordImg, username, userIcon, status, recordType, err => {
+    releases.addRecord(recordTitle, recordContent,date1, recordImg, username, userIcon, status, recordType, err => {
       if (err == null) {
         res.json({
           date: "日志成功存入"
@@ -53,6 +54,19 @@ module.exports = {
       }
     );
   },
+
+    //具体日志
+    recordDetail: (req, res) => {
+      var recordTitle = req.body.recordTitle;
+      console.log(recordTitle);
+      releases.recordDetail(recordTitle, err => {
+        console.log(err)
+        res.json({
+          recordinfo: err,
+        })
+      })
+    },
+
   //用户发布日志
   relRecord:(req, res) => {
     const username = req.body.username;

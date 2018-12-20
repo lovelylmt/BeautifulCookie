@@ -18,12 +18,13 @@ module.exports = {
     var step1 = req.body.step1;
     var step2 = req.body.step2;
     var step3 = req.body.step3;
+    var date1=req.body.date1;
     var username = req.body.username;
     var userIcon = req.body.userIcon;
     var status = req.body.status;
     var recipeType = req.body.recipeType;
 
-    releases.addRecipe(recipeName, img666, stepImg1, stepImg2, stepImg3, recipeDescription, mainMaterial, mainMaterialUsage, accessories, accessoriesUsage, step1, step2, step3, username, status, userIcon, recipeType, err => {
+    releases.addRecipe(recipeName, img666, stepImg1, stepImg2, stepImg3, recipeDescription, mainMaterial, mainMaterialUsage, accessories, accessoriesUsage, step1, step2, step3,date1, username, status, userIcon, recipeType, err => {
       if (err == null) {
         res.json({
           date: "菜谱成功存入"
