@@ -25,21 +25,23 @@ $.ajax({
 $.ajax({
     url: "http://172.20.10.2:3000/api/upRecord",
     type: "post",
+ 
     success: function (data) {
         console.log(data);
-        var datas = data.recordinfo
+        var datas = data.recordinfo;
         for (index in datas) {
             switch (datas[index].recordType) {
                 case 'essenceRecord':
-                    $('#recordList1').append('<li onclick="recordDetail(this)"><div class="pic" ><a ><img src="' + datas[index].recordImg + '"/></a></div><div class="detail"><h2 ><span >' + datas[index].recordTitle + '</span></h2><p>' + datas[index].username + '</p><p>' + datas[index].recordContent + '</p></div></li>');
+                    $('#recordList1').append('<li onclick="recordDetail(this)"><div class="pic" ><a ><img src="' + datas[index].recordImg + '"/></a></div><div class="detail"><h2 ><span >' + datas[index].recordTitle + '</span></h2><p>' + datas[index].date1 + '</p><p>' + datas[index].recordContent + '</p></div></li>');
                     break;
                 case 'originalRecord':
-                    $('#recordList2').append('<li onclick="recordDetail(this)"><div class="pic" ><a ><img src="' + datas[index].recordImg + '" /></a></div><div class="detail"><h2><span>' + datas[index].recordTitle + '</span></h2><p>' + datas[index].username + '</p><p>' + datas[index].recordContent + '</p></div></li>');
+                    $('#recordList2').append('<li onclick="recordDetail(this)"><div class="pic" ><a ><img src="' + datas[index].recordImg + '" /></a></div><div class="detail"><h2><span>' + datas[index].recordTitle + '</span></h2><p>' + datas[index].date1 + '</p><p>' + datas[index].recordContent + '</p></div></li>');
                     break;
             }
         }
     },
-})
+});
+
 
 function recordDetail(data) {
     var datas = data.getElementsByTagName("span")[0].innerText;

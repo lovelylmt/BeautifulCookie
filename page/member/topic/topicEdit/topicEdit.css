@@ -214,3 +214,45 @@ div a{
     color:#fff;
     display:block;
 }
+.upPhoto{
+    
+    width: 500px;
+    height: 130px;
+    
+}
+.addicon{
+    
+    overflow:hidden;
+    position:relative;
+    float: left;
+    top:10px;   
+    left:0;
+    margin: 0 10px 10px;
+    z-index:70;
+    border:#ccc solid 1px;
+    width:100px;
+    height:100px;
+    background-color:#f7f7f7;
+    text-align:center;
+    cursor:pointer;
+}
+.addicon p{
+    font-size:12px;
+    color:#a1a1a1;
+}
+.addicon p.p1{
+    margin-top:30px;
+    font-size:14px;
+    margin-bottom:3px;
+    color:#5b5b5b;
+}
+.addicon input.file{
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:90;
+    opacity:0;
+    cursor:pointer;
+}

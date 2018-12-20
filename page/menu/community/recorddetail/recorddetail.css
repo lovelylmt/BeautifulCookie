@@ -195,8 +195,9 @@ div a{
 .box{
     position: relative;
     display: block;
+   
     width: 640px;
-    height: 600px;
+    height: 100%;
 }
 .box img{
     position: relative;
@@ -223,22 +224,35 @@ div a{
       height: 600px;
   }
 
-  /* 评论 */
-  .Iscomment{
-      height: 200px;
-      width: 100%;
-      background: blue;
-  }
-  .img111{
-     margin: 70px 0;
-    width:640px;
-    height:90px;
-    /* background: #000; */
-    
-  }
+
   .recipeContent{
       position: relative;
-      /* background: pink; */
+      background: pink;
       width: 640px;
       left: 13.5%;
+  }
+
+  .footer{
+    position: relative;
+    left: 13.5%;
+    display: block;
+    width: 990px;
+    height: 150px;
+    margin-top: 10%;
+   
+  }
+  .message{
+    
+    color:#c90;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:6px;
+   
+    
+  }
+  .message a{
+    width: 100%;
+    
+    color:#f50;
+   
   }

@@ -52,6 +52,18 @@ $.ajax({
         case 'cake':
           $('#bakingList').append('<li ><a onclick="cookdetail(this)"><img src="' + datas[index].img666 + '"/><span >' + datas[index].recipeName + '</span></a></li>');
           break;
+          case 'drink':
+          $('#drinkingList').append('<li ><a onclick="cookdetail(this)"><img src="' + datas[index].img666 + '"/><span >' + datas[index].recipeName + '</span></a></li>');
+          break;
+          case 'homeDishes':
+          $('#homeDishesList').append('<li ><a onclick="cookdetail(this)"><img src="' + datas[index].img666 + '"/><span >' + datas[index].recipeName + '</span></a></li>');
+          break;
+          case 'hotPot':
+          $('#hotPotList').append('<li ><a onclick="cookdetail(this)"><img src="' + datas[index].img666 + '"/><span >' + datas[index].recipeName + '</span></a></li>');
+          break;
+          case 'seafood':
+          $('#seafoodList').append('<li ><a onclick="cookdetail(this)"><img src="' + datas[index].img666 + '"/><span >' + datas[index].recipeName + '</span></a></li>');
+          break;
       }
 
     }

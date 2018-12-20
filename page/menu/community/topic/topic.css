@@ -166,16 +166,14 @@ div a{
     position: relative;
    margin-top: 15%;
   
-    /* height:1600px; */
+  
     width:640px;
+    height: 100%;
 }
 #topic li {
     position: relative;
-  
-
     float: left;
-    height: 250px;
-    
+    height: 250px; 
     width: 640px;
   }
   .left { 
@@ -216,13 +214,23 @@ div a{
      float: left;
      margin-top: -1%;  
   }
+  .left .name span{
+      position: relative;
+      display: block;
+      margin: 30px 5px;
+      /* background: blue; */
+      font-size: 14px;
+      color: #666;
+
+  }
 .down{
     display:block;
     position: relative;
- 
+   /* background: orange; */
     width: 560px;
     left: 12%;
     height: 200px;
+    margin-top: 2%;
   
   }
   .down .pp{
@@ -237,13 +245,16 @@ div a{
     font-size: 17px;
     color:#666;
   }
+ .huati{
+    float: left;
+    margin:10px 40px 0 0;
+ }
 .clear img {
    display: block;
-   position: relative;  
-   float:left;
-   margin-top: 15%;
-    height: 100px;
-    width: 100px;
+   position: relative;
+   float: left;  
+   height: 100px;
+   width: 100px;
   }
 
   /* 发布话题 */
@@ -276,3 +287,27 @@ div a{
       width: 300px;
       height: 600px;
   }
+
+  /* .footer{
+    position: absolute;
+    left: 12.5%;
+    display: block;
+    width: 990px;
+    height: 150px;
+    background: pink;
+  margin-top: 150%;
+  }
+  .message{
+    color:#c90;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:6px;
+   
+    
+  }
+  .message a{
+    width: 100%;
+    
+    color:#f50;
+   
+  } */

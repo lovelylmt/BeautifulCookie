@@ -38,10 +38,10 @@
 
         <ul id="users" class="bar-left right">
             <li>
-                <a title="注册" href="./page/register/register.html" target="_black">注册</a>
+                <a title="注册" href="../../../register/register.html" target="_black">注册</a>
             </li>
             <li>
-                <a title="登录" href="./page/login/login.html" target="_black">登录</a>
+                <a title="登录" href="../../../login/login.html" target="_black">登录</a>
             </li>
         </ul>
         <ul id="user1" style="display: none" class="bar-left right">
@@ -63,7 +63,7 @@
             <a title="话题" href="../../community/topic/topic.html" target="_blank">话题</a>
             <a title="日志" href="../../community/record/recond.html" target="_blank">日志</a>
         </div>
-        <div class="logo_search">
+        <!-- <div class="logo_search">
             <div class="input-group">
                 <input type="text" class="form-control">
                 <span class="input-group-btn">
@@ -72,21 +72,21 @@
                     </button>
                 </span>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- 全部排行 -->
     <div class="centreNavigation2">
         <ul>
-        
-            <li><a title="热菜"  href="#">热菜</a></li>
+
+            <li><a title="热菜" href="#">热菜</a></li>
             <li><a title="凉菜" href="#">凉菜</a></li>
             <li><a title="汤羹" href="#">汤羹</a></li>
             <li><a title="主食" href="#">主食</a></li>
             <li><a title="小吃" href="#">小吃</a></li>
             <li><a title="西餐" href="#">西餐</a></li>
             <li><a title="烘焙" href="#">烘焙</a></li>
- 
+
         </ul>
     </div>
     <!-- 图片 -->
@@ -96,13 +96,64 @@
 
     <!-- 菜名 -->
     <div class="recipeContent" id="recipeContent">
-      
+
     </div>
-    <!-- <div class="img111">
-        <iframe src="../../../../static/img/r3.jpg" width="640" height="90" scrolling="no" frameborder="0"></iframe>
+    <!-- 评论 -->
+    <div class="Iscomment" id="comment">
+        <textarea name="recipeComment" id="recipeComment" cols="89" rows="5"></textarea>
+        <div class="commentPost">
+            <input id="loginbtn" type="button" class="loginbtn" onclick="recipeComment()" value="发表评论" />
+        </div>
+        <div class="displayComment">
+            <ul id="commentContent">
+                <!-- <li id="">
+                    <div class="icon">
+
+                        <a><img src="../../../../static/img/20181211154450808147510449735.jpg" width="48" height="48"
+                                style="display:block;border-radius: 100%;" />
+                        </a>
+                    </div>
+                    <div class="detail">
+                        <div class="tools">
+                            <div class="left">
+                                <a> 作者</a>
+                                <span>时间</span>
+                            </div>
+
+                        </div>
+                        <div class="content">哇哇哇哇哇
+
+                        </div>
+                    </div>
+                </li>
+                <li id="">
+                    <div class="icon">
+
+                        <a><img src="../../../../static/img/20181211154450808147510449735.jpg" width="48" height="48"
+                                style="display:block" />
+                        </a>
+                    </div>
+                    <div class="detail">
+                        <div class="tools">
+                            <div class="left">
+                                <a> 作者</a>
+                                <span>时间</span>
+                            </div>
+
+                        </div>
+                        <div class="content">哇哇哇哇哇
+
+                        </div>
+                    </div>
+                </li> -->
+
+            </ul>
+        </div>
+   <div id="show">
+
+   </div>
     </div>
-   
-    <div class="Iscomment" id="comment"></div>  -->
+
 
 
     <!-- 右边图片 -->
@@ -111,9 +162,15 @@
 
     </div>
 
-
+    <!-- <div class="footer">
+        <p class="message"><a title="美食至上 - 大家一起做吃货！" href="" target="_blank">美食至上 -大家一起做吃货！</a></p>
+        <span>联系人：李梦婷</span><br>
+        <span>手机：15757468501</span><br>
+        <span>QQ：793502404</span>
+    </div> -->
 
 </body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="./cookdetail.js"></script>
 
 </html>

@@ -198,7 +198,7 @@ div a{
     position: relative;
     /* left: 13.5%; */
     /* background: pink; */
-    height: 3000px;
+    height:100%;
     width: 640px;
 }
 .recipeimg img{
@@ -327,20 +327,99 @@ div a{
 
   /* 评论 */
   .Iscomment{
-      height: 200px;
-      width: 100%;
-      background: blue;
+      position: relative;
+      display: block;
+      left: 13.5%;
+      height: 100%;
+      width: 640px;
+      /* background:pink; */
   }
-  .img111{
-     margin: 70px 0;
-    width:640px;
-    height:90px;
-    /* background: #000; */
-    
+  .commentPost{
+      height: 30px;
+      /* background: orange; */
+  }
+  .commentPost .loginbtn{
+    height: 30px;
+      width: 11%;
+      float: right;
+      color: #ddd;
+      font-size: 14px;
+      text-align: center;
+      background: rgb(186,32,32);
+      border: none;
   }
   .recipeContent{
       position: relative;
       /* background: pink; */
       width: 640px;
       left: 13.5%;
+      height: 1700px;
+  }
+  .footer{
+     
+    position: absolute;
+    left: 12.5%;
+    display: block;
+    width: 990px;
+    height: 150px;
+    margin-top: 10%;
+   
+  }
+  .message{
+    
+    color:#c90;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:6px;
+   
+    
+  }
+  .message a{
+    width: 100%;
+    
+    color:#f50;
+   
+  }
+
+  .displayComment{
+      position: relative;
+      display: block;
+      
+      width: 640px;
+      /* background: pink; */
+      height: 100%;
+
+  }
+  .displayComment li{
+      position: relative;
+      display: block;
+      height: 100%;
+  }
+  .icon{
+      position: relative;
+      display: block;
+      /* background: #000; */
+      width: 60px;
+  }
+  .icon img{
+      display: block;
+     width:48px;
+     height:48px;
+     border-radius: 100%; 
+  }
+  .detail{
+      position: relative;
+      display: block;
+      width: 580px;
+     /* background: orange; */
+     float: right;
+     top: -50px;
+     margin:0 1px 0;
+    
+  }
+  .content{
+      position: relative;
+      display: block;
+      /* background: green; */
+      margin:10px 0 0;
   }

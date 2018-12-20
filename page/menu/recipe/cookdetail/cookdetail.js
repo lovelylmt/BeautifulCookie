@@ -46,3 +46,31 @@ $.ajax({
 //     localStorage.setItem('userIcon', datas);
 //     window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/member/center/center.html'
 // };
+
+//评论
+function recipeComment() {  //提交评论
+    var recipeComment = document.getElementById("recipeComment").value;
+    let date1 = new Date(+new Date() + 8 * 3600 * 1000).toISOString().replace(/T/g, ' ').replace(/\.[\d]{3}Z/, '');
+    var data = {
+        recipeComment: recipeComment,
+        username: localStorage.getItem('username'),
+        userIcon: localStorage.getItem('userIcon'),
+        status: 0,
+        date1:date1,
+    }; 
+    $.post('http://172.20.10.2:3000/api/commentRecipe', data)
+}
+
+$.ajax({   //显示评论
+    url: "http://172.20.10.2:3000/api/releaseComment",
+    type: "post",
+    success: function (data) {
+        console.log(data);
+        var datas = data.commentinfo
+        for (index in datas) {
+        $('#commentContent').append('<li><div class="icon"><a><img src="' + datas[index].userIcon + '" /></a></div><div class="detail"><div class="tools"><div class="left"><a>' + datas[index].username + '</a><span id="show">'+datas[index].date1 +'</span></div></div><div class="content">' + datas[index].recipeComment + '</div></div></li>')
+    }
+    },
+})
+
+var d=new Date();

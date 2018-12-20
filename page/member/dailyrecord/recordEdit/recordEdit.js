@@ -15,11 +15,13 @@ function go() {
 function recordEdit() {
     var recordTitle = document.getElementById("recordTitle").value;
     var recordContent = document.getElementById("recordContent").value;
+    let date1 = new Date(+new Date() + 8 * 3600 * 1000).toISOString().replace(/T/g, ' ').replace(/\.[\d]{3}Z/, '');
     var reader = new FileReader();
     var file = $("#photo")[0].files[0];
     var datass1 = {
         recordTitle: recordTitle,
         recordContent: recordContent,
+        date1:date1,
         username: localStorage.getItem('username'),
         userIcon: localStorage.getItem('userIcon'),
         status: 0,

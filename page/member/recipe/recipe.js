@@ -1,23 +1,28 @@
-console.log(localStorage.getItem('username'));
-if (localStorage.getItem('username') != null) {
-    $('#users')[0].style.display = 'none';
-    $('#user1')[0].style.display = 'block';
-    // $('#userinfrom')[0].innerHTML = localStorage.getItem('username');
-} else {
-    $('#users')[0].style.display = 'block';
-}
 
-  $.ajax({
-     url: "http://172.20.10.2:3000/api/icon",
-     data: {
-          "username": localStorage.getItem("username")
-     },
-      type: "post",
-      success: function (data) {
-          var imgsrc = data.userIcon;
-          console.log($('#userIcon'));
-          $('#userIcon')[0].src = imgsrc;
-      },
-
-  })
-
+$("#send").click(function(){
+	var url="http://localhost:1337/";
+	$.get(url,{
+		name:$("#name").val(),
+		content:$("#content").val()
+	},function(data,textSattus){
+		//$("#comments").html(data);
+		/*var data_elem=$(data);
+		$("#comments").append(data_elem);*/
+ 
+		/*var name=data.name;
+		var content=data.content;*/
+		console.log(data);
+		console.log(typeof data);
+ 
+		var name=data.name;
+		var content=data.content;
+		$("#comments h6:last").text(name);
+		$("#comments p:last").text(content);
+ 
+	})
+});
+--------------------- 
+作者：前端小白的江湖路 
+来源：CSDN 
+原文：https://blog.csdn.net/qq_21058391/article/details/52162736 
+版权声明：本文为博主原创文章，转载请附上博文链接！

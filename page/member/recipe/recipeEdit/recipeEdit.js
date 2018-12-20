@@ -57,7 +57,7 @@ function go() {
         }
     }
 }
- 
+
 
 
 function recipeEdit() {
@@ -70,6 +70,7 @@ function recipeEdit() {
     var step1 = document.getElementById("step1").value;
     var step2 = document.getElementById("step2").value;
     var step3 = document.getElementById("step3").value;
+    let date1 = new Date(+new Date() + 8 * 3600 * 1000).toISOString().replace(/T/g, ' ').replace(/\.[\d]{3}Z/, '');
     var reader = new FileReader();
     var reader1 = new FileReader();
     var reader2 = new FileReader();
@@ -78,7 +79,7 @@ function recipeEdit() {
     var file1 = $("#photo1")[0].files[0];
     var file2 = $("#photo2")[0].files[0];
     var file3 = $("#photo3")[0].files[0];
-    
+
     var datass = {
         name: recipeName,
         recipeDescription: recipeDescription,
@@ -89,10 +90,11 @@ function recipeEdit() {
         step1: step1,
         step2: step2,
         step3: step3,
-        username:localStorage.getItem('username'),
-        userIcon:localStorage.getItem('userIcon'),
-        status:0,
-        recipeType:$('#type .on')[0].id
+        date1:date1,
+        username: localStorage.getItem('username'),
+        userIcon: localStorage.getItem('userIcon'),
+        status: 0,
+        recipeType: $('#type .on')[0].id
     };
 
 
@@ -100,7 +102,7 @@ function recipeEdit() {
         reader1.readAsDataURL(file1);
         reader1.onload = function (e) {
             datass.stepImg1 = reader1.result
-           // Object.assign(datass, { stepImg1: reader.result });
+            // Object.assign(datass, { stepImg1: reader.result });
         }
     }
 
@@ -108,7 +110,7 @@ function recipeEdit() {
         reader2.readAsDataURL(file2);
         reader2.onload = function (e) {
             datass.stepImg2 = reader2.result
-          //  Object.assign(datass, { stepImg2: reader.result });
+            //  Object.assign(datass, { stepImg2: reader.result });
         }
     }
 
@@ -116,21 +118,21 @@ function recipeEdit() {
         reader3.readAsDataURL(file3);
         reader3.onload = function (e) {
             datass.stepImg3 = reader3.result
-          //  Object.assign(datass, { stepImg3: reader.result });
+            //  Object.assign(datass, { stepImg3: reader.result });
 
-           
+
         }
     }
 
     if (file) {
         imgUrlBase64 = reader.readAsDataURL(file);
-        reader.onload = function (e) {    
+        reader.onload = function (e) {
             datass.img666 = reader.result;
             $('#uploadNesc')[0].src = reader.result;
-           
+
             console.log(datass);
-          $.post('http://172.20.10.2:3000/api/release', datass)
-          window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/member/center/center.html'
+            $.post('http://172.20.10.2:3000/api/release', datass)
+            window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/member/center/center.html'
 
         }
     }
@@ -172,7 +174,7 @@ $.ajax({
     type: "post",
     success: function (data) {
         var imgsrc = data.userIcon;
-       localStorage.setItem('userIcon',imgsrc);
+        localStorage.setItem('userIcon', imgsrc);
         $('#userIcon')[0].src = imgsrc;
     },
 
@@ -180,11 +182,11 @@ $.ajax({
 
 //分类
 function choose(element) {
-    if($('#'+element)[0].className == 'on'){
-        $('#'+element).removeClass('on');     
-    }   
+    if ($('#' + element)[0].className == 'on') {
+        $('#' + element).removeClass('on');
+    }
     else {
-           $('#'+element).addClass('on');
+        $('#' + element).addClass('on');
     }
 
 }

@@ -246,3 +246,27 @@ div a{
       width: 640px;
       left: 13.5%;
   }
+
+  .footer{
+    position: absolute;
+    left: 12.5%;
+    display: block;
+    width: 990px;
+    height: 150px;
+   
+  }
+  .message{
+    
+    color:#c90;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:6px;
+   
+    
+  }
+  .message a{
+    width: 100%;
+    
+    color:#f50;
+   
+  }

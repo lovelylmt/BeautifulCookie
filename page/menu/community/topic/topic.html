@@ -68,7 +68,7 @@
             <a title="日志" href="../../community/record/recond.html" target="_blank">日志</a>
 
         </div>
-        <div class="logo_search">
+        <!-- <div class="logo_search">
             <div class="input-group">
                 <input type="text" class="form-control">
                 <span class="input-group-btn">
@@ -77,7 +77,7 @@
                     </button>
                 </span>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- 全部话题 -->
@@ -90,38 +90,35 @@
         <div id="topic" class="tab-content">
             <div class="tab-pane active" id="hotTopicList">
                 <ul id="topicList1">
-                    <!-- <li>
-                        <div class="left">
-                            <a href="#" target="_blank"><img src="../../../../static/img/shise.jpg" />
-                                <div class="name">
-                                    <a href="#" target="_blank">用户名</a>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="down" onclick="topicDetail(this)">
-                            <div class="pp">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容
-                            </div>
-                            <a class="clear" target="_blank">
-                                <img src="../../../../static/img/2018121115444898658876235901869.jpg" />
-                            </a>
-                        </div>
-                    </li>
+<!-- 
                     <li>
                         <div class="left">
-                            <a href="#" target="_blank"><img src="../../../../static/img/shise.jpg" />
+                            <a href="#" target="_blank">
+                                <img src="../../../../static/img/20181211154450808147510449735.jpg" />
                                 <div class="name">
                                     <a href="#" target="_blank">用户名</a>
+                                    <span>时间</span>
                                 </div>
                             </a>
                         </div>
                         <div class="down" onclick="topicDetail(this)">
-                            <div class="pp">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+                            <div class="pp">内容内容</div>
+                            <div class="huati"><a class="clear" target="_blank"> <img src="'+datas[index].topicImg+'" /></a></div>
+                            <div class="huati">
+
+                                <a class="clear" target="_blank">
+                                    <img src="../../../../static/img/20181211154450807780310449735.jpg" />
+                                </a>
                             </div>
-                            <a class="clear" target="_blank">
-                                <img src="../../../../static/img/2018121115444898658876235901869.jpg" />
-                            </a>
+
+                            <div class="huati">
+                                <a class="clear" target="_blank">
+                                    <img src="../../../../static/img/20181211154450807780310449735.jpg" />
+                                </a>
+                            </div>
                         </div>
                     </li> -->
+
                 </ul>
             </div>
             <div class="tab-pane" id="essenceTopicList">
@@ -129,6 +126,7 @@
             </div>
 
         </div>
+
     </div>
 
     <!-- 图片 -->
@@ -140,13 +138,19 @@
 
     <!-- 发布话题 -->
     <div class="release">
-        <a class="r_pai-add" target="_blank" href="../../../member/topic/topic.html">发布话题</a>
+        <a class="r_pai-add" target="_blank" href="../../../member/topic/topicEdit/topicEdit.html">发布话题</a>
     </div>
     <!-- 右边图片 -->
     <div class="rightimg">
         <a href="#"><img src="../../../../static/img/r3.jpg" alt=""></a>
 
     </div>
+    <!-- <div class="footer">
+        <p class="message"><a title="美食至上 - 大家一起做吃货！" href="" target="_blank">美食至上 -大家一起做吃货！</a></p>
+        <span>联系人：李梦婷</span><br>
+        <span>手机：15757468501</span><br>
+        <span>QQ：793502404</span>
+    </div> -->
 </body>
 <script src="./topic.js"></script>
 
