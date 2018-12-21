@@ -205,9 +205,12 @@ div a{
     width: 640px;
 }
 .block_txt{
+    position: relative;
+    display: block;
     /* background: orange; */
     margin:30px 0 0 0;
-    font-size:16px
+    font-size:16px;
+    height: 100%;
 }
 .mo{
     /* background: green; */
@@ -217,14 +220,19 @@ div a{
     height: 50px;
 }
 .mo h3{
+    position: relative;
+    display: block;
+    /* background: green; */
     font-size: 20px;
     width: 50%;
-    padding: 10px 10px;
+    padding: 0 10px;
     color: #ff6767;
 }
 .particulars{
     position: relative;
-    top: 1.5%;
+    display: block;
+    /* background: orange; */
+   margin-top: 3%;
     border-radius:15px;
     border:1px solid #ddd;
     height: 120px;
@@ -281,12 +289,14 @@ div a{
    
 }
 .recipeStep{
-    /* background: pink; */
+    /* background: green; */
     position: relative;
     top: 2%;
 }
 .recipeStep li{
     display:block;
+    /* background: orange; */
+    height: 170px;
     margin:0 0 40px 0;
 }
 .stepimg{
@@ -294,6 +304,7 @@ div a{
     display:inline-block; 
 }
 .stepimg img{
+    height: 170px;
     width:220px;
 }
 .stepword{
@@ -301,7 +312,7 @@ div a{
     width:390px;
     display:inline-block;
     vertical-align:middle;
-    font-size:18px;
+    font-size:16px;
 }
 .stepnum{
     border:1px solid #ddd;
@@ -332,11 +343,11 @@ div a{
       left: 13.5%;
       height: 100%;
       width: 640px;
-      /* background:pink; */
+      /* background:orange; */
   }
   .commentPost{
       height: 30px;
-      /* background: orange; */
+      background: orange;
   }
   .commentPost .loginbtn{
     height: 30px;
@@ -350,10 +361,10 @@ div a{
   }
   .recipeContent{
       position: relative;
-      /* background: pink; */
+      background: pink;
       width: 640px;
       left: 13.5%;
-      height: 1700px;
+      height: 100%;
   }
   .footer{
      
@@ -386,7 +397,7 @@ div a{
       display: block;
       
       width: 640px;
-      /* background: pink; */
+      background: pink;
       height: 100%;
 
   }
@@ -403,7 +414,7 @@ div a{
   }
   .icon img{
       display: block;
-     width:48px;
+      width:48px;
      height:48px;
      border-radius: 100%; 
   }
@@ -423,3 +434,7 @@ div a{
       /* background: green; */
       margin:10px 0 0;
   }
+  /* .click{
+      position: relative;
+      top: -10px;
+  } */

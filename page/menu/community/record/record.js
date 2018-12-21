@@ -28,7 +28,9 @@ $.ajax({
  
     success: function (data) {
         console.log(data);
+      
         var datas = data.recordinfo;
+      
         for (index in datas) {
             switch (datas[index].recordType) {
                 case 'essenceRecord':
@@ -40,6 +42,7 @@ $.ajax({
             }
         }
     },
+  
 });
 
 
