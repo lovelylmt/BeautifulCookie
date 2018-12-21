@@ -19,6 +19,7 @@ const recipename = mongoose.model('recipes', {
     userIcon: String,
     status: String,
     recipeType: String,
+   
 });
 
 module.exports = {
@@ -43,6 +44,7 @@ module.exports = {
             userIcon: userIcon,
             status: status,
             recipeType: recipeType,
+        
         });
 
         recipes.save(function (err) {
@@ -59,7 +61,7 @@ module.exports = {
         recipename.find().then(result => {
             total = result.length;
             recipename.find()
-            .sort(mysort)
+                .sort(mysort)
                 .limit(limit)
                 .skip((offset / limit) * limit)
                 .then(result => {
@@ -79,12 +81,13 @@ module.exports = {
     },
     //管理员发布审核的菜谱
     upRecipe: (cb) => {
+        // var count=countID;
         var mysort = { date1: -1 };
         recipename.find({ status: "1", }).sort(mysort).then(result => { console.log(result); cb(result) })
     },
 
-    //具体菜谱做法
 
+    //具体菜谱做法
     cookdetail: (recipeName, cb) => {
         console.log(recipeName)
         recipename.findOne({

@@ -5,13 +5,13 @@ module.exports = {
   addRecord: (req, res) => {
     var recordTitle = req.body.recordTitle;
     var recordContent = req.body.recordContent;
-    var date1=req.body.date1;
     var recordImg = req.body.recordImg;
     var username = req.body.username;
     var userIcon = req.body.userIcon;
     var status = req.body.status;
     var recordType = req.body.recordType;
-    releases.addRecord(recordTitle, recordContent,date1, recordImg, username, userIcon, status, recordType, err => {
+  
+    releases.addRecord(recordTitle, recordContent, recordImg, username, userIcon, status, recordType, err => {
       if (err == null) {
         res.json({
           date: "日志成功存入"
@@ -22,13 +22,13 @@ module.exports = {
   },
   //管理员获取所有日志
   getRecord: (req, res) => {
-    const {  limit , offset } = req.body; //es6  解构;
-    releases.getRecord(limit ,offset,err => {
-        console.log(err);
-        res.json({
-          recordinfo: err
-        })
-      }
+    const { limit, offset } = req.body; //es6  解构;
+    releases.getRecord(limit, offset, err => {
+      console.log(err);
+      res.json({
+        recordinfo: err
+      })
+    }
     );
   },
 
@@ -55,49 +55,49 @@ module.exports = {
     );
   },
 
-    //具体日志
-    recordDetail: (req, res) => {
-      var recordTitle = req.body.recordTitle;
-      console.log(recordTitle);
-      releases.recordDetail(recordTitle, err => {
-        console.log(err)
-        res.json({
-          recordinfo: err,
-        })
+  //具体日志
+  recordDetail: (req, res) => {
+    var recordTitle = req.body.recordTitle;
+    console.log(recordTitle);
+    releases.recordDetail(recordTitle, err => {
+      console.log(err)
+      res.json({
+        recordinfo: err,
       })
-    },
+    })
+  },
 
   //用户发布日志
-  relRecord:(req, res) => {
+  relRecord: (req, res) => {
     const username = req.body.username;
-    releases.relRecord( username ,err => {
-        console.log(err);
-        res.json({
-          recordinfo: err
-        })
-      }
+    releases.relRecord(username, err => {
+      console.log(err);
+      res.json({
+        recordinfo: err
+      })
+    }
     );
   },
-    //搜索日志
-    searchRecord:(req, res) => {
+  //搜索日志
+  searchRecord: (req, res) => {
     const recordContent = req.body.recordContent;
-    releases.searchRecord(recordContent,err=>{
-      if(err !==false ){
+    releases.searchRecord(recordContent, err => {
+      if (err !== false) {
         res.json({
-          code:200,
-          data:{
-            searchResult:err
+          code: 200,
+          data: {
+            searchResult: err
           }
         })
-      }else {
+      } else {
         res.json({
-          code:200,
-          data:{
-            searchResult:false
+          code: 200,
+          data: {
+            searchResult: false
           }
-        })        
+        })
       }
-  })
+    })
   }
 
 }

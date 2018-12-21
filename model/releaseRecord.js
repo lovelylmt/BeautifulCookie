@@ -5,7 +5,6 @@ var mongoose = require('../util/database');
 const topic = mongoose.model('records', {
     recordTitle: String,
     recordContent: String,
-    date1: String,
     recordImg: String,
     username: String,
     userIcon: String,
@@ -15,11 +14,10 @@ const topic = mongoose.model('records', {
 
 module.exports = {
     //用户发布日志
-    addRecord: function (recordTitle, recordContent,date1, recordImg, username, userIcon, status, recordType, cb) {
+    addRecord: function (recordTitle, recordContent, recordImg, username, userIcon, status, recordType, cb) {
         var topics = new topic({
             recordTitle: recordTitle,
             recordContent: recordContent,
-            date1: date1,
             recordImg: recordImg,
             username: username,
             userIcon: userIcon,
@@ -57,9 +55,9 @@ module.exports = {
         })
     },
 
-    upRecord: (cb) => { 
-           //管理员发布审核的日志
+    upRecord: (cb) => {    //管理员发布审核的日志
         var mysort = { date1: -1 };
+        
         topic.find({ status: "1", }).sort(mysort).then(result => { console.log(result); cb(result) })
     },
 
@@ -77,13 +75,12 @@ module.exports = {
         }
     });
 },
-      //用户发布日志
+      //用户发布菜谱
       relRecord: (username, cb) => {
-        var mysort = { date1: -1 };
         topic.find({
             username: username ,
             status: "1", 
-        }).limit(2).sort(mysort).then(result => {
+        }).then(result => {
             console.log(result);
             cb(result)
         })

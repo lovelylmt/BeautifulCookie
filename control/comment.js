@@ -6,9 +6,10 @@ module.exports = {
         var username = req.body.username;
         var userIcon = req.body.userIcon;
         var status = req.body.status;
-        var date1=req.body.date1;
+        var date1 = req.body.date1;
+        var recipeName = req.body.recipeName;
 
-        comment.commentRecipe(recipeComment, username, userIcon, status,date1, err => {
+        comment.commentRecipe(recipeComment, username, userIcon, status, date1, recipeName, err => {
             if (err == null) {
                 res.json({
                     date: "评论成功"
@@ -39,16 +40,16 @@ module.exports = {
         }
         );
     },
-  //发表
-  releaseComment: (req, res) => {
+    //发表
+    releaseComment: (req, res) => {
         console.log(123);
         comment.releaseComment(
-          err => {
-            console.log(err);
-            res.json({
-                commentinfo: err
-            })
-          }
+            err => {
+                console.log(err);
+                res.json({
+                    commentinfo: err
+                })
+            }
         );
-      },
+    },
 }
