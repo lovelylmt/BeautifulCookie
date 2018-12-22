@@ -24,11 +24,11 @@ $.ajax({
 })
 
 
-
+//显示菜谱
 $.ajax({
     url: "http://172.20.10.2:3000/api/cookdetail",
     data: {
-        "recipeName": localStorage.getItem("recipeName")
+        "recipeName": localStorage.getItem("recipeName"),
     },
     type: "post",
     success: function (data) {
@@ -40,9 +40,8 @@ $.ajax({
 })
 
 
-
-//评论
-function recipeComment() {  //提交评论
+//提交评论
+function recipeComment() {  
     var recipeComment = document.getElementById("recipeComment").value;
     let date1 = new Date(+new Date() + 8 * 3600 * 1000).toISOString().replace(/T/g, ' ').replace(/\.[\d]{3}Z/, '');
     var data = {
@@ -55,19 +54,21 @@ function recipeComment() {  //提交评论
     };
     $.post('http://172.20.10.2:3000/api/commentRecipe', data)
     // alert("发表成功！将刷新此页面");
-    // window.location.reload();
+    window.location.reload();
 }
 
-$.ajax({   //显示评论
+//显示评论
+$.ajax({   
     url: "http://172.20.10.2:3000/api/releaseComment",
+    data: {
+        "recipeName": localStorage.getItem("recipeName"),
+    },
     type: "post",
     success: function (data) {
         console.log(data);
-        var datas = data.commentinfo;
-        console.log(datas);
-        for (index in datas) {
-            $('#commentContent').append('<li><div class="icon"><a><img src="' + datas[index].userIcon + '" /></a></div><div class="detail"><div class="tools"><div class="left"><a>' + datas[index].username + '</a><span id="show">' + datas[index].date1 + '</span></div></div><div class="content">' + datas[index].recipeComment + '</div></div></li>')
-        }
+        var datas = data.commentinfo;  
+        $('#commentContent').append('<li><div class="icon"><a><img src="' + datas.userIcon + '" /></a></div><div class="detail"><div class="tools"><div class="left"><a>' + datas.username + '</a><span id="show">' + datas.date1 + '</span></div></div><div class="content">' + datas.recipeComment + '</div></div></li>')
+
     },
 })
 
