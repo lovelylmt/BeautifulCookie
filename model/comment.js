@@ -49,25 +49,20 @@ module.exports = {
             console.log(result);
         })
     },
-
-    releaseComment: (recipeName1,cb) => {
-        console.log(recipeName1)
-        var mysort = { date1: -1 };      //管理员发布审核过的评论
-        comment.find({ 
-            recipeName:recipeName1
+    //管理员发布审核过的评论
+    releaseComment: (recipeName, cb) => {
+        console.log(recipeName)
+        var mysort = { date1: -1 };
+        comment.findOne({
+            recipeName: recipeName
         }).sort(mysort).then(result => {
-            console.log(result);
-            cb(result)
-        })
-    },}
+            if (result !== null) {
+                console.log(result)
+                cb(result);
+            } else {
+                cb(false);
+            }
+        });
+    },
+}
 
-// relRecipe: (username, cb) => {
-//     var mysort = { date1: -1 };
-//     recipename.find({
-//         username: username,
-//         status: "1",
-//     }).sort(mysort).then(result => {
-//         console.log(result);
-//         cb(result)
-//     })
-// },
