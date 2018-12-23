@@ -5,13 +5,15 @@ module.exports = {
   addRecord: (req, res) => {
     var recordTitle = req.body.recordTitle;
     var recordContent = req.body.recordContent;
+    var date1 = req.body.date1;
+    var recordType = req.body.recordType;
     var recordImg = req.body.recordImg;
     var username = req.body.username;
     var userIcon = req.body.userIcon;
     var status = req.body.status;
-    var recordType = req.body.recordType;
-  
-    releases.addRecord(recordTitle, recordContent, recordImg, username, userIcon, status, recordType, err => {
+
+
+    releases.addRecord(recordTitle, recordContent, date1, recordImg, username, userIcon, status, recordType, err => {
       if (err == null) {
         res.json({
           date: "日志成功存入"

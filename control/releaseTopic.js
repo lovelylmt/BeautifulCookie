@@ -7,14 +7,14 @@ module.exports = {
     var topicContent = req.body.topicContent;
     var date1 = req.body.date1;
     var topicImg = req.body.topicImg;
-    var topicImg1 = req.body.topicImg1;
-    var topicImg2 = req.body.topicImg2;
+  
     var username = req.body.username;
     var userIcon = req.body.userIcon;
     var status = req.body.status;
     var topicType = req.body.topicType;
-    releases.addTopic(topicContent, date1, topicImg, topicImg1, topicImg2, username, userIcon, status, topicType, err => {
+    releases.addTopic(topicContent, date1, topicImg, username, userIcon, status, topicType, err => {
       if (err == null) {
+        
         res.json({
           date: "话题成功存入"
         })
