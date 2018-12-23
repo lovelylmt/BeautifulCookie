@@ -59,7 +59,7 @@ $.ajax({
         console.log(data);
         var datas = data.topicinfo;
         for (index in datas) {
-            $('#topic').append('<li><div class="left"><a  href="#" target="_blank"><img src="' + datas[index].userIcon + '"/><div class="name"><a href="#" target="_blank">' + datas[index].username + '</a></div></a></div><div class="down" onclick="topicDetail(this)"><div class="pp"  ><a >' + datas[index].topicContent + '</a></div><a class="clear"  target="_blank" ><img src="' + datas[index].topicImg + '" /></a></div></li>');
+            $('#topic').append('<li><div class="left"><a  href="#" target="_blank"><img src="' + datas[index].userIcon + '"/><div class="name"><a href="#" target="_blank">' + datas[index].date1 + '</a></div></a></div><div class="down" onclick="topicDetail(this)"><div class="pp"  ><a >' + datas[index].topicContent + '</a></div><a class="clear"  target="_blank" ><img src="' + datas[index].topicImg + '" /></a></div></li>');
         }
     },
 })
@@ -82,7 +82,7 @@ $.ajax({
         console.log(data);
         var datas = data.recordinfo;
         for (index in datas) {
-            $('#record').append('<li onclick="recordDetail(this)"><div class="pic" ><a ><img src="' + datas[index].recordImg + '" /></a></div><div class="detail"><h2><span>' + datas[index].recordTitle + '</span></h2><p>' + datas[index].username + '</p><p>' + datas[index].recordContent + '</p></div></li>');
+            $('#record').append('<li onclick="recordDetail(this)"><div class="pic" ><a ><img src="' + datas[index].recordImg + '" /></a></div><div class="detail"><h2><span>' + datas[index].recordTitle + '</span></h2><p>' + datas[index].date1 + '</p><p>' + datas[index].recordContent + '</p></div></li>');
         }
     },
 })

@@ -347,7 +347,7 @@ div a{
   }
   .commentPost{
       height: 30px;
-      background: orange;
+      /* background: orange; */
   }
   .commentPost .loginbtn{
     height: 30px;
@@ -361,7 +361,7 @@ div a{
   }
   .recipeContent{
       position: relative;
-      background: pink;
+      /* background: pink; */
       width: 640px;
       left: 13.5%;
       height: 100%;
@@ -397,7 +397,7 @@ div a{
       display: block;
       
       width: 640px;
-      background: pink;
+      /* background: pink; */
       height: 100%;
 
   }

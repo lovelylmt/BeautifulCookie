@@ -6,7 +6,7 @@ function go() {
       reader.onload = function (e) {
          //执行上传操作         
          $('#uploadNesc')[0].src = reader.result;
-         $('#upload')[0].style.display = 'none'
+         $('#p1')[0].style.display = 'none'
       }
    }
 }
@@ -32,10 +32,11 @@ function register() {
          $.post('http://172.20.10.2:3000/api/register', data)
          localStorage.setItem('username', username)
          
-         if (date.date == '该用户已被注册') {
+         if (data.date == '该用户已被注册') {
             alert('请重新注册')
          } else {
-            
+            alert('注册成功')
+            window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/index.html';
          }
         
       }

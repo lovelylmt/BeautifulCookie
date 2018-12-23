@@ -33,10 +33,9 @@ $.ajax({
     
     
       var datas = data.topicinfo
-        $('#topicContent').append('<ul><li><div class="left"><a href="#" target="_blank"><img src="'+datas.userIcon+'"></a><div class="name"><a href="#" target="_blank">'+datas.username+'</a><br></div></div><div class="down"><div>'+datas.topicContent+'</div><a ><img src="'+datas.topicImg+'"></a></li></ul>')
+        $('#topicContent').append('<div class="left"><a href="#"><img src="'+datas.userIcon+'"></a><div class="name"><a href="#">'+datas.username+'</a><span>'+datas.date1+'</span></div></div><div class="down"><div><p>'+datas.topicContent+'</p></div><img src="'+datas.topicImg+'"></div>')
      
     },
   })
 
 
-  

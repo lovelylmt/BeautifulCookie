@@ -149,6 +149,7 @@ div a{
      margin-top: 18px;
      color: #000;
      font-size: 20px;
+     cursor:pointer;
 }
 .tab-content li h2 :hover{
     text-decoration: none;
@@ -189,6 +190,7 @@ div a{
 .tab-content li img{
     height: 135px;
     width: 180px;
+    
     -moz-transition:all .5s ease-in-out;  /*ease-in-out：（加速然后减速）*/
     -o-transition:all .5s ease-in-out;
     -ms-transition:all .5s ease-in-out;

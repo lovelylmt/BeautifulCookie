@@ -198,6 +198,7 @@ div a{
   display: block;
   width: 328%;
   height: 50px;
+  cursor:pointer;
  
 }
 #recipe li a{
@@ -286,7 +287,7 @@ div a{
 }
 
 #all .down .pp a{
- 
+  cursor:pointer;
   width: 500px;
   color: #000;
   white-space:nowrap; 
@@ -312,7 +313,7 @@ color: #ff6767;
 }
 #my li h2{
  position: relative;
-
+ cursor:pointer;
    display: block;
  
    color: #000;

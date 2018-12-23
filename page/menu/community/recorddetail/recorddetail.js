@@ -33,7 +33,7 @@ $.ajax({
     success: function (data) {
       console.log(data);
       var datas = data.recordinfo
-        $('#recordContent').append('<div class="recordName"><h3>'+datas.recordTitle+'</h3><a class="uright"><img id="userIcon1"  src="'+datas.userIcon+'"/><span class="userName">'+datas.username+'</span></a></div><div class="box"><div class="recondImg"><img src="'+datas.recordImg+'"/></div><div class="recordContent">'+datas.recordContent+'</div></div> ')
+        $('#recordContent').append('<div class="recordName"><h3>'+datas.recordTitle+'</h3><p>发表于'+datas.date1+'</p><a class="uright"><img id="userIcon1"  src="'+datas.userIcon+'"/><span class="userName">'+datas.username+'</span></a></div><div class="box"><div class="recondImg"><img src="'+datas.recordImg+'"/></div><div class="recordContent">'+datas.recordContent+'</div></div> ')
        
    
     },

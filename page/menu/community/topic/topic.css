@@ -244,6 +244,10 @@ div a{
     -webkit-box-orient: vertical;
     font-size: 17px;
     color:#666;
+    cursor:pointer;
+  }
+  .down .pp:hover{
+      color:blue;
   }
  .huati{
     float: left;
@@ -255,6 +259,7 @@ div a{
    float: left;  
    height: 100px;
    width: 100px;
+   cursor:pointer;
   }
 
   /* 发布话题 */

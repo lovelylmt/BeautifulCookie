@@ -137,35 +137,21 @@ div a{
 
 /* 话题部分 */
 .topic{
+    position: relative;
     width: 640px;
-    height: 640px;
-    position: relative;
-    left: 13.5%;
-    /* background: pink; */
-}
-.topic li {
-    position: relative;
-    /* background:blue; */
-    padding: 10px 0;
-    float: left;
     height: 100%;
-    overflow: hidden;
-    width: 640px;
-  }
+    left: 13.5%;
+    margin-top: 3%;
+    /* background: orange */
+}
 
-.left div{
-    /* background:wheat; */
-    float: right;
-    width:570px;
-    height: 40px;
-    position: relative;
-    line-height: 30px;
-   }
+
+
   
-.topicContent .left a{
-  
+.topic .left a{
+   
    display: block;
-   width: 15px;
+   
    white-space:nowrap;
    float: left;
    /* background: green; */
@@ -180,39 +166,45 @@ div a{
     border-radius:100%;
     float: left;
   }
+  .left .name{
+    position: relative;
+    /* background:wheat; */
+   float: right;
+    width:570px;
+    height: 40px;
+    line-height: 30px;
+   }
   .left .name a{
       font-size:14px;
       color: rgb(28, 177, 247);
       display: block;
       position: relative;
-      width: 100%;
-      float: left;
-      
+     
+      width: 570px;
+      float: left;    
   }
 
-.down{
-   
+      
+.down{ 
     position: relative;
-    top: 50px;
-    background: #a0dafc; 
+    display: block;
+    /* background: #a0dafc;  */
     width:560px;
     left: 12%;
-    height: 100%;
-   
-  } 
-.down div{
-    display: block;
-    position: relative;
-    background: pink;
-    width: 560px;
-   /* text-align: center */
-  
-}
+    height: 100%; 
+    top: 30px;
 
-.clear img {
+  } 
+ .down  p{ 
+    
+     /* background: orangered; */
+     font-size: 17px;
+ 
+ }
+.down img {
     display: block;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
   }
 
 
@@ -227,30 +219,13 @@ div a{
       height: 600px;
   }
 
-  /* 评论 */
-  .Iscomment{
-      height: 200px;
-      width: 100%;
-      background: blue;
-  }
-  .img111{
-     margin: 70px 0;
-    width:640px;
-    height:90px;
-    /* background: #000; */
-    
-  }
-  .recipeContent{
-      position: relative;
-      /* background: pink; */
-      width: 640px;
-      left: 13.5%;
-  }
+
 
   .footer{
-    position: absolute;
+    position: relative;
     left: 12.5%;
     display: block;
+    top: 100px;
     width: 990px;
     height: 150px;
    

@@ -145,7 +145,7 @@ div a{
 .recordName{
     position: relative;
  
-    /* background: orange; */
+    /* background: greenyellow; */
     padding:15px 0 10px 0;
     width: 640px;
     height: 90px;
@@ -154,6 +154,13 @@ div a{
    
     margin-top: 2%;
 }
+.recordName p{
+    position: relative;
+    display: block;
+     width: 300px;
+    
+    /* background: red; */
+}
 /* 头像 */
 .recordName a.uright{ 
      display: block;
@@ -161,7 +168,7 @@ div a{
      /* background: blue;    */
      float:right;
      width:100px;
-     top: -70%;
+     top: -80px;
 }
 .recordName a.uright span{
     position: relative;
@@ -195,9 +202,10 @@ div a{
 .box{
     position: relative;
     display: block;
-   
+    /* background: orange; */
     width: 640px;
     height: 100%;
+    
 }
 .box img{
     position: relative;
@@ -225,12 +233,7 @@ div a{
   }
 
 
-  .recipeContent{
-      position: relative;
-      background: pink;
-      width: 640px;
-      left: 13.5%;
-  }
+
 
   .footer{
     position: relative;

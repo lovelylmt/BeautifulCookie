@@ -80,3 +80,12 @@ function cookdetail(data) {
 
 
 
+function choose(element) {
+  if ($('#' + element)[0].className == 'on') {
+      $('#' + element).removeClass('on');
+  }
+  else {
+      $('#' + element).addClass('on');
+  }
+
+}

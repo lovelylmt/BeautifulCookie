@@ -83,13 +83,13 @@ width:70px;
    line-height: 50px;
    color: black;
 }
-.logo_nav .on{
-   color: #ff6767
-}
+
+
 .logo_nav a:hover{
    color: #ff6767;
     text-decoration: none;
 }
+
 .logo_search {
    height: 100%;
    width: 250px;
@@ -175,23 +175,24 @@ width:70px;
   top:140px
 }
 
- #w2 li a {
+ #w2 li a:link {
   display: block;
   width:90px; 
   color: #333;
+ }
 
 
-
-}#w2 li a:hover{
+#w2 li a:hover{
   color: #ff6767;
 }
+
 #w2Content {
   position: relative;
   top: 140px;
   left: 11.5%;
   width: 1045px;
-  height: 1700px;
-  /* background: #ff6767; */
+  height: 100%;
+ 
   overflow: hidden;
 }
 #w2Content li{
@@ -204,7 +205,7 @@ width:70px;
   display: block;
   width: 230px;
   height: 230px;
-  -moz-transition:all .5s ease-in-out;  /*ease-in-out：（加速然后减速）*/
+  -moz-transition:all .5s ease-in-out;  
     -o-transition:all .5s ease-in-out;
     -ms-transition:all .5s ease-in-out;
     transition:all .5s ease-in-out;
@@ -230,6 +231,7 @@ width:70px;
  font-size: 17px;
  text-align: center;
 }
+
 #w2Content li a:hover{
   text-decoration: none;
   color: #ff6767;
@@ -244,8 +246,10 @@ ul{
 
 .footer{
   position: absolute;
-  left: 12.5%;
+ 
   display: block;
+  margin-top: 30%;
+  left: 12.5%;
   width: 990px;
   height: 150px;
  
@@ -264,4 +268,11 @@ ul{
   
   color:#f50;
  
+}
+
+#w2 .on{
+  border:1px solid #ff8d8d;
+  background:#ff8d8d;
+  color:#fff;
+  display:block;
 }
