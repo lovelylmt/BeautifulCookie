@@ -244,24 +244,15 @@ div a{
 }
 
 
-.material li{
+.material li a{
     position: relative;   
-    /* background: blueviolet; */
     float: left;
     left: 10%;
+    width: 80%;
+   
 }
-.material a{
-    font-size: 20px;
-    color: #000;
-}
-.material span{
-    /* background: blue; */
-    color: #666;
-   position: relative;
-   top: 35px;
-   float: left;
-   left: 35%;
-}
+
+
 
 /* 详细步骤 */
 .dishesName1{
@@ -289,7 +280,7 @@ div a{
    
 }
 .recipeStep{
-    /* background: green; */
+  
     position: relative;
     top: 2%;
 }

@@ -186,7 +186,7 @@ div a{
     padding:5px 40px 10px 0;
     position:relative;
     font-size:0;
-    width:524px;
+    width:880px;
 }
 .ingredient blockquote div input{
     font-size:14px;
@@ -197,12 +197,10 @@ div a{
     line-height:30px;
 }
 .ingredient div input.liao{
-    width:54%;
+    width:100%;
     border-right:0;
 }
-.ingredient div input.yongliang{
-    width:46%;
-}
+
 /* 做法步骤 */
 
 .step .right{
@@ -325,7 +323,7 @@ div a{
   /* 发布 */
 .release1{
   position: absolute;
-    top: 15%;
+    top: 18%;
     height: 44px;
     width: 200px;
 }

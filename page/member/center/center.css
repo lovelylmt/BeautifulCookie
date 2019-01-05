@@ -24,7 +24,7 @@
 .navigation .right{
     position: relative;
     float: right;
-    margin-top: -1.1%;
+    margin-top: -0.7%;
   }
 .navigation .right img{
       height: 40px;
@@ -36,7 +36,7 @@
     list-style: none;
     line-height: 40px;
   }
-div a{
+.navigation a{
   text-decoration: none;
   color: white;
   display: inline-block;
@@ -61,9 +61,9 @@ div a{
     position:relative;
 }
 .menu a{
-    display:block;
-    padding:12px 5px;
-    color: #000;
+  display:block;
+  padding:12px 5px;
+  color: #000;
 }
 .menu a.on,.menu a:hover{
     text-decoration:none;
@@ -154,18 +154,15 @@ div a{
 
 }
 #dynamic li a {
-  width: 140px;
-  color: #333;
-  background: white;
+  display: block;
+  width:160px; 
  
 }
-#dynamic li a:hover{
-  color: #ff6767;
-}
+
 #dynamicContent{
   position: relative;
   top: 25%;
-  width: 990px;
+  width: 1040px;
   background-color: #f8f8f8;
   /* border: 1px solid #ddd; */
   overflow: hidden;
@@ -196,9 +193,11 @@ div a{
 }
 #recipe li span{
   display: block;
-  width: 328%;
+  width: 100%;
   height: 50px;
   cursor:pointer;
+  /* background: orange; */
+ 
  
 }
 #recipe li a{
@@ -207,6 +206,7 @@ div a{
   text-align: center;
  font-size: 17px;
  text-align: center;
+ 
 }
 #recipe li a:hover{
   text-decoration: none;

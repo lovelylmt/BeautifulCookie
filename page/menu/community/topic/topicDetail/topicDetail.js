@@ -30,8 +30,7 @@ $.ajax({
    },
     type: "post",
     success: function (data) {
-    
-    
+        console.log(data);
       var datas = data.topicinfo
         $('#topicContent').append('<div class="left"><a href="#"><img src="'+datas.userIcon+'"></a><div class="name"><a href="#">'+datas.username+'</a><span>'+datas.date1+'</span></div></div><div class="down"><div><p>'+datas.topicContent+'</p></div><img src="'+datas.topicImg+'"></div>')
      

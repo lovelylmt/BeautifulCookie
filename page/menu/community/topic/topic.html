@@ -1,35 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>话题</title>
     <link rel="stylesheet" type="text/css" href="topic.css" />
-    <!-- 新 Bootstrap4 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
-    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
-    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>  
 </head>
-
 <body>
     <!-- 导航栏 -->
     <div class="navigation">
-
         <ul class="bar-left ">
-
             <li>
                 <a title="首页" href="../../../../index.html" target="_black">首页</a>
             </li>
             <li>
                 <a title="菜谱" href="../../../../index.html" target="_black">菜谱</a>
             </li>
-
             <li>
                 <a title="话题" href="../../community/topic/topic.html" target="_black">话题</a>
             </li>
@@ -37,7 +27,6 @@
                 <a title="日志" href="../../community/record/recond.html" target="_black">日志</a>
             </li>
         </ul>
-
         <ul id="users" class="bar-left right">
             <li>
                 <a title="注册" href="./../../../register/register.html" target="_black">注册</a>
@@ -51,7 +40,6 @@
             <a href="../../../member/center/center.html"> <img id="userIcon" style="height:40px;width:40px;border-radius: 20px"></a>
         </ul>
     </div>
-
     <!-- 中间导航 -->
     <div class="centreNavigation">
         <div class="logo_inner">
@@ -62,69 +50,31 @@
         <div class="logo_nav">
             <a title="首页" href="../../../../index.html" target="_blank">首页</a>
             <a title="菜谱" href="../../../../index.html">菜谱</a>
-
-
             <a title="话题" class="on" href="../../community/topic/topic.html" target="_blank">话题</a>
             <a title="日志" href="../../community/record/recond.html" target="_blank">日志</a>
-
         </div>
-        <!-- <div class="logo_search">
-            <div class="input-group">
-                <input type="text" class="form-control">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" style="background-color: rgb(153, 153, 153);color: white">
-                        搜索
-                    </button>
-                </span>
-            </div>
-        </div> -->
     </div>
-
     <!-- 全部话题 -->
     <div class="centreNavigation2">
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs" id="title1">
             <li class="active"><a data-toggle="tab" class="on" href="#hotTopicList">热门话题</a></li>
             <li><a data-toggle="tab" href="#essenceTopicList">精华话题</a></li>
         </ul>
         <!-- 话题部分 -->
         <div id="topic" class="tab-content">
-            <div class="tab-pane active" id="hotTopicList">
+            <div class="tab-pane fade in active " id="hotTopicList">
                 <ul id="topicList1">
-<!-- 
-                    <li>
-                        <div class="left">
-                            <a href="#" target="_blank">
-                                <img src="../../../../static/img/20181211154450808147510449735.jpg" />
-                                <div class="name">
-                                    <a href="#" target="_blank">用户名</a>
-                                    <span>时间</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="down" onclick="topicDetail(this)">
-                            <div class="pp">内容内容</div>
-                            <div class="huati"><a class="clear" target="_blank"> <img src="'+datas[index].topicImg+'" /></a></div>
-                           
-                        </div>
-                    </li> -->
-
                 </ul>
             </div>
-            <div class="tab-pane" id="essenceTopicList">
+            <div class="tab-pane fade" id="essenceTopicList">
                 <ul id="topicList2"></ul>
             </div>
-
-        </div>
-
+        </div>   
     </div>
-
     <!-- 图片 -->
     <div class="centreimg">
         <a href="#"><img src="../../../../static/img/zhongjiantupian.jpg"></a>
-
     </div>
-
-
     <!-- 发布话题 -->
     <div class="release">
         <a class="r_pai-add" target="_blank" href="../../../member/topic/topicEdit/topicEdit.html">发布话题</a>
@@ -132,15 +82,13 @@
     <!-- 右边图片 -->
     <div class="rightimg">
         <a href="#"><img src="../../../../static/img/r3.jpg" alt=""></a>
-
     </div>
-    <!-- <div class="footer">
+    <div class="footer">
         <p class="message"><a title="美食至上 - 大家一起做吃货！" href="" target="_blank">美食至上 -大家一起做吃货！</a></p>
         <span>联系人：李梦婷</span><br>
         <span>手机：15757468501</span><br>
         <span>QQ：793502404</span>
-    </div> -->
+    </div>
 </body>
 <script src="./topic.js"></script>
-
 </html>

@@ -2,198 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- 新 Bootstrap4 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
-    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
-    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <title>首页</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body>
 
 
-    <!-- 导航栏 -->
-    <div class="navigation">
+	<!-- 导航栏 -->
+	<div class="navigation">
 
-        <ul class="bar-left left">
+		<ul class="bar-left left">
 
-            <li>
-                <a title="首页" href="index.html" target="_black">首页</a>
-            </li>
-            <li>
-                <a title="菜谱" href="index.html">菜谱</a>
-            </li>
-            <li>
-                <a title="话题" href="./page/menu/community/topic/topic.html" target="_black">话题</a>
-            </li>
-            <li>
-                <a title="日志" href="./page/menu/community/record/recond.html" target="_black">日志</a>
-            </li>
-        </ul>
+			<li>
+				<a title="首页" href="index.html" target="_black">首页</a>
+			</li>
+			<li>
+				<a title="菜谱" href="index.html">菜谱</a>
+			</li>
+			<li>
+				<a title="话题" href="./page/menu/community/topic/topic.html" target="_blank">话题</a>
+			</li>
+			<li>
+				<a title="日志" href="./page/menu/community/record/recond.html" target="_blank">日志</a>
+			</li>
+		</ul>
 
-        <ul id="users" class="bar-left right">
-            <li>
-                <a title="注册" href="./page/register/register.html" target="_black">注册</a>
-            </li>
-            <li>
-                <a title="登录" href="./page/login/login.html" target="_black">登录</a>
-            </li>
-        </ul>
-        <ul id="user1" style="display: none" class="bar-left right">
-            <a id="userinfrom" href="" style="color:aliceblue"></a>
-            <a href="./page/member/center/center.html"> <img id="userIcon" src="" alt="" srcset="" style="height:40px;width:40px;border-radius: 20px"></a>
-        </ul>
-    </div>
+		<ul id="users" class="bar-left right">
+			<li>
+				<a title="注册" href="./page/register/register.html" target="_blank">注册</a>
+			</li>
+			<li>
+				<a title="登录" href="page/login/login.html" target="_blank">登录</a>
+			</li>
+		</ul>
+		<ul id="user1" style="display: none" class="bar-left right">
+			<a id="userinfrom" href="" style="color:aliceblue"></a>
+			<a href="./page/member/center/center.html"> <img id="userIcon" src="" alt="" srcset="" style="height:40px;width:40px;border-radius: 20px"></a>
+		</ul>
+	</div>
 
-    <!-- 中间导航 -->
+	<!-- 中间导航 -->
 
-    <div class="centreNavigation" data-spy="scroll" data-target=".navbar" data-offset="50">
-        <!-- 监听 -->
-        <div class="logo_inner">
-            <a href="#" title="美食至上">
-                <img src="./static//img/logo.png" alt="">
-            </a>
-        </div>
-        <div class="logo_nav">
-            <a title="首页" target="_blank" style="color:#ff6767">首页</a>
-            <a title="菜谱" href="#section2">菜谱</a>
-            <a title="话题" href="./page/menu/community/topic/topic.html" target="_blank">话题</a>
-            <a title="日志" href="./page/menu/community/record/recond.html" target="_blank">日志</a>
+	<div class="centreNavigation" data-spy="scroll" data-target=".navbar" data-offset="50">
+		<!-- 监听 -->
+		<div class="logo_inner">
+			<a href="#" title="美食至上">
+				<img src="./static//img/logo.png" alt="">
+			</a>
+		</div>
+		<div class="logo_nav">
+			<a title="首页" target="_blank" style="color:#ff6767">首页</a>
+			<a title="菜谱" href="#section2">菜谱</a>
+			<a title="话题" href="./page/menu/community/topic/topic.html" target="_blank">话题</a>
+			<a title="日志" href="./page/menu/community/record/recond.html" target="_blank">日志</a>
 
-        </div>
-        <!-- <div class="logo_search">
-            <div class="input-group">
-              
-                <input  type="text" >
-                <span class="input-group-btn">
-                    <button onclick="changesearch()" class="btn btn-default" type="button" style="background-color: rgb(153, 153, 153);color: white">
-                        搜索
-                    </button>
-                </span>
-            </div>
-        </div> -->
-    </div>
+		</div>
 
-    <!-- 轮播 -->
-    <div id="w1" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#w1" data-slide-to="0" class="active"></li>
-            <li data-target="#w1" data-slide-to="1"></li>
-            <li data-target="#w1" data-slide-to="2"></li>
-            <li data-target="#w1" data-slide-to="3"></li>
-            <li data-target="#w1" data-slide-to="4"></li>
-            <li data-target="#w1" data-slide-to="5"></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a><img src="https://i3.meishichina.com/attachment/magic/2018/11/12/2018111215419885964518197577.jpg"></a>
-            </div>
-            <div class="carousel-item">
-                <a> <img src="https://i3.meishichina.com/attachment/magic/2018/11/05/2018110515413832164878197577.jpg"></a>
-            </div>
-            <div class="carousel-item">
-                <a> <img src="https://i3.meishichina.com/attachment/magic/2018/11/02/2018110215411248941498197577.jpg">
-            </div></a>
-            <div class="carousel-item">
-                <a><img src="https://i3.meishichina.com/attachment/magic/2018/10/29/2018102915408079408358197577.jpg"></a>
-            </div>
-            <div class="carousel-item">
-                <a><img src="https://i3.meishichina.com/attachment/magic/2018/10/22/2018102215401741536388197577.jpg"></a>
-            </div>
-            <div class="carousel-item">
-                <a> <img src="https://i3.meishichina.com/attachment/magic/2018/10/18/2018101815398290753628197577.jpg"></a>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#w1" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#w1" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
-    <!-- 小图标 -->
-    <div class="icon" id="section2">
-        <ul><a><img src="./static/img/r01.jpg"><span></span></a>
-            <a><img src="./static/img/r02.jpg"><span></span></a>
-            <a><img src="./static/img/r03.jpg"><span></span></a>
-            <a><img src="./static/img/r04.jpg"><span></span></a>
-            <a><img src="./static/img/r05.jpg"><span></span></a>
-            <a><img src="./static/img/r06.jpg"><span></span></a>
-            <a><img src="./static/img/r07.jpg"><span></span></a>
-            <a><img src="./static/img/r08.jpg"><span></span></a>
-            <a><img src="./static/img/r09.jpg"><span></span></a>
-            <a><img src="./static/img/r10.jpg"><span></span></a>
-        </ul>
-    </div>
+	</div>
 
-    <!-- 菜谱 -->
-    <ul id="w2" class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#hotDishes" style="color:#ff6767">热菜</a></li>
-        <li><a data-toggle="tab" href="#coldDishes">凉菜</a></li>
-        <li><a data-toggle="tab" href="#soup">汤羹</a></li>
-        <li><a data-toggle="tab" href="#stapleFood">主食</a></li>
-        <li><a data-toggle="tab" href="#snack">小吃</a> </li>
-        <li><a data-toggle="tab" href="#westernFood">西餐</a> </li>
-        <li> <a data-toggle="tab" href="#baking">烘焙</a> </li>
-        <li> <a data-toggle="tab" href="#drinking">饮品</a> </li>
-        <li> <a data-toggle="tab" href="#homeDishes">家常菜</a> </li>
-        <li> <a data-toggle="tab" href="#hotPot">火锅</a> </li>
-        <li> <a data-toggle="tab" href="#seafood">海鲜</a> </li>
-    </ul>
-    <!--  -->
-    <div id="w2Content" class="tab-content">
+	<!-- 轮播 -->
+	<div id="w1" class="carousel slide">
+		<!-- 轮播（Carousel）指标 -->
+		<ol class="carousel-indicators">
+			<li data-target="#w1" data-slide-to="0" class="active"></li>
+			<li data-target="#w1" data-slide-to="1"></li>
+			<li data-target="#w1" data-slide-to="2"></li>
+			<li data-target="#w1" data-slide-to="3"></li>
+			<li data-target="#w1" data-slide-to="4"></li>
+			<li data-target="#w1" data-slide-to="5"></li>
+		</ol>
+		<!-- 轮播（Carousel）项目 -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="https://i3.meishichina.com/attachment/magic/2018/12/24/2018122415456235072908197577.jpg" alt="First slide">
+			</div>
+			<div class="item">
+				<img src="https://i3.meishichina.com/attachment/magic/2018/12/21/2018122115453575666698197577.jpg" alt="Second slide">
+			</div>
+			<div class="item">
+				<img src="https://i3.meishichina.com/attachment/magic/2018/12/12/2018121215445824093428197577.jpg" alt="Third slide">
+			</div>
+			<div class="item">
+				<img src="https://i3.meishichina.com/attachment/magic/2018/12/07/2018120715441503252468197577.jpg" alt="Fourth slide">
+			</div>
+			<div class="item">
+				<img src="https://i3.meishichina.com/attachment/magic/2018/12/04/2018120415438891202028197577.jpg" alt="Fifth slide">
+			</div>
+			<div class="item">
+				<img src="https://i3.meishichina.com/attachment/magic/2018/11/26/2018112615431992195218197577.jpg" alt="Sixth slide">
+			</div>
+		</div>
+		<!-- 轮播（Carousel）导航 -->
+		<a class="left carousel-control" href="#w1" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 
-        <div class="tab-pane active" id="hotDishes">
-            <ul id="hotDishesList"></ul>
-        </div>
-        <div class="tab-pane fade" id="coldDishes">
-            <ul id="coldDishesList"></ul>
-        </div>
-        <div class="tab-pane fade" id="soup">
-            <ul id="soupList"></ul>
-        </div>
-        <div class=" tab-pane fade" id="stapleFood">
-            <ul id="stapleFoodList"> </ul>
-        </div>
-        <div class=" tab-pane fade" id="snack">
-            <ul id="snackList"> </ul>
-        </div>
-        <div class=" tab-pane fade" id="westernFood">
-            <ul id="westernFoodList"> </ul>
-        </div>
-        <div class=" tab-pane fade" id="baking">
-            <ul id="bakingList"> </ul>
-        </div>
-        <div class=" tab-pane fade" id="drinking">
-            <ul id="drinkingList"> </ul>
-        </div>
-        <div class=" tab-pane fade" id="homeDishes">
-            <ul id="homeDishesList"> </ul>
-        </div>
-        <div class=" tab-pane fade" id="hotPot">
-            <ul id="hotPotList"> </ul>
-        </div>
-        <div class=" tab-pane fade" id="seafood">
-            <ul id="seafoodList"> </ul>
-        </div>
-    </div>
+		</a>
+		<a class="right carousel-control" href="#w1" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		</a>
 
+	</div>
+	<!-- 小图标 -->
+	<div class="icon" id="section2">
+		<ul><a><img src="./static/img/r01.jpg"><span></span></a>
+			<a><img src="./static/img/r02.jpg"><span></span></a>
+			<a><img src="./static/img/r03.jpg"><span></span></a>
+			<a><img src="./static/img/r04.jpg"><span></span></a>
+			<a><img src="./static/img/r05.jpg"><span></span></a>
+			<a><img src="./static/img/r06.jpg"><span></span></a>
+			<a><img src="./static/img/r07.jpg"><span></span></a>
+			<a><img src="./static/img/r08.jpg"><span></span></a>
+			<a><img src="./static/img/r09.jpg"><span></span></a>
+			<a><img src="./static/img/r10.jpg"><span></span></a>
+		</ul>
+	</div>
 
-    <!-- 底部信息 -->
-    <div class="footer">
-        <p class="message"><a title="美食至上 - 大家一起做吃货！" href="" target="_blank">美食至上 -大家一起做吃货！</a></p>
-        <span>联系人：李梦婷</span><br>
-        <span>手机：15757468501</span><br>
-        <span>QQ：793502404</span>
-    </div>
+	<!-- 菜谱 -->
+
+	<ul id="w2" class="nav nav-tabs">
+		<li class="active"><a href="#hotDishes" data-toggle="tab">热菜</a></li>
+		<li><a href="#coldDishes" data-toggle="tab">凉菜</a></li>
+		<li><a href="#soup" data-toggle="tab">汤羹</a></li>
+		<li><a href="#stapleFood" data-toggle="tab">主食</a></li>
+		<li><a href="#snack" data-toggle="tab">小吃</a></li>
+		<li><a href="#westernFood" data-toggle="tab">西餐</a></li>
+		<li><a href="#baking" data-toggle="tab">烘焙</a></li>
+		<li><a href="#drinking" data-toggle="tab">饮品</a></li>
+		<li><a href="#homeDishes" data-toggle="tab">家常菜</a></li>
+		<li> <a href="#hotPot" data-toggle="tab">火锅</a> </li>
+	</ul>
+	<!--  -->
+	<div id="w2Content" class="tab-content">
+
+		<div class="tab-pane fade in active" id="hotDishes">
+			<ul id="hotDishesList"></ul>
+		</div>
+		<div class="tab-pane fade" id="coldDishes">
+			<ul id="coldDishesList"></ul>
+		</div>
+		<div class="tab-pane fade" id="soup">
+			<ul id="soupList"></ul>
+		</div>
+		<div class=" tab-pane fade" id="stapleFood">
+			<ul id="stapleFoodList"> </ul>
+		</div>
+		<div class=" tab-pane fade" id="snack">
+			<ul id="snackList"> </ul>
+		</div>
+		<div class=" tab-pane fade" id="westernFood">
+			<ul id="westernFoodList"> </ul>
+		</div>
+		<div class=" tab-pane fade" id="baking">
+			<ul id="bakingList"> </ul>
+		</div>
+		<div class=" tab-pane fade" id="drinking">
+			<ul id="drinkingList"> </ul>
+		</div>
+		<div class=" tab-pane fade" id="homeDishes">
+			<ul id="homeDishesList"> </ul>
+		</div>
+		<div class=" tab-pane fade" id="hotPot">
+			<ul id="hotPotList"> </ul>
+		</div>
+	</div>
+	<!-- 底部信息 -->
+	<div class="footer">
+		<p class="message"><a title="美食至上 - 大家一起做吃货！" href="" target="_blank">美食至上 -大家一起做吃货！</a></p>
+		<span>联系人：李梦婷</span><br>
+		<span>手机：15757468501</span><br>
+		<span>QQ：793502404</span>
+		<a href="../CookieAdmin/Admin/login.html" target="_black" style="width:100%">管理员请戳这里！</a>
+	</div>
 </body>
 <script src="./index.js"></script>
 

@@ -6,14 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>会员中心</title>
-    <!-- 新 Bootstrap4 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
-    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
-    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="center.css" />
 </head>
 
@@ -80,23 +75,13 @@
 
         <div class="detail">
             <a href="./center.html" target="_blank" id="username"></a>
-            <!-- <ul class="substatus">
-                <li>
-                    <a title="关注" href="#">0 <span>关注</span></a>
-                </li>
-                <li>
-                    <a title="粉丝" href="#">1 <span>粉丝</span></a>
-                </li>
-                <li>
-                    <a title="来访" href="#">2 <span>来访</span></a>
-                </li>
-            </ul> -->
+        
         </div>
 
         <!-- 动态部分 -->
         <ul id="dynamic" class="nav nav-tabs">
             <li class="active">
-                <a href="#home" data-toggle="tab">我发布的菜谱</a>
+                <a href="#home" data-toggle="tab">发布的菜谱</a>
             </li>
             <li>
                 <a href="#all" data-toggle="tab">发布的话题</a>
@@ -109,6 +94,7 @@
         <div id="dynamicContent" class="tab-content">
             <div class="tab-pane active" id="home">
                 <ul id="recipe">
+                    
                 </ul>
             </div>
             <div class="tab-pane fade" id="all">

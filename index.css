@@ -33,7 +33,7 @@ ul{
 .navigation .right{
 
   /* float: right; */
-  margin-top: 2.9%;
+  margin-top: 3.4%;
 }
 
 .navigation li{
@@ -60,7 +60,7 @@ width:70px;
 .logo_inner {
     position: relative;
     display: block;
-     left: 12%;
+     left: 13%;
     height: 100%;
     width: 108px;
    float: left;
@@ -89,18 +89,18 @@ width:70px;
    color: #ff6767;
     text-decoration: none;
 }
-
 .logo_search {
-   height: 100%;
-   width: 250px;
-   float: left;
-   padding: 10px;
+  height: 100%;
+  width: 250px;
+  float: left;
+  padding: 10px;
 }
 .navigation .right{
-  position: relative;
-  float: right;
-  top: -130%;
+ position: relative;
+ float: right;
+ top: -130%;
 }
+
 
 /* 轮播 */
 #w1{
@@ -116,27 +116,35 @@ width:70px;
 } */
 .carousel-control-prev {
   /* left: 12.5%; */
-  background: #000;
+  /* background: #000; */
   height: 20%;
   width: 3%;
   position: absolute;
   top: 40%
 }
-
+.carousel-control-prev :hover{
+  background: rgba(22, 22, 22, 0.7);
+  height: 70px;
+  width: 60px;
+}
 .carousel-control-next {
-  background: #000;
+  /* background: #000; */
   position: absolute;
   /* right: 14%; */
   height: 20%;
   width: 3%;
   top: 40%;
 }
-
+.carousel-control-next :hover{
+  background: rgba(22, 22, 22, 0.7);
+  height: 70px;
+  width: 60px;
+}
 /* 小图标 */
 .icon{
   position: absolute;
-  left: 11%;
-  padding: 20px;
+  left: 7%;
+  padding: 80px;
 }
 .icon a{
   float:left;
@@ -148,16 +156,7 @@ width:70px;
   display: block;
   color: #000;
 }
-.icon span{
-  display: block;
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
-}
-.icon a:hover{
-  text-decoration: none;
-  color: #ff6767;
-}
+
 .icon a img{
   width:50px;
   height:50px;
@@ -168,17 +167,16 @@ width:70px;
 /* 新秀菜谱 */
 #w2 {
   position: relative;
-  left: 12.5%;
+  left: 14%;
   font-size: 20px;
-
-  width: 990px;
+  width: 1040px;
   top:140px
 }
 
- #w2 li a:link {
+ #w2 li a {
   display: block;
-  width:90px; 
-  color: #333;
+  width:98px; 
+ 
  }
 
 
@@ -189,7 +187,7 @@ width:70px;
 #w2Content {
   position: relative;
   top: 140px;
-  left: 11.5%;
+  left: 13.5%;
   width: 1045px;
   height: 100%;
  
@@ -248,7 +246,7 @@ ul{
   position: absolute;
  
   display: block;
-  margin-top: 30%;
+  margin-top: 25%;
   left: 12.5%;
   width: 990px;
   height: 150px;
@@ -270,9 +268,9 @@ ul{
  
 }
 
-#w2 .on{
+/* #w2 li a .on{
   border:1px solid #ff8d8d;
   background:#ff8d8d;
   color:#fff;
   display:block;
-}
+} */

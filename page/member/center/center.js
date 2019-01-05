@@ -15,7 +15,7 @@ $.ajax({
     type: "post",
     success: function (data) {
         var imgsrc = data.userIcon;
-       console.log(data);
+        console.log(data);
         console.log($('#userIcon'));
         $('#userIcon')[0].src = imgsrc;
         $('#userIcon1')[0].src = imgsrc;
@@ -36,7 +36,7 @@ $.ajax({
         console.log(data);
         var datas = data.recipeinfo;
         for (index in datas) {
-            $('#recipe').append('<li ><a onclick="cookdetail(this)" ><img src="' + datas[index].img666 + '"  /><span >' + datas[index].recipeName + '</span></a></li>');
+            $('#recipe').append('<li ><a onclick="cookdetail(this)" ><img src="' + datas[index].recipeImg + '"  /><span >' + datas[index].recipeName + '</span></a></li>');
         }
     },
 })
@@ -111,7 +111,7 @@ function recordDetail(data) {
 //         var datas = data.topicinfo;
 //         var datas = data.recordinfo;
 //         for (index in datas) {
-//             // $('#recipe').append('<li ><a onclick="cookdetail(this)" ><img src="' + datas[index].img666 + '"  /><span >' + datas[index].recipeName + '</span></a></li>');
+//             // $('#recipe').append('<li ><a onclick="cookdetail(this)" ><img src="' + datas[index].recipeImg + '"  /><span >' + datas[index].recipeName + '</span></a></li>');
 //         }
 //     },
 // })

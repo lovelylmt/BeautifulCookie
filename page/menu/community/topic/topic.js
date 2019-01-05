@@ -44,18 +44,8 @@ function topicDetail(data) {
     var datas = data.getElementsByTagName("div")[0].innerText;
     console.log(data);
     localStorage.setItem('topicContent', datas);
-    window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/menu/community/topic/topicDetail/topicDetail.html'
+    window.location.href = 'topicDetail/topicDetail.html'
 
 };
 
 
-//分类
-function choose(element) {
-    if ($('#' + element)[0].className == 'on') {
-        $('#' + element).removeClass('on');
-    }
-    else {
-        $('#' + element).addClass('on');
-    }
-
-}

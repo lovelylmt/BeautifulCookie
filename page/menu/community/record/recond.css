@@ -24,7 +24,7 @@
 .navigation .right{
     position: relative;
     float: right;
-    margin-top: -1.1%;
+    margin-top: -0.7%;
 
 
   }
@@ -40,7 +40,7 @@
   }
 div a{
   text-decoration: none;
-  color: white;
+
   display: inline-block;
   width:70px;
   }
@@ -102,34 +102,15 @@ div a{
 /* 全部日志 */
 .centreNavigation2{
     height:34px;
-    border-bottom:1px solid #ff6767;
-    border-top:1px solid #ff6767;
-    margin:auto;width:990px;
+    margin:auto;
+    width:990px;
 }
- .centreNavigation2  li{
-     list-style: none;
-    float:left;
-    padding:0 2px;
-   
-}
-.centreNavigation2 a{
+
+.centreNavigation2 li a{
     display:block;
-    padding:0 3px;
-    height:34px;
-    font-size:14px;
-    line-height:34px;
-    color: #000;
-    width:100%;
-    /* background: orange; */
-}
-.centreNavigation2 a.on{
-    color:#ff6767;
     width: 100px;
 }
-.centreNavigation2 a:hover{
-    color:#ff6767;
-    text-decoration:none;
-}
+
 /* 日志列表 */
 
 
@@ -213,4 +194,28 @@ div a{
       width: 300px;
       height: 600px;
   }
-
+  .footer{
+    position: relative;
+ 
+    display: block;
+    margin-top: 75%;
+    left: 13.5%;
+    width: 990px;
+    height: 150px;
+   
+  }
+  .message{
+    
+    color:#c90;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:6px;
+   
+    
+  }
+  .message a{
+    width: 100%;
+    
+    color:#f50;
+   
+  }

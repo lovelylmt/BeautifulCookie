@@ -24,7 +24,7 @@
 .navigation .right{
     position: relative;
     float: right;
-    margin-top: -1.1%;
+    margin-top: -0.7%;
 
 
   }
@@ -40,7 +40,7 @@
   }
 div a{
   text-decoration: none;
-  color: white;
+  /* color: white; */
   display: inline-block;
   width:70px;
   }
@@ -101,38 +101,19 @@ div a{
 /* 全部话题 */
 .centreNavigation2{
     height:34px;
-   
-    border-bottom:1px solid #ff6767;
-    border-top:1px solid #ff6767;
     margin:auto;
     width:990px;
+ 
+  
 }
- .centreNavigation2 li{
-   
-     list-style: none;
-    float:left;
-    padding:0 2px;
-   width: 90px;
-    /* background: blue; */
-}
-.centreNavigation2 a{
-    display:block;
-    padding:0 3px;
-    height:34px;
-    font-size:14px;
-    line-height:34px;
-    color: #000;
-}
-.centreNavigation2 a.on{
 
-    width: 100%;
-    color:#ff6767;
-    width: 90px;
+.centreNavigation2 li a{
+    display:block;
+    width: 100px;
+ 
 }
-.centreNavigation2 a:hover{
-    color:#ff6767;
-    text-decoration:none;
-}
+
+
 /* 图片 */
 .centreimg{
     display: block;
@@ -164,17 +145,17 @@ div a{
 /* 话题部分 */
 #topic{
     position: relative;
-   margin-top: 15%;
-  
-  
+    margin-top: 15%;
     width:640px;
     height: 100%;
+    
 }
 #topic li {
     position: relative;
     float: left;
     height: 250px; 
     width: 640px;
+    
   }
   .left { 
     display: block;
@@ -210,14 +191,14 @@ div a{
      font-size:14px;
      /* background: red; */
      width: 100%;
-     height: 15px;
+     height: 30px;
      float: left;
-     margin-top: -1%;  
+     
   }
   .left .name span{
       position: relative;
       display: block;
-      margin: 30px 5px;
+      margin:40px 0 5px;
       /* background: blue; */
       font-size: 14px;
       color: #666;
@@ -292,17 +273,18 @@ div a{
       width: 300px;
       height: 600px;
   }
-
-  /* .footer{
-    position: absolute;
-    left: 12.5%;
+  .footer{
+    position: relative;
+    /* background: orange; */
     display: block;
+    margin-top: 100%;
+    left: 18%;
     width: 990px;
     height: 150px;
-    background: pink;
-  margin-top: 150%;
+   
   }
   .message{
+    
     color:#c90;
     font-size:14px;
     font-weight:700;
@@ -315,4 +297,4 @@ div a{
     
     color:#f50;
    
-  } */
+  }

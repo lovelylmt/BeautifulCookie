@@ -50,6 +50,6 @@ function recordDetail(data) {
     var datas = data.getElementsByTagName("span")[0].innerText;
     console.log(data);
     localStorage.setItem('recordTitle', datas);
-    window.location.href = 'file:///C:/Users/%E6%9D%8E%E6%A2%A6%E5%A9%B7/Desktop/BeautifulCookie/page/menu/community/recorddetail/recorddetail.html'
+    window.location.href = '../recorddetail/recorddetail.html'
 
 };

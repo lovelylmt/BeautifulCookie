@@ -225,7 +225,7 @@ div a{
     position: relative;
     left: 12.5%;
     display: block;
-    top: 100px;
+    top: 400px;
     width: 990px;
     height: 150px;
    
@@ -244,4 +244,29 @@ div a{
     
     color:#f50;
    
+  }
+  
+  /* 评论 */
+  .Iscomment{
+      position: relative;
+      display: block;
+	  top:300px;
+      left: 13.5%;
+      height: 100%;
+      width: 640px;
+      /* background:orange; */
+  }
+  .commentPost{
+      height: 30px;
+      /* background: orange; */
+  }
+  .commentPost .loginbtn{
+    height: 30px;
+      width: 11%;
+      float: right;
+      color: #ddd;
+      font-size: 14px;
+      text-align: center;
+      background: rgb(186,32,32);
+      border: none;
   }
