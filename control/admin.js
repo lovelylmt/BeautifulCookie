@@ -1,10 +1,10 @@
 var admin = require('../model/admin');
 
 module.exports = {
-    admin: (req, res) => {
+    login: (req, res) => {
         var name = req.body.name;
         var password = req.body.password;
-        admin.admin(name, password, err => {
+        admin.login(name, password, err => {
             console.log(err)
             if (err.length > 0) {
                 res.json({
@@ -13,12 +13,9 @@ module.exports = {
             } else {
                 res.json({
                     date: '登录失败'
+                    
                 })
             }
         })
     },
-
-
-
-
 }

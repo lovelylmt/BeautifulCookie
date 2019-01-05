@@ -37,7 +37,7 @@ module.exports = {
         var mysort = { date1: -1 };
         topic.find({}).then(result => {
             total = result.length;
-            topic.find()
+            topic.find({})
             .sort(mysort)
             .limit(limit)
             .skip((offset/ limit) * limit)
@@ -54,6 +54,15 @@ module.exports = {
         cb(1);
         topic.update({ recordContent: recordContent1 }, { $set: { status: "1" } }).then(result => {
             console.log(result);
+        })
+    },
+      //删除
+      deleteRecord: (recordContent, cb) => {
+        var recordContent = recordContent
+        topic.remove({recordContent:recordContent}).then(result => {
+            cb({
+                result: result,
+            });
         })
     },
 
@@ -78,10 +87,11 @@ module.exports = {
 },
       //用户发布菜谱
       relRecord: (username, cb) => {
+        var mysort = { date1: -1 };
         topic.find({
             username: username ,
             status: "1", 
-        }).then(result => {
+        }).sort(mysort).then(result => {
             console.log(result);
             cb(result)
         })

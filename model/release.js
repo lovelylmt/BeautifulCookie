@@ -2,15 +2,13 @@ var mongoose = require('../util/database');
 
 const recipename = mongoose.model('recipes', {
     recipeName: String,
-    img666: String,
+    recipeImg: String,
     stepImg1: String,
     stepImg2: String,
     stepImg3: String,
     recipeDescription: String,
     mainMaterial: String,
-    mainMaterialUsage: String,
     accessories: String,
-    accessoriesUsage: String,
     step1: String,
     step2: String,
     step3: String,
@@ -19,23 +17,21 @@ const recipename = mongoose.model('recipes', {
     userIcon: String,
     status: String,
     recipeType: String,
-   
+
 });
 
 module.exports = {
     //用户上传菜谱
-    addRecipe: function (recipeName, img666, stepImg1, stepImg2, stepImg3, recipeDescription, mainMaterial, mainMaterialUsage, accessories, accessoriesUsage, step1, step2, step3, date1, username, status, userIcon, recipeType, cb) {
+    addRecipe: function (recipeName, recipeImg, stepImg1, stepImg2, stepImg3, recipeDescription, mainMaterial, accessories, step1, step2, step3, date1, username, status, userIcon, recipeType, cb) {
         var recipes = new recipename({
             recipeName: recipeName,
-            img666: img666,
+            recipeImg: recipeImg,
             stepImg1: stepImg1,
             stepImg2: stepImg2,
             stepImg3: stepImg3,
             recipeDescription: recipeDescription,
             mainMaterial: mainMaterial,
-            mainMaterialUsage: mainMaterialUsage,
             accessories: accessories,
-            accessoriesUsage: accessoriesUsage,
             step1: step1,
             step2: step2,
             step3: step3,
@@ -44,7 +40,7 @@ module.exports = {
             userIcon: userIcon,
             status: status,
             recipeType: recipeType,
-        
+
         });
 
         recipes.save(function (err) {
@@ -58,9 +54,9 @@ module.exports = {
         var limit = parseInt(limit);
         var offset = parseInt(offset);
         var mysort = { date1: -1 };
-        recipename.find().then(result => {
+        recipename.find({}).then(result => {
             total = result.length;
-            recipename.find()
+            recipename.find({})
                 .sort(mysort)
                 .limit(limit)
                 .skip((offset / limit) * limit)
@@ -75,15 +71,34 @@ module.exports = {
     },
     //审核菜谱
     recipeExamine: (recipeName1, cb) => {
-        recipename.update({ recipeName: recipeName1 }, { $set: { status: "1" } }).then(result => {
-            console.log(result);
+        recipename.update({
+            recipeName: recipeName1
+        }, {
+                $set: { status: "1" }
+            }).then(result => {
+                console.log(result);
+            })
+    },
+    //删除
+    deleteRecipe: (recipeName, cb) => {
+        var recipeName = recipeName
+        recipename.remove({recipeName:recipeName}).then(result => {
+            cb({
+                result: result,
+            });
         })
     },
+
     //管理员发布审核的菜谱
     upRecipe: (cb) => {
-        // var count=countID;
         var mysort = { date1: -1 };
-        recipename.find({ status: "1", }).sort(mysort).then(result => { console.log(result); cb(result) })
+        recipename.find({
+            status: "1",
+        }).sort(mysort)
+            .then(result => {
+                console.log(result);
+                cb(result)
+            })
     },
 
 

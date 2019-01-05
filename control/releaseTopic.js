@@ -43,7 +43,16 @@ module.exports = {
     }
     );
   },
-
+   //删除
+   deleteTopic: (req, res) => {
+    const topicContent = req.body.topicContent;
+    releases.deleteTopic(topicContent, err => {
+      res.json({
+        topicinfo: err
+      })
+    }
+    );
+  },
   //管理员发布话题
   upTopic: (req, res) => {
     console.log(123);

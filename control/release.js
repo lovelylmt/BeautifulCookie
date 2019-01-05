@@ -6,15 +6,13 @@ module.exports = {
   addRecipe: (req, res) => {
     console.log(req.body.name);
     var recipeName = req.body.name;   // 菜谱名称
-    var img666 = req.body.img666; //菜谱图片
+    var recipeImg = req.body.recipeImg; //菜谱图片
     var stepImg1 = req.body.stepImg1;
     var stepImg2 = req.body.stepImg2;
     var stepImg3 = req.body.stepImg3;
     var recipeDescription = req.body.recipeDescription;
     var mainMaterial = req.body.mainMaterial;
-    var mainMaterialUsage = req.body.mainMaterialUsage;
     var accessories = req.body.accessories;
-    var accessoriesUsage = req.body.accessoriesUsage;
     var step1 = req.body.step1;
     var step2 = req.body.step2;
     var step3 = req.body.step3;
@@ -24,7 +22,7 @@ module.exports = {
     var status = req.body.status;
     var recipeType = req.body.recipeType;
 
-    releases.addRecipe(recipeName, img666, stepImg1, stepImg2, stepImg3, recipeDescription, mainMaterial, mainMaterialUsage, accessories, accessoriesUsage, step1, step2, step3,date1, username, status, userIcon, recipeType, err => {
+    releases.addRecipe(recipeName, recipeImg, stepImg1, stepImg2, stepImg3, recipeDescription, mainMaterial,  accessories, step1, step2, step3,date1, username, status, userIcon, recipeType, err => {
       if (err == null) {
         res.json({
           date: "菜谱成功存入"
@@ -53,6 +51,17 @@ module.exports = {
     }
     );
   },
+  //删除
+  deleteRecipe: (req, res) => {
+    const recipeName = req.body.recipeName;
+    releases.deleteRecipe(recipeName, err => {
+      res.json({
+        recipeinfo: err
+      })
+    }
+    );
+  },
+
   //管理员发布菜谱
   upRecipe: (req, res) => {
     releases.upRecipe(

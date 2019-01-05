@@ -26,7 +26,8 @@ module.exports = {
     users.login(username, password, err => {
       if (err.length > 0) {
         res.json({
-          date: '登录成功'
+          date: '登录成功',
+         
         })
       } else {
         res.json({

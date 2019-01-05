@@ -38,6 +38,7 @@ module.exports = {
             cb(resuilt)
         })
     },
+    
     upicon: (username, cb) => {
         user.findOne({                             //从数据库里面查找
             username: username

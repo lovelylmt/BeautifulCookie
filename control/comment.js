@@ -39,6 +39,18 @@ module.exports = {
         }
         );
     },
+
+    //删除
+    deleteComment: (req, res) => {
+        const recipeComment1 = req.body.recipeComment;
+        comment.deleteComment(recipeComment1, err => {
+          res.json({
+            commentinfo: err
+          })
+        }
+        );
+      },
+  
     //发表
     releaseComment: (req, res) => {    
         var recipeName = req.body.recipeName;
@@ -51,5 +63,8 @@ module.exports = {
         }
         );
     },
+
+
+
 }
 

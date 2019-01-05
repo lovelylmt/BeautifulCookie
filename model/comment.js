@@ -7,6 +7,8 @@ const comment = mongoose.model('comments', {
     status: String,
     date1: String,
     recipeName: String,
+    topicComment:String,
+    topicContent:String,
 });
 
 module.exports = {
@@ -29,9 +31,10 @@ module.exports = {
         var limit = parseInt(limit);
         var offset = parseInt(offset);
         var mysort = { date1: -1 };
-        comment.find({}).sort(mysort).then(result => {
+        comment.find().then(result => {
             total = result.length;
             comment.find()
+                .sort(mysort)
                 .limit(limit)
                 .skip((offset / limit) * limit)
                 .then(result => {
@@ -49,12 +52,23 @@ module.exports = {
             console.log(result);
         })
     },
+    //删除
+    deleteComment: (recipeComment, cb) => {
+        var recipeComment = recipeComment
+        comment.remove({recipeComment:recipeComment}).then(result => {
+            cb({
+                result: result,
+            })
+        })
+    },
+
     //管理员发布审核过的评论
     releaseComment: (recipeName, cb) => {
         console.log(recipeName)
         var mysort = { date1: -1 };
-        comment.findOne({
-            recipeName: recipeName
+        comment.find({
+            recipeName: recipeName,
+            status: "1",
         }).sort(mysort).then(result => {
             if (result !== null) {
                 console.log(result)
@@ -64,5 +78,7 @@ module.exports = {
             }
         });
     },
+
+  
 }
 

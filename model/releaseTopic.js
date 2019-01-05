@@ -11,7 +11,7 @@ const topic = mongoose.model('topics', {
 });
 
 module.exports = {
-    addTopic: function (topicContent,date1, topicImg, username, userIcon, status, topicType, cb) {   //用户上传话题
+    addTopic: function (topicContent, date1, topicImg, username, userIcon, status, topicType, cb) {   //用户上传话题
         var topics = new topic({
             topicContent: topicContent,
             date1: date1,
@@ -25,23 +25,23 @@ module.exports = {
             cb(err);
         });
     },
-    getTopic: ( limit ,offset,cb) => {    //管理员获取所有话题
+    getTopic: (limit, offset, cb) => {    //管理员获取所有话题
         var total = 0;
         var limit = parseInt(limit);
         var offset = parseInt(offset);
         var mysort = { date1: -1 };
         topic.find({}).then(result => {
             total = result.length;
-            topic.find()
-            .sort(mysort)
-            .limit(limit)
-            .skip((offset/ limit) * limit)
-            .then(result => {
-              cb({
-                result: result,
-                total: total
-              });
-            });
+            topic.find({})
+                .sort(mysort)
+                .limit(limit)
+                .skip((offset / limit) * limit)
+                .then(result => {
+                    cb({
+                        result: result,
+                        total: total
+                    });
+                });
         });
 
     },
@@ -52,39 +52,47 @@ module.exports = {
             console.log(result);
         })
     },
-
-    upTopic: (cb) => { 
+    //删除
+    deleteTopic: (topicContent, cb) => {
+        var topicContent = topicContent
+        topic.remove({topicContent:topicContent}).then(result => {
+            cb({
+                result: result,
+            });
+        })
+    },
+    upTopic: (cb) => {
         var mysort = { date1: -1 };      //管理员发布审核过的话题
         topic.find({ status: "1" }).sort(mysort).then(result => { console.log(result); cb(result) })
     },
 
-        //具体话题
+    //具体话题
 
-        topicDetail: (topicContent, cb) => {
-            console.log(topicContent)
-            topic.findOne({
-                topicContent: topicContent
-            }).then(result => {
-                if (result !== null) {
-                    console.log(result)
-                    cb(result);
-                } else {
-                    cb(false);
-                }
-            });
-        },
+    topicDetail: (topicContent, cb) => {
+        console.log(topicContent)
+        topic.findOne({
+            topicContent: topicContent
+        }).then(result => {
+            if (result !== null) {
+                console.log(result)
+                cb(result);
+            } else {
+                cb(false);
+            }
+        });
+    },
 
-          //用户发布话题
-          relTopic: (username, cb) => {
-            var mysort = { date1: -1 };
-            topic.find({
-                username: username ,
-                status: "1", 
-            }).sort(mysort).then(result => {
-                console.log(result);
-                cb(result)
-            })
-        },
+    //用户发布话题
+    relTopic: (username, cb) => {
+        var mysort = { date1: -1 };
+        topic.find({
+            username: username,
+            status: "1",
+        }).sort(mysort).then(result => {
+            console.log(result);
+            cb(result)
+        })
+    },
 
     searchTopic: (topicContent, cb) => {  //搜索    
         topic.find(

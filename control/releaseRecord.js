@@ -44,6 +44,17 @@ module.exports = {
     }
     );
   },
+
+    //删除
+    deleteRecord: (req, res) => {
+      const recordContent = req.body.recordContent;
+      releases.deleteRecord(recordContent, err => {
+        res.json({
+          recordinfo: err
+        })
+      }
+      );
+    },
   //管理员发布日志
   upRecord: (req, res) => {
     console.log(123);
